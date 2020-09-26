@@ -8,6 +8,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Table from 'react-bootstrap/Table';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -16,6 +17,19 @@ import Col from 'react-bootstrap/Col';
 import ColoredLine from '../../components/Common/ColoredLine.js'
 import Sidebar from '../../components/Sidebar/Sidebar.js'
 import TimeLineChart from '../../components/Chart/TimeLineChart.js'
+
+import {
+  XYPlot,
+  XAxis,
+  YAxis,
+  HorizontalGridLines,
+  VerticalGridLines,
+  LineSeries,
+  VerticalBarSeries,
+  DiscreteColorLegend,
+  ChartLabel,
+  LabelSeries
+} from 'react-vis';
 
 import { connect } from "react-redux";
 import { fetchPeopleCounter } from '../../redux/action';
@@ -262,7 +276,7 @@ class Dashboard extends React.Component{
     return (
         <Container fluid style={{background: '#fff'}}>
           <Row>
-            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #f9f9f9)', paddingTop: 10}}>
+            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #fff)', paddingTop: 10}}>
             </Col>
             <Col >
               <Row style={{height: 60, padding:10}}>
@@ -314,7 +328,6 @@ class Dashboard extends React.Component{
                     </Carousel.Item>
                   </Carousel>
                 </Col>
-
               </Row>
               <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
                 <Col>
@@ -370,8 +383,7 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
               </Row>
-              <Row style={{height: 20}}><Col></Col></Row>
-              <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
                     <h3>Latar Belakang</h3>
@@ -461,7 +473,7 @@ class Dashboard extends React.Component{
                   </Card>
                 </CardColumns>
               </Row>
-              <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
                     <h3>Jumlah Spesies Tanaman di Arboretum Gambut Tahun 2018 - 2020</h3>
@@ -508,13 +520,156 @@ class Dashboard extends React.Component{
                   </Table>
                 </Col>
               </Row>
-              <Row>
+              <Row style={{paddingTop: 30}}>
                 <Col>
-                  <Card body className="text-center"><h2>Footer</h2></Card>  
+                  <CardGroup>
+                    <Card chart style={{border: 'none'}}>
+                      <Card.Body style={{justifyContent: 'center'}}>
+                        <div style={{justifyContent: 'center', textAlign: 'center'}}>
+                          <Card.Title>Perkembangan Biodiversity</Card.Title>
+                          <XYPlot 
+                            className="clustered-stacked-bar-chart-example"
+                            xType="ordinal"
+                            yDomain={[0, 30]}
+                            height={400} 
+                            width={400}>
+                            <XAxis />
+                            <YAxis />
+                            <ChartLabel
+                              text=""
+                              className="alt-x-label"
+                              includeMargin={false}
+                              xPercent={0.6}
+                              yPercent={1.12}
+                            />
+                            <ChartLabel
+                              text="Jumlah Spesies"
+                              className="alt-y-label"
+                              includeMargin={false}
+                              xPercent={0.06}
+                              yPercent={0.06}
+                              style={{
+                                transform: 'rotate(-90)',
+                                textAnchor: 'end'
+                              }}
+                            />
+                            <VerticalBarSeries
+                              className="clustered-stacked-bar-chart-example"
+                              barWidth={0.5}
+                              color="#12939A"
+                              data={[
+                                {x: '2018', y: 13},
+                                {x: '2019', y: 24},
+                                {x: '2020', y: 26},
+                              ]}
+                            />
+                            <LabelSeries
+                              labelAnchorX='middle'
+
+                              data={[
+                                {x: '2018', y: 13, yOffset: -25},
+                                {x: '2019', y: 24, yOffset: -25},
+                                {x: '2020', y: 26, yOffset: -25},
+                              ]} 
+                              getLabel={d => d.y}/>
+                            <LineSeries
+                              color="#000"
+                              strokeStyle='dashed'
+                              data={[
+                                {x: '2018', y: 13, yOffset: -25},
+                                {x: '2019', y: 19.5, yOffset: -25},
+                                {x: '2020', y: 26, yOffset: -25},
+                              ]} 
+                            />
+                          </XYPlot>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                    <Card chart style={{border: 'none'}}>
+                      <Card.Body style={{justifyContent: 'center'}}>
+                        <div style={{alignSelf: 'center', textAlign: 'center'}}>
+                          <Card.Title>Index Keanekaragaman Hayati</Card.Title>
+                          <XYPlot 
+                            className="clustered-stacked-bar-chart-example"
+                            xType="ordinal"
+                            yDomain={[0, 3]}
+                            height={400} 
+                            width={400}>
+                            <XAxis />
+                            <YAxis />
+                            <ChartLabel
+                              text=""
+                              className="alt-x-label"
+                              includeMargin={false}
+                              xPercent={0.6}
+                              yPercent={1.12}
+                            />
+                            <ChartLabel
+                              text="Indeks Kehati"
+                              className="alt-y-label"
+                              includeMargin={false}
+                              xPercent={0.06}
+                              yPercent={0.06}
+                              style={{
+                                transform: 'rotate(-90)',
+                                textAnchor: 'end'
+                              }}
+                            />
+                            <VerticalBarSeries
+                              className="clustered-stacked-bar-chart-example"
+                              barWidth={0.5}
+                              color="#12939A"
+                              data={[
+                                {x: '2018', y: 1.37},
+                                {x: '2019', y: 2.55},
+                                {x: '2020', y: 2.69},
+                              ]}
+                            />
+                            <LabelSeries
+                              labelAnchorX='middle'
+
+                              data={[
+                                {x: '2018', y: 1.37, yOffset: -25},
+                                {x: '2019', y: 2.55, yOffset: -25},
+                                {x: '2020', y: 2.69, yOffset: -25},
+                              ]} 
+                              getLabel={d => d.y}/>
+                            <LineSeries
+                              color="#000"
+                              strokeStyle='dashed'
+                              data={[
+                                {x: '2018', y: 1.37, yOffset: -25},
+                                {x: '2019', y: 2.03, yOffset: -25},
+                                {x: '2020', y: 2.69, yOffset: -25},
+                              ]} 
+                            />
+                          </XYPlot>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </CardGroup>
+                  
                 </Col>
+              </Row>
+              <Row style={{paddingTop: 60}}>
+                <Col>
+                  <ColoredLine/>
+                </Col>
+              </Row>
+              <Row style={{paddingTop: 20, paddingLeft: 30, paddingBottom: 30, height: 240, background: '#fff'}}>
+                <Col>
+                  <h5>Websites</h5>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item href="https://arboretumgambut.com">Arboretum Gambut</ListGroup.Item>
+                    <ListGroup.Item href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</ListGroup.Item>
+                    <ListGroup.Item href="https://games.covid-19.sekolahcintagambut.com/home">Covid-19 Education Game</ListGroup.Item>
+                  </ListGroup>
+                </Col>
+                <Col></Col>
+                <Col></Col>
               </Row>  
             </Col>
-            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #f9f9f9)', paddingTop: 10}}>
+            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #fff)', paddingTop: 10}}>
             </Col>
           </Row>
         </Container>
