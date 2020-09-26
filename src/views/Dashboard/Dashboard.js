@@ -19,6 +19,7 @@ import { connect } from "react-redux";
 import { fetchPeopleCounter } from '../../redux/action';
 import { fetchPeopleCount } from '../../api/api';
 
+import logo_pertamina from "../../assets/logo_pertamina.png"
 
 const MSEC_DAILY = 86400000;
 const timestamp = new Date('July 9 2020').getTime();
@@ -56,15 +57,21 @@ class Dashboard extends React.Component{
 
     console.log('props', this.props.data.data)
     return (
-        <Container fluid style={{background: 'linear-gradient(to top, #ffffff, #eeeeee)'}}>
+        <Container fluid style={{background: '#fff'}}>
           <Row>
-            <Col sm={3} style={{background: 'linear-gradient(to bottom, #232b2b, #232b2b)', paddingTop: 10}}>
-              <Sidebar />
+            <Col sm={1} style={{background: 'linear-gradient(to bottom, #f9f9f9, #f9f9f9)', paddingTop: 10}}>
             </Col>
             <Col >
+              <Row style={{height: 60, padding:10}}>
+                <Col sm={8} md={8} lg={9} style={{background: '#fff'}}></Col>
+                <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img src={logo_pertamina} height="35"/></Col>
+              </Row>
               <Row>
-                <Col style={{padding: 30}}>
-                  <div style={{color:'#999', fontSize: 20}}>Dashboard</div>
+                <Col style={{padding: 0}}>
+                  <img src="https://cdn.idntimes.com/content-images/community/2019/11/474b414c-3467-4a8b-b3a4-b0e013ce5c42-notebook3-1-ebddd88e8f326d68a31894cec8dc936c_600x400.jpg" 
+                       alt="new"
+                       height="400"
+                       width="1100"/>
                 </Col>
               </Row>
               <Row style={{height: 20, paddingBottom: 40}}><Col><ColoredLine/></Col></Row>
@@ -78,16 +85,7 @@ class Dashboard extends React.Component{
                         <h5>Hourly Flow</h5>
                       </Card.Header>
                       <Card.Body>
-                        <TimeLineChart 
-                          data={data}
-                          width={850}
-                          height={300}
-                          min_y={0}
-                          max_y={300}
-                          x_title='Time'
-                          y_title='People Count'
-                          time_type='daily'
-                        />
+                        aaaaa
                       </Card.Body>           
                     </Card>
                     <Card chart>
@@ -124,6 +122,8 @@ class Dashboard extends React.Component{
                   <Card body className="text-center"><h2>Footer</h2></Card>  
                 </Col>
               </Row>
+            </Col>
+            <Col sm={1} style={{background: 'linear-gradient(to bottom, #f9f9f9, #f9f9f9)', paddingTop: 10}}>
             </Col>
           </Row>
         </Container>
