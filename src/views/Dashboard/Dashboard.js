@@ -343,7 +343,7 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("http://sekolahcintagambut.com", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
                     <Card.Img variant="top" 
                       src={img2}
                       height='240'
@@ -354,7 +354,7 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("https://games.covid-19.sekolahcintagambut.com/home", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-tanjung-leban")}}>
                     <Card.Img variant="top" 
                       src={img16}
                       height='240'
