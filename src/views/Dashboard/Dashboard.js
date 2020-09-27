@@ -462,8 +462,8 @@ class Dashboard extends React.Component{
                 <Col>
                   <h5>Websites</h5>
                   <ListGroup variant="flush">
-                    <ListGroup.Item href="https://arboretumgambut.com">Arboretum Gambut</ListGroup.Item>
-                    <ListGroup.Item href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</ListGroup.Item>
+                    <ListGroup.Item><a href="https://arboretumgambut.com">Arboretum Gambut</a></ListGroup.Item>
+                    <ListGroup.Item><a href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</a></ListGroup.Item>
                   </ListGroup>
                 </Col>
                 <Col></Col>

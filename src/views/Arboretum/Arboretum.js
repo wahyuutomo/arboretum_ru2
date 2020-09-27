@@ -588,19 +588,31 @@ class Arboretum extends React.Component{
               </Row>
               <Row>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>this.history.push("/arboretum")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/home")}}>
                     <Card.Img variant="top" 
-                      src={img9}
+                      src={img6}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Arboretum Gambut</Card.Title>
+                      <Card.Title className="text-center">Home</Card.Title>
                     </Card.Body>
                     
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("http://sekolahcintagambut.com", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/arboretum")}}>
+                    <Card.Img variant="top" 
+                      src={img9}
+                      height='240'
+                      />
+                    <Card.Body className="text-center">
+                      <Card.Title className="text-center">Arboretum Gambut</Card.Title>
+                    </Card.Body>
+                    
+                  </Card>
+                </Col>
+                <Col style={{background: '#fff'}}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
                     <Card.Img variant="top" 
                       src={img2}
                       height='240'
@@ -611,17 +623,18 @@ class Arboretum extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("https://games.covid-19.sekolahcintagambut.com/home", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-tanjung-leban")}}>
                     <Card.Img variant="top" 
                       src={img16}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Mangrove Tanjung Leban</Card.Title>
+                      <Card.Title className="text-center">Mangrove Tanjung Leban</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
               </Row>
+
               <Row style={{paddingTop: 30}}>
                 <Col>
                   <ColoredLine/>
@@ -631,8 +644,8 @@ class Arboretum extends React.Component{
                 <Col>
                   <h5>Websites</h5>
                   <ListGroup variant="flush">
-                    <ListGroup.Item href="https://arboretumgambut.com">Arboretum Gambut</ListGroup.Item>
-                    <ListGroup.Item href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</ListGroup.Item>
+                    <ListGroup.Item><a href="https://arboretumgambut.com">Arboretum Gambut</a></ListGroup.Item>
+                    <ListGroup.Item><a href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</a></ListGroup.Item>
                   </ListGroup>
                 </Col>
                 <Col></Col>

@@ -48,188 +48,168 @@ import img19 from "../../assets/19.jpeg"
 const table_data = [
     {
         "no": "1",
-        "name": "Nepenthes ampullaria Jack",
-        "first": "51",
-        "second": "56",
-        "third": "56"
+        "nama": "Bakau Merah",
+        "jumlah": "7236",
+        "pi": "0.469",
+        "ln_pi": "0.76",
+        "h": "0.36"
     },
     {
         "no": "2",
-        "name": "Nepenthes rafflesiana Jack",
-        "first": "49",
-        "second": "60",
-        "third": "70"
+        "nama": "Aglaia",
+        "jumlah": "2621",
+        "pi": "0.170",
+        "ln_pi": "1.77",
+        "h": "0.30"
     },
     {
         "no": "3",
-        "name": "Nepenthes bicalcarata Hook",
-        "first": "34",
-        "second": "42",
-        "third": "54"
+        "nama": "Agealitis",
+        "jumlah": "2036",
+        "pi": "0.132",
+        "ln_pi": "2.03",
+        "h": "0.27"
     },
     {
         "no": "4",
-        "name": "Nepenthes mirabilis (Lour) Druce",
-        "first": "40",
-        "second": "43",
-        "third": "50"
+        "nama": "Buta-buta",
+        "jumlah": "893",
+        "pi": "0.058",
+        "ln_pi": "2.85",
+        "h": "0.16"
     },
     {
         "no": "5",
-        "name": "Nepenthes sumatrana",
-        "first": "5",
-        "second": "7",
-        "third": "15"
+        "nama": "Karet",
+        "jumlah": "945",
+        "pi": "0.061",
+        "ln_pi": "2.79",
+        "h": "0.17"
     },
     {
         "no": "6",
-        "name": "Nepenthes spectabilis",
-        "first": "10",
-        "second": "11",
-        "third": "20"
+        "nama": "Baru-baru",
+        "jumlah": "1403",
+        "pi": "0.091",
+        "ln_pi": "2.40",
+        "h": "0.22"
     },
     {
         "no": "7",
-        "name": "Nepenthes albomarginata",
-        "first": "32",
-        "second": "32",
-        "third": "32"
+        "nama": "Nipah",
+        "jumlah": "145",
+        "pi": "0.009",
+        "ln_pi": "4.67",
+        "h": "0.04"
     },
     {
         "no": "8",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "3",
-        "third": "3"
+        "nama": "Beringin",
+        "jumlah": "36",
+        "pi": "0.002",
+        "ln_pi": "6.06",
+        "h": "0.01"
     },
     {
         "no": "9",
-        "name": "Aquilaria malacensis",
-        "first": "-",
-        "second": "8",
-        "third": "8"
+        "nama": "Bintaro",
+        "jumlah": "109",
+        "pi": "0.007",
+        "ln_pi": "4.95",
+        "h": "0.03"
     },
     {
         "no": "10",
-        "name": "Melaleuca leucadendron",
-        "first": "-",
-        "second": "30",
-        "third": "30"
-    },
-    {
-        "no": "11",
-        "name": "Cratoxylon arbores",
-        "first": "-",
-        "second": "13",
-        "third": "13"
-    },
-    {
-        "no": "12",
-        "name": "Syzygium aqueum",
-        "first": "-",
-        "second": "23",
-        "third": "23"
-    },
-    {
-        "no": "13",
-        "name": "Syzygium malaccense",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "14",
-        "name": "Citrus sp.",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "15",
-        "name": "Hevea brasiliensis",
-        "first": "-",
-        "second": "58",
-        "third": "58"
-    },
-    {
-        "no": "16",
-        "name": "Syzygium leptostemonum",
-        "first": "-",
-        "second": "80",
-        "third": "80"
-    },
-    {
-        "no": "17",
-        "name": "Vitex pubescens",
-        "first": "-",
-        "second": "38",
-        "third": "38"
-    },
-    {
-        "no": "18",
-        "name": "Macaranga trilobata",
-        "first": "-",
-        "second": "8",
-        "third": "8"
-    },
-    {
-        "no": "19",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "176",
-        "third": "176"
-    },
-    {
-        "no": "20",
-        "name": "Dimocarpus longan",
-        "first": "-",
-        "second": "15",
-        "third": "15"
-    },
-    {
-        "no": "21",
-        "name": "Artocarpus heterophyllus",
-        "first": "-",
-        "second": "5",
-        "third": "5"
-    },
-    {
-        "no": "22",
-        "name": "Nephelium lappeceum",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "23",
-        "name": "Shorea leprosula",
-        "first": "-",
-        "second": "3",
-        "third": "100"
-    },
-    {
-        "no": "24",
-        "name": "Setulang",
-        "first": "-",
-        "second": "193",
-        "third": "193"
-    },
-    {
-        "no": "25",
-        "name": "Asplenium nidus",
-        "first": "-",
-        "second": "-",
-        "third": "3"
-    },
-    {
-        "no": "26",
-        "name": "Dendobrium bigibbum",
-        "first": "-",
-        "second": "-",
-        "third": "10"
+        "nama": "Ketapang",
+        "jumlah": "9",
+        "pi": "0.001",
+        "ln_pi": "7.45",
+        "h": "0.00"
     },
 ]
 
+const table_data_2 = [
+    {
+        "no": "1",
+        "nama": "Bakau Merah",
+        "jumlah": "7500",
+        "pi": "0.470",
+        "ln_pi": "0.75",
+        "h": "0.35"
+    },
+    {
+        "no": "2",
+        "nama": "Aglaia",
+        "jumlah": "2621",
+        "pi": "0.164",
+        "ln_pi": "1.81",
+        "h": "0.30"
+    },
+    {
+        "no": "3",
+        "nama": "Agealitis",
+        "jumlah": "2130",
+        "pi": "0.134",
+        "ln_pi": "2.01",
+        "h": "0.27"
+    },
+    {
+        "no": "4",
+        "nama": "Buta-buta",
+        "jumlah": "921",
+        "pi": "0.058",
+        "ln_pi": "2.85",
+        "h": "0.16"
+    },
+    {
+        "no": "5",
+        "nama": "Karet",
+        "jumlah": "945",
+        "pi": "0.059",
+        "ln_pi": "2.83",
+        "h": "0.17"
+    },
+    {
+        "no": "6",
+        "nama": "Baru-baru",
+        "jumlah": "1403",
+        "pi": "0.088",
+        "ln_pi": "2.43",
+        "h": "0.21"
+    },
+    {
+        "no": "7",
+        "nama": "Nipah",
+        "jumlah": "221",
+        "pi": "0.014",
+        "ln_pi": "4.28",
+        "h": "0.06"
+    },
+    {
+        "no": "8",
+        "nama": "Beringin",
+        "jumlah": "56",
+        "pi": "0.004",
+        "ln_pi": "5.65",
+        "h": "0.02"
+    },
+    {
+        "no": "9",
+        "nama": "Bintaro",
+        "jumlah": "123",
+        "pi": "0.008",
+        "ln_pi": "4.86",
+        "h": "0.04"
+    },
+    {
+        "no": "10",
+        "nama": "Ketapang",
+        "jumlah": "25",
+        "pi": "0.002",
+        "ln_pi": "6.46",
+        "h": "0.01"
+    }
+]
 
 class MangroveTanjungLeban extends React.Component{
   constructor(props) {
@@ -313,7 +293,7 @@ class MangroveTanjungLeban extends React.Component{
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h2>Arboretum Gambut Marsawa</h2>
+                    <h2>Mangrove Desa Tanjung Leban</h2>
                   </div>
                   <div>
                     <ColoredLine/>
@@ -366,10 +346,7 @@ class MangroveTanjungLeban extends React.Component{
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h3>Jumlah Spesies Tanaman di Arboretum Gambut Tahun 2018 - 2020</h3>
-                  </div>
-                  <div>
-                    <ColoredLine/>
+                    <h3>Indeks Keanekaragaman Hayati (H') Flora Mangrove Tanjung Leban 2019</h3>
                   </div>
                 </Col>
               </Row>
@@ -378,14 +355,12 @@ class MangroveTanjungLeban extends React.Component{
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th colspan="3" style={{textAlign: 'center'}}>Jumlah</th>
-                      </tr>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>2018</td>
-                        <td style={{textAlign: 'center'}}>2019</td>
-                        <td style={{textAlign: 'center'}}>2020</td>
+                        <th style={{textAlign: 'center'}}>No</th>
+                        <th style={{textAlign: 'center'}}>Nama Ilmiah</th>
+                        <th style={{textAlign: 'center'}}>Jumlah</th>
+                        <th style={{textAlign: 'center'}}>Pi</th>
+                        <th style={{textAlign: 'center'}}>In (Pi)</th>
+                        <th style={{textAlign: 'center'}}>H'</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -393,18 +368,64 @@ class MangroveTanjungLeban extends React.Component{
                         return (
                           <tr key={index}>
                             <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.name}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.first}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.second}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.third}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.jumlah}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.pi}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.ln_pi}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.h}</td>
                           </tr>
                         );
                       })}
                       <tr>
-                        <td colSpan="2">Jumlah</td>
-                        <td style={{textAlign: 'center'}}>221</td>
-                        <td style={{textAlign: 'center'}}>913</td>
-                        <td style={{textAlign: 'center'}}>1066</td>
+                        <td colSpan="2" style={{textAlign: 'center'}}>Jumlah</td>
+                        <td style={{textAlign: 'center'}}>15433</td>
+                        <td style={{textAlign: 'center'}}></td>
+                        <td style={{textAlign: 'center'}}></td>
+                        <td style={{textAlign: 'center'}}>1.57</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
+                <Col>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Indeks Keanekaragaman Hayati (H') Flora Mangrove Tanjung Leban 2020</h3>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th style={{textAlign: 'center'}}>No</th>
+                        <th style={{textAlign: 'center'}}>Nama Ilmiah</th>
+                        <th style={{textAlign: 'center'}}>Jumlah</th>
+                        <th style={{textAlign: 'center'}}>Pi</th>
+                        <th style={{textAlign: 'center'}}>In (Pi)</th>
+                        <th style={{textAlign: 'center'}}>H'</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {table_data_2.map(( listValue, index ) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{textAlign: 'center'}}>{index + 1}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.jumlah}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.pi}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.ln_pi}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.h}</td>
+                          </tr>
+                        );
+                      })}
+                      <tr>
+                        <td colSpan="2" style={{textAlign: 'center'}}>Jumlah</td>
+                        <td style={{textAlign: 'center'}}>15945</td>
+                        <td style={{textAlign: 'center'}}></td>
+                        <td style={{textAlign: 'center'}}></td>
+                        <td style={{textAlign: 'center'}}>1.59</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -412,116 +433,14 @@ class MangroveTanjungLeban extends React.Component{
               </Row>
               <Row style={{paddingTop: 45}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2018-2020</h5>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th style={{textAlign: 'center'}}>2018</th>
-                        <th style={{textAlign: 'center'}}>2019</th>
-                        <th style={{textAlign: 'center'}}>2020</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>Jumlah Spesies</td>
-                        <td style={{textAlign: 'center'}}>13</td>
-                        <td style={{textAlign: 'center'}}>24</td>
-                        <td style={{textAlign: 'center'}}>26</td>
-                      </tr>
-                    </tbody>
-                  </Table>
                 </Col>
                 <Col style={{textAlign: 'center'}}>
                   <div>
-                    <h5>Perkembangan Biodiversitas</h5>
+                    <h5>Indeks Kehati Mangrove Tanjung Leban</h5>
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 30]}
-                      height={400} 
-                      width={400}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Jumlah Spesies"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={[
-                          {x: '2018', y: 13},
-                          {x: '2019', y: 24},
-                          {x: '2020', y: 26},
-                        ]}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={[
-                          {x: '2018', y: 13, yOffset: -25},
-                          {x: '2019', y: 24, yOffset: -25},
-                          {x: '2020', y: 26, yOffset: -25},
-                        ]} 
-                        getLabel={d => d.y}/>
-                      <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={[
-                          {x: '2018', y: 13, yOffset: -25},
-                          {x: '2019', y: 19.5, yOffset: -25},
-                          {x: '2020', y: 26, yOffset: -25},
-                        ]} 
-                      />
-                    </XYPlot>
-                  </div>
-                </Col>
-              </Row>
-              <Row style={{paddingTop: 30}}>
-                <Col style={{textAlign: 'center'}}>
-                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2018-2020</h5>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th style={{textAlign: 'center'}}>2018</th>
-                        <th style={{textAlign: 'center'}}>2019</th>
-                        <th style={{textAlign: 'center'}}>2020</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>Indeks Kehati</td>
-                        <td style={{textAlign: 'center'}}>1.37</td>
-                        <td style={{textAlign: 'center'}}>2.55</td>
-                        <td style={{textAlign: 'center'}}>2.69</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-                <Col style={{textAlign: 'center'}}>
-                  <div>
-                    <h5>Index Keanekaragaman Hayati</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 3]}
+                      yDomain={[1.5, 1.6]}
                       height={400} 
                       width={400}>
                       <XAxis />
@@ -549,33 +468,25 @@ class MangroveTanjungLeban extends React.Component{
                         barWidth={0.5}
                         color="#12939A"
                         data={[
-                          {x: '2018', y: 1.37},
-                          {x: '2019', y: 2.55},
-                          {x: '2020', y: 2.69},
+                          {x: '2019', y: 1.57},
+                          {x: '2020', y: 1.59},
                         ]}
                       />
                       <LabelSeries
                         labelAnchorX='middle'
 
                         data={[
-                          {x: '2018', y: 1.37, yOffset: -25},
-                          {x: '2019', y: 2.55, yOffset: -25},
-                          {x: '2020', y: 2.69, yOffset: -25},
+                          {x: '2019', y: 1.57, yOffset: -25},
+                          {x: '2020', y: 1.59, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
-                      <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={[
-                          {x: '2018', y: 1.37, yOffset: -25},
-                          {x: '2019', y: 2.03, yOffset: -25},
-                          {x: '2020', y: 2.69, yOffset: -25},
-                        ]} 
-                      />
                     </XYPlot>
                   </div>
                 </Col>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
               </Row>
+
               <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
@@ -588,40 +499,53 @@ class MangroveTanjungLeban extends React.Component{
               </Row>
               <Row>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>this.history.push("/arboretum")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/home")}}>
                     <Card.Img variant="top" 
-                      src={img9}
+                      src={img6}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Arboretum Gambut</Card.Title>
+                      <Card.Title className="text-center">Home</Card.Title>
                     </Card.Body>
                     
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("http://sekolahcintagambut.com", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/arboretum")}}>
+                    <Card.Img variant="top" 
+                      src={img9}
+                      height='240'
+                      />
+                    <Card.Body className="text-center">
+                      <Card.Title className="text-center">Arboretum Gambut</Card.Title>
+                    </Card.Body>
+                    
+                  </Card>
+                </Col>
+                <Col style={{background: '#fff'}}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
                     <Card.Img variant="top" 
                       src={img2}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Mangrove Pangkalan Jambi</Card.Title>
+                      <Card.Title className="text-center">Mangrove Pangkalan Jambi</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>window.open("https://games.covid-19.sekolahcintagambut.com/home", "_blank")}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-tanjung-leban")}}>
                     <Card.Img variant="top" 
                       src={img16}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Mangrove Tanjung Leban</Card.Title>
+                      <Card.Title className="text-center">Mangrove Tanjung Leban</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
               </Row>
+
               <Row style={{paddingTop: 30}}>
                 <Col>
                   <ColoredLine/>
@@ -631,8 +555,8 @@ class MangroveTanjungLeban extends React.Component{
                 <Col>
                   <h5>Websites</h5>
                   <ListGroup variant="flush">
-                    <ListGroup.Item href="https://arboretumgambut.com">Arboretum Gambut</ListGroup.Item>
-                    <ListGroup.Item href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</ListGroup.Item>
+                    <ListGroup.Item><a href="https://arboretumgambut.com">Arboretum Gambut</a></ListGroup.Item>
+                    <ListGroup.Item><a href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</a></ListGroup.Item>
                   </ListGroup>
                 </Col>
                 <Col></Col>
