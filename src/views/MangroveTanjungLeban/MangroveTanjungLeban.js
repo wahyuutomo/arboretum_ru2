@@ -222,14 +222,7 @@ class MangroveTanjungLeban extends React.Component{
   }
 
   componentDidMount = () => {
-    fetchPeopleCount().then(
-      data => {
-        this.setState((prevState, props) => {
-          return {data: data, isBusy: false};
-        })
-        this.props.fetchPeopleCounter(data)
-      }
-    )
+    window.scrollTo(0, 0);
   }
 
   render(){
