@@ -41,7 +41,6 @@ import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
 import img16 from "../../assets/16.jpeg"
 import img19 from "../../assets/19.jpeg"
-import edu_game from "../../assets/edu_game.png"
 
 
 const table_data = [
@@ -331,7 +330,7 @@ class Dashboard extends React.Component{
                 <Col style={{background: '#fff'}}>
                   <Card as="a" onClick={()=>window.open("https://arboretumgambut.com", "_blank")}>
                     <Card.Img variant="top" 
-                      src={img19}
+                      src={img9}
                       height='240'
                       />
                     <Card.Body className="text-center">
@@ -343,22 +342,22 @@ class Dashboard extends React.Component{
                 <Col style={{background: '#fff'}}>
                   <Card as="a" onClick={()=>window.open("http://sekolahcintagambut.com", "_blank")}>
                     <Card.Img variant="top" 
-                      src={img10}
+                      src={img2}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Sekolah Cinta Gambut</Card.Title>
+                      <Card.Title>Mangrove Pangkalan Jambi</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
                   <Card as="a" onClick={()=>window.open("https://games.covid-19.sekolahcintagambut.com/home", "_blank")}>
                     <Card.Img variant="top" 
-                      src={edu_game}
+                      src={img16}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Covid-19 Education Game</Card.Title>
+                      <Card.Title>Mangrove Tanjung Leban</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -428,7 +427,7 @@ class Dashboard extends React.Component{
                   </Card>
                   <Card style={{width: 340}}>
                     <Card.Img variant="top" 
-                      src={img9}
+                      src={img10}
                       width='300'
                       height='400'
                       />
@@ -444,7 +443,7 @@ class Dashboard extends React.Component{
                   </Card>
                   <Card style={{width: 340}}>
                     <Card.Img variant="top" 
-                      src={img16}
+                      src={img19}
                       width='300'
                       height='240'
                       />
