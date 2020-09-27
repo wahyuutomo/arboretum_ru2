@@ -505,6 +505,50 @@ class Dashboard extends React.Component{
                 </Col>
               </Row>
               <Row style={{paddingTop: 30}}>
+                <Col style={{textAlign: 'center'}}>
+                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2018-2020</h5>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th style={{textAlign: 'center'}}>2018</th>
+                        <th style={{textAlign: 'center'}}>2019</th>
+                        <th style={{textAlign: 'center'}}>2020</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>Jumlah Spesies</td>
+                        <td style={{textAlign: 'center'}}>13</td>
+                        <td style={{textAlign: 'center'}}>24</td>
+                        <td style={{textAlign: 'center'}}>26</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2018-2020</h5>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th style={{textAlign: 'center'}}>2018</th>
+                        <th style={{textAlign: 'center'}}>2019</th>
+                        <th style={{textAlign: 'center'}}>2020</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>Indeks Kehati</td>
+                        <td style={{textAlign: 'center'}}>1.37</td>
+                        <td style={{textAlign: 'center'}}>2.55</td>
+                        <td style={{textAlign: 'center'}}>2.69</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+              <Row style={{paddingTop: 30}}>
                 <Col>
                   <CardGroup>
                     <Card chart style={{border: 'none'}}>
@@ -632,7 +676,6 @@ class Dashboard extends React.Component{
                       </Card.Body>
                     </Card>
                   </CardGroup>
-                  
                 </Col>
               </Row>
               <Row style={{paddingTop: 60}}>
