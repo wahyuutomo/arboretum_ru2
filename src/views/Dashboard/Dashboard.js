@@ -15,18 +15,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import ColoredLine from '../../components/Common/ColoredLine.js'
-import Sidebar from '../../components/Sidebar/Sidebar.js'
-import TimeLineChart from '../../components/Chart/TimeLineChart.js'
 
 import {
   XYPlot,
   XAxis,
   YAxis,
-  HorizontalGridLines,
-  VerticalGridLines,
   LineSeries,
   VerticalBarSeries,
-  DiscreteColorLegend,
   ChartLabel,
   LabelSeries
 } from 'react-vis';
@@ -50,17 +45,6 @@ import img18 from "../../assets/18.jpeg"
 import img19 from "../../assets/19.jpeg"
 import img20 from "../../assets/20.jpeg"
 
-
-
-const MSEC_DAILY = 86400000;
-const timestamp = new Date('July 9 2020').getTime();
-
-var week_data = [
-          {x: timestamp + MSEC_DAILY, y: 312},
-          {x: timestamp + MSEC_DAILY * 2, y: 135},
-          {x: timestamp + MSEC_DAILY * 3, y: 415},
-          {x: timestamp + MSEC_DAILY * 4, y: 312}
-        ]
 
 const table_data = [
     {
