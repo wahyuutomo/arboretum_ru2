@@ -4,7 +4,6 @@ import 'react-vis/dist/style.css';
 
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Table from 'react-bootstrap/Table';
@@ -41,9 +40,7 @@ import img10 from "../../assets/10.jpeg"
 import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
 import img16 from "../../assets/16.jpeg"
-import img18 from "../../assets/18.jpeg"
 import img19 from "../../assets/19.jpeg"
-import img20 from "../../assets/20.jpeg"
 import edu_game from "../../assets/edu_game.png"
 
 
@@ -255,8 +252,6 @@ class Dashboard extends React.Component{
   }
 
   render(){
-    const data = this.props.data.data
-
     console.log('props', this.props.data.data)
     return (
         <Container fluid style={{background: '#fff'}}>
@@ -268,7 +263,7 @@ class Dashboard extends React.Component{
                 <Col sm={8} md={8} lg={9} style={{background: '#fff'}}>
                   <div style={{fontSize: 24, textAlignVertical:'center'}}>Pertamina RU II Sungai Pakning</div>
                 </Col>
-                <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img src={logo_pertamina} height="35"/></Col>
+                <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img alt="" src={logo_pertamina} height="35"/></Col>
               </Row>
               <Row>
                 <Col style={{padding: 0}}>    
@@ -381,7 +376,7 @@ class Dashboard extends React.Component{
               <Row>
                 <Col>
                   <Card body style={{border: 'none'}}>
-                    <div style={{textAlign: 'center'}}><a>
+                    <div style={{textAlign: 'center'}}>
                       Sungai Pakning berada di wilayah pesisir Provinsi Riau, 
                       berseberangan dengan Pulau Bengkalis. 
                       Permasalahan umum yang nampak di wilayah Sungai Pakning antara lain kebakaran lahan dan hutan serta abrasi. 
@@ -393,10 +388,8 @@ class Dashboard extends React.Component{
                       penanaman mangrove dan pencegahan abrasi antara lain hybrid engineering, lalu hybrid engineering yang telah 
                       dimodifikasi dan terakhir ialah triangle mangrove barrier. Di wilayah gambut Pertamina RU II Sungai Pakning juga 
                       memperkenalkan Arboretum Gambut sebagai solusinya.
-                      </a>
                       <br></br>
                       <br></br>
-                      <a>
                       Selain itu sebagai wujud kepedulian PT. Pertamina RU II Sungai Pakning terhadap perlindungan biodiversity mangrove 
                       maka dibangunlah Mangrove Education Center (MEC) Pangkalan Jambi sebagai tempat implementasi konservasi biodiversity 
                       ekosistem mangrove dan untuk edukasi terhadap masyarakat, Arboretum Gambut sebagai tempat pelestarian flora dan 
@@ -404,7 +397,7 @@ class Dashboard extends React.Component{
                       dari pengelolaan maka PT. Pertamina RU II Sungai Pakning secara rutin melakukan pemantauan/monev perkembangan 
                       biodiversity di dalamnya. Untuk itu didalam laporan ini akan dijelaskan mengenai kenaikan indeks keanekaragaman 
                       hayati yang terjadi di masing – masing lokasi Program Keanekaragaman Hayati.
-                    </a></div>
+                    </div>
                   </Card>
                 </Col>
               </Row>
@@ -688,7 +681,7 @@ class Dashboard extends React.Component{
                 <Col></Col>
                 <Col>
                   <h5>Contact Us</h5>
-                  <a>Address: <br></br>Sungai Pakning, Bukit Batu, Bengkalis Regency, Riau 28761</a>
+                  Address: <br></br>Sungai Pakning, Bukit Batu, Bengkalis Regency, Riau 28761
                 </Col>
               </Row>
               <Row style={{paddingTop: 10}}>
@@ -698,7 +691,7 @@ class Dashboard extends React.Component{
               </Row>
               <Row style={{paddingBottom: 60}}>
                 <Col>
-                  <a>© Copyright PT Pertamina(Persero) RU II Sungai Pakning 2020. All Rights Reserved.</a>
+                  © Copyright PT Pertamina(Persero) RU II Sungai Pakning 2020. All Rights Reserved.
                 </Col>
               </Row> 
             </Col>
