@@ -3,7 +3,6 @@ import './MangroveTanjungLeban.css';
 import 'react-vis/dist/style.css';
 
 import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/Card';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Table from 'react-bootstrap/Table';
@@ -15,34 +14,25 @@ import Col from 'react-bootstrap/Col';
 
 import ColoredLine from '../../components/Common/ColoredLine.js'
 
-import { useHistory } from 'react-router-dom';
 
 import {
   XYPlot,
   XAxis,
   YAxis,
-  LineSeries,
   VerticalBarSeries,
   ChartLabel,
   LabelSeries
 } from 'react-vis';
 
 import { connect } from "react-redux";
-import { fetchPeopleCounter } from '../../redux/action';
-import { fetchPeopleCount } from '../../api/api';
 
 import logo_pertamina from "../../assets/logo_pertamina.png"
 import img2 from "../../assets/2.jpeg"
 import img3 from "../../assets/3.jpeg"
 import img6 from "../../assets/6.jpeg"
-import img7 from "../../assets/7.jpeg"
-import img8 from "../../assets/8.jpeg"
 import img9 from "../../assets/9.jpeg"
-import img10 from "../../assets/10.jpeg"
-import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
 import img16 from "../../assets/16.jpeg"
-import img19 from "../../assets/19.jpeg"
 
 
 const table_data = [
@@ -583,5 +573,4 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { fetchPeopleCounter }
 )(MangroveTanjungLeban);

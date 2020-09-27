@@ -6,7 +6,6 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/Card';
 
 import Carousel from 'react-bootstrap/Carousel';
-import Table from 'react-bootstrap/Table';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 import Container from 'react-bootstrap/Container';
@@ -14,23 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import ColoredLine from '../../components/Common/ColoredLine.js'
-
-import { useHistory } from 'react-router-dom';
-
-
-import {
-  XYPlot,
-  XAxis,
-  YAxis,
-  LineSeries,
-  VerticalBarSeries,
-  ChartLabel,
-  LabelSeries
-} from 'react-vis';
-
 import { connect } from "react-redux";
-import { fetchPeopleCounter } from '../../redux/action';
-import { fetchPeopleCount } from '../../api/api';
 
 import logo_pertamina from "../../assets/logo_pertamina.png"
 import img2 from "../../assets/2.jpeg"
@@ -44,192 +27,6 @@ import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
 import img16 from "../../assets/16.jpeg"
 import img19 from "../../assets/19.jpeg"
-
-
-const table_data = [
-    {
-        "no": "1",
-        "name": "Nepenthes ampullaria Jack",
-        "first": "51",
-        "second": "56",
-        "third": "56"
-    },
-    {
-        "no": "2",
-        "name": "Nepenthes rafflesiana Jack",
-        "first": "49",
-        "second": "60",
-        "third": "70"
-    },
-    {
-        "no": "3",
-        "name": "Nepenthes bicalcarata Hook",
-        "first": "34",
-        "second": "42",
-        "third": "54"
-    },
-    {
-        "no": "4",
-        "name": "Nepenthes mirabilis (Lour) Druce",
-        "first": "40",
-        "second": "43",
-        "third": "50"
-    },
-    {
-        "no": "5",
-        "name": "Nepenthes sumatrana",
-        "first": "5",
-        "second": "7",
-        "third": "15"
-    },
-    {
-        "no": "6",
-        "name": "Nepenthes spectabilis",
-        "first": "10",
-        "second": "11",
-        "third": "20"
-    },
-    {
-        "no": "7",
-        "name": "Nepenthes albomarginata",
-        "first": "32",
-        "second": "32",
-        "third": "32"
-    },
-    {
-        "no": "8",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "9",
-        "name": "Aquilaria malacensis",
-        "first": "-",
-        "second": "8",
-        "third": "8"
-    },
-    {
-        "no": "10",
-        "name": "Melaleuca leucadendron",
-        "first": "-",
-        "second": "30",
-        "third": "30"
-    },
-    {
-        "no": "11",
-        "name": "Cratoxylon arbores",
-        "first": "-",
-        "second": "13",
-        "third": "13"
-    },
-    {
-        "no": "12",
-        "name": "Syzygium aqueum",
-        "first": "-",
-        "second": "23",
-        "third": "23"
-    },
-    {
-        "no": "13",
-        "name": "Syzygium malaccense",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "14",
-        "name": "Citrus sp.",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "15",
-        "name": "Hevea brasiliensis",
-        "first": "-",
-        "second": "58",
-        "third": "58"
-    },
-    {
-        "no": "16",
-        "name": "Syzygium leptostemonum",
-        "first": "-",
-        "second": "80",
-        "third": "80"
-    },
-    {
-        "no": "17",
-        "name": "Vitex pubescens",
-        "first": "-",
-        "second": "38",
-        "third": "38"
-    },
-    {
-        "no": "18",
-        "name": "Macaranga trilobata",
-        "first": "-",
-        "second": "8",
-        "third": "8"
-    },
-    {
-        "no": "19",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "176",
-        "third": "176"
-    },
-    {
-        "no": "20",
-        "name": "Dimocarpus longan",
-        "first": "-",
-        "second": "15",
-        "third": "15"
-    },
-    {
-        "no": "21",
-        "name": "Artocarpus heterophyllus",
-        "first": "-",
-        "second": "5",
-        "third": "5"
-    },
-    {
-        "no": "22",
-        "name": "Nephelium lappeceum",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "23",
-        "name": "Shorea leprosula",
-        "first": "-",
-        "second": "3",
-        "third": "100"
-    },
-    {
-        "no": "24",
-        "name": "Setulang",
-        "first": "-",
-        "second": "193",
-        "third": "193"
-    },
-    {
-        "no": "25",
-        "name": "Asplenium nidus",
-        "first": "-",
-        "second": "-",
-        "third": "3"
-    },
-    {
-        "no": "26",
-        "name": "Dendobrium bigibbum",
-        "first": "-",
-        "second": "-",
-        "third": "10"
-    },
-]
 
 
 class Dashboard extends React.Component{
@@ -491,5 +288,4 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { fetchPeopleCounter }
 )(Dashboard);
