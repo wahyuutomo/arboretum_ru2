@@ -260,7 +260,7 @@ class Dashboard extends React.Component{
     return (
         <Container fluid style={{background: '#fff'}}>
           <Row>
-            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #fff)', paddingTop: 10}}>
+            <Col sm={1} style={{background: 'linear-gradient(to bottom, #f9f9f9, #f9f9f9)', paddingTop: 10}}>
             </Col>
             <Col >
               <Row style={{height: 60, padding:10}}>
@@ -687,10 +687,22 @@ class Dashboard extends React.Component{
                 <Col></Col>
                 <Col>
                   <h5>Contact Us</h5>
+                  <a>Address: <br></br>Sungai Pakning, Bukit Batu, Bengkalis Regency, Riau 28761</a>
                 </Col>
-              </Row>  
+              </Row>
+              <Row style={{paddingTop: 10}}>
+                <Col>
+                  <ColoredLine/>
+                </Col>
+              </Row>
+              <Row style={{paddingBottom: 60}}>
+                <Col>
+                  <a>© Copyright PT Pertamina(Persero) 2020. All Rights Reserved.</a>
+                </Col>
+              </Row> 
             </Col>
-            <Col sm={1} style={{background: 'linear-gradient(to bottom, #fff, #fff)', paddingTop: 10}}>
+            <Col sm={1} style={{background: 'linear-gradient(to left, #f9f9f9, #f9f9f9)', paddingTop: 10}}>
+
             </Col>
           </Row>
         </Container>
