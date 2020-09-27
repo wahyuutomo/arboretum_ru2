@@ -44,6 +44,7 @@ import img16 from "../../assets/16.jpeg"
 import img18 from "../../assets/18.jpeg"
 import img19 from "../../assets/19.jpeg"
 import img20 from "../../assets/20.jpeg"
+import edu_game from "../../assets/edu_game.png"
 
 
 const table_data = [
@@ -265,7 +266,7 @@ class Dashboard extends React.Component{
             <Col >
               <Row style={{height: 60, padding:10}}>
                 <Col sm={8} md={8} lg={9} style={{background: '#fff'}}>
-                  <div style={{fontSize: 24, textAlignVertical:'center'}}>Pertamina RUII Sungai Pakning</div>
+                  <div style={{fontSize: 24, textAlignVertical:'center'}}>Pertamina RU II Sungai Pakning</div>
                 </Col>
                 <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img src={logo_pertamina} height="35"/></Col>
               </Row>
@@ -280,8 +281,8 @@ class Dashboard extends React.Component{
                         height="400"
                       />
                       <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3> </h3>
+                        <p> </p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -293,8 +294,8 @@ class Dashboard extends React.Component{
                       />
 
                       <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3> </h3>
+                        <p> </p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -306,8 +307,8 @@ class Dashboard extends React.Component{
                       />
 
                       <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3> </h3>
+                        <p> </p>
                       </Carousel.Caption>
                     </Carousel.Item>
                   </Carousel>
@@ -333,7 +334,7 @@ class Dashboard extends React.Component{
               </Row>
               <Row>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>alert('jello')}>
+                  <Card as="a" onClick={()=>window.open("https://arboretumgambut.com", "_blank")}>
                     <Card.Img variant="top" 
                       src={img19}
                       height='240'
@@ -345,7 +346,7 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>alert('jello')}>
+                  <Card as="a" onClick={()=>window.open("http://sekolahcintagambut.com", "_blank")}>
                     <Card.Img variant="top" 
                       src={img10}
                       height='240'
@@ -356,9 +357,9 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="a" onClick={()=>alert('jello')}>
+                  <Card as="a" onClick={()=>window.open("https://games.covid-19.sekolahcintagambut.com/home", "_blank")}>
                     <Card.Img variant="top" 
-                      src={img18}
+                      src={edu_game}
                       height='240'
                       />
                     <Card.Body className="text-center">
@@ -697,7 +698,7 @@ class Dashboard extends React.Component{
               </Row>
               <Row style={{paddingBottom: 60}}>
                 <Col>
-                  <a>© Copyright PT Pertamina(Persero) 2020. All Rights Reserved.</a>
+                  <a>© Copyright PT Pertamina(Persero) RU II Sungai Pakning 2020. All Rights Reserved.</a>
                 </Col>
               </Row> 
             </Col>
