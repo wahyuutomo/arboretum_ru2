@@ -144,13 +144,13 @@ class Dashboard extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-tanjung-leban")}}>
+                  <Card as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
                     <Card.Img variant="top" 
                       src={img16}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Mangrove Tanjung Leban</Card.Title>
+                      <Card.Title>Poligowo</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
