@@ -36,188 +36,230 @@ import img16 from "../../assets/16.jpeg"
 
 
 const table_data = [
-    {
-        "no": "1",
-        "name": "Nepenthes ampullaria Jack",
-        "first": "51",
-        "second": "56",
-        "third": "56"
-    },
-    {
-        "no": "2",
-        "name": "Nepenthes rafflesiana Jack",
-        "first": "49",
-        "second": "60",
-        "third": "70"
-    },
-    {
-        "no": "3",
-        "name": "Nepenthes bicalcarata Hook",
-        "first": "34",
-        "second": "42",
-        "third": "54"
-    },
-    {
-        "no": "4",
-        "name": "Nepenthes mirabilis (Lour) Druce",
-        "first": "40",
-        "second": "43",
-        "third": "50"
-    },
-    {
-        "no": "5",
-        "name": "Nepenthes sumatrana",
-        "first": "5",
-        "second": "7",
-        "third": "15"
-    },
-    {
-        "no": "6",
-        "name": "Nepenthes spectabilis",
-        "first": "10",
-        "second": "11",
-        "third": "20"
-    },
-    {
-        "no": "7",
-        "name": "Nepenthes albomarginata",
-        "first": "32",
-        "second": "32",
-        "third": "32"
-    },
-    {
-        "no": "8",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "9",
-        "name": "Aquilaria malacensis",
-        "first": "-",
-        "second": "8",
-        "third": "8"
-    },
-    {
-        "no": "10",
-        "name": "Melaleuca leucadendron",
-        "first": "-",
-        "second": "30",
-        "third": "30"
-    },
-    {
-        "no": "11",
-        "name": "Cratoxylon arbores",
-        "first": "-",
-        "second": "13",
-        "third": "13"
-    },
-    {
-        "no": "12",
-        "name": "Syzygium aqueum",
-        "first": "-",
-        "second": "23",
-        "third": "23"
-    },
-    {
-        "no": "13",
-        "name": "Syzygium malaccense",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "14",
-        "name": "Citrus sp.",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "15",
-        "name": "Hevea brasiliensis",
-        "first": "-",
-        "second": "58",
-        "third": "58"
-    },
-    {
-        "no": "16",
-        "name": "Syzygium leptostemonum",
-        "first": "-",
-        "second": "80",
-        "third": "80"
-    },
-    {
-        "no": "17",
-        "name": "Vitex pubescens",
-        "first": "-",
-        "second": "38",
-        "third": "38"
-    },
-    {
-        "no": "18",
-        "name": "Macaranga trilobata",
-        "first": "-",
-        "second": "8",
-        "third": "8"
-    },
-    {
-        "no": "19",
-        "name": "Gomphandra capitulata",
-        "first": "-",
-        "second": "176",
-        "third": "176"
-    },
-    {
-        "no": "20",
-        "name": "Dimocarpus longan",
-        "first": "-",
-        "second": "15",
-        "third": "15"
-    },
-    {
-        "no": "21",
-        "name": "Artocarpus heterophyllus",
-        "first": "-",
-        "second": "5",
-        "third": "5"
-    },
-    {
-        "no": "22",
-        "name": "Nephelium lappeceum",
-        "first": "-",
-        "second": "3",
-        "third": "3"
-    },
-    {
-        "no": "23",
-        "name": "Shorea leprosula",
-        "first": "-",
-        "second": "3",
-        "third": "100"
-    },
-    {
-        "no": "24",
-        "name": "Setulang",
-        "first": "-",
-        "second": "193",
-        "third": "193"
-    },
-    {
-        "no": "25",
-        "name": "Asplenium nidus",
-        "first": "-",
-        "second": "-",
-        "third": "3"
-    },
-    {
-        "no": "26",
-        "name": "Dendobrium bigibbum",
-        "first": "-",
-        "second": "-",
-        "third": "10"
-    },
+ {
+   "no": 1,
+   "name": "Nepenthes ampullaria Jack",
+   "first": 51,
+   "second": 56,
+   "third": 56,
+   "fourth": 120
+ },
+ {
+   "no": 2,
+   "name": "Nepenthes rafflesiana Jack",
+   "first": 49,
+   "second": 60,
+   "third": 70,
+   "fourth": 157
+ },
+ {
+   "no": 3,
+   "name": "Nepenthes bicalcarata Hook",
+   "first": 34,
+   "second": 42,
+   "third": 54,
+   "fourth": 75
+ },
+ {
+   "no": 4,
+   "name": "Nepenthes mirabilis (Lour) Druce",
+   "first": 40,
+   "second": 43,
+   "third": 50,
+   "fourth": 80
+ },
+ {
+   "no": 5,
+   "name": "Nepenthes sumatrana",
+   "first": 5,
+   "second": 7,
+   "third": 15,
+   "fourth": 30
+ },
+ {
+   "no": 6,
+   "name": "Nepenthes spectabilis",
+   "first": 10,
+   "second": 11,
+   "third": 20,
+   "fourth": 30
+ },
+ {
+   "no": 7,
+   "name": "Nepenthes albomarginata",
+   "first": 32,
+   "second": 32,
+   "third": 32,
+   "fourth": 40
+ },
+ {
+   "no": 8,
+   "name": "Gomphandra capitulata",
+   "first": null,
+   "second": 3,
+   "third": 3,
+   "fourth": 7
+ },
+ {
+   "no": 9,
+   "name": "Aquilaria malacensis",
+   "first": null,
+   "second": 8,
+   "third": 8,
+   "fourth": 10
+ },
+ {
+   "no": 10,
+   "name": "Melaleuca leucadendron",
+   "first": null,
+   "second": 30,
+   "third": 30,
+   "fourth": 35
+ },
+ {
+   "no": 11,
+   "name": "Cratoxylon arbores",
+   "first": null,
+   "second": 13,
+   "third": 13,
+   "fourth": 19
+ },
+ {
+   "no": 12,
+   "name": "Syzygium aqueum",
+   "first": null,
+   "second": 23,
+   "third": 23,
+   "fourth": 38
+ },
+ {
+   "no": 13,
+   "name": "Syzygium malaccense",
+   "first": null,
+   "second": 3,
+   "third": 3,
+   "fourth": 15
+ },
+ {
+   "no": 14,
+   "name": "Citrus sp.",
+   "first": null,
+   "second": 3,
+   "third": 3,
+   "fourth": 9
+ },
+ {
+   "no": 15,
+   "name": "Hevea brasiliensis",
+   "first": null,
+   "second": 58,
+   "third": 58,
+   "fourth": 74
+ },
+ {
+   "no": 16,
+   "name": "Syzygium leptostemonum",
+   "first": null,
+   "second": 80,
+   "third": 80,
+   "fourth": 80
+ },
+ {
+   "no": 17,
+   "name": "Vitex pubescens",
+   "first": null,
+   "second": 38,
+   "third": 38,
+   "fourth": 42
+ },
+ {
+   "no": 18,
+   "name": "Macaranga trilobata",
+   "first": null,
+   "second": 8,
+   "third": 8,
+   "fourth": 12
+ },
+ {
+   "no": 19,
+   "name": "Gomphandra capitulata",
+   "first": null,
+   "second": 176,
+   "third": 176,
+   "fourth": 256
+ },
+ {
+   "no": 20,
+   "name": "Dimocarpus longan",
+   "first": null,
+   "second": 15,
+   "third": 15,
+   "fourth": 17
+ },
+ {
+   "no": 21,
+   "name": "Artocarpus heterophyllus",
+   "first": null,
+   "second": 5,
+   "third": 5,
+   "fourth": 9
+ },
+ {
+   "no": 22,
+   "name": "Nephelium lappeceum",
+   "first": null,
+   "second": 3,
+   "third": 3,
+   "fourth": 10
+ },
+ {
+   "no": 23,
+   "name": "Shorea leprosula",
+   "first": null,
+   "second": 3,
+   "third": 100,
+   "fourth": 150
+ },
+ {
+   "no": 24,
+   "name": "Setulang",
+   "first": null,
+   "second": 193,
+   "third": 193,
+   "fourth": 243
+ },
+ {
+   "no": 25,
+   "name": "Asplenium nidus",
+   "first": null,
+   "second": null,
+   "third": 3,
+   "fourth": 8
+ },
+ {
+   "no": 26,
+   "name": "Dendobrium bigibbum",
+   "first": null,
+   "second": null,
+   "third": 10,
+   "fourth": 20
+ },
+ {
+   "no": 27,
+   "name": "Caladium bicolor",
+   "first": null,
+   "second": null,
+   "third": null,
+   "fourth": 15
+ },
+ {
+   "no": 28,
+   "name": "Alocasia macrorrhizos",
+   "first": null,
+   "second": null,
+   "third": null,
+   "fourth": 8
+ }
 ]
 
 
@@ -349,7 +391,7 @@ class Arboretum extends React.Component{
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h3>Jumlah Spesies Tanaman di Arboretum Gambut Tahun 2018 - 2020</h3>
+                    <h3>Jumlah Spesies Tanaman di Arboretum Gambut Tahun 2018 - 2021</h3>
                   </div>
                 </Col>
               </Row>
@@ -360,12 +402,13 @@ class Arboretum extends React.Component{
                       <tr>
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th colspan="3" style={{textAlign: 'center'}}>Jumlah</th>
+                        <th colspan="4" style={{textAlign: 'center'}}>Jumlah</th>
                       </tr>
                       <tr>
                         <td style={{textAlign: 'center'}}>2018</td>
                         <td style={{textAlign: 'center'}}>2019</td>
                         <td style={{textAlign: 'center'}}>2020</td>
+                        <td style={{textAlign: 'center'}}>2021</td>
                       </tr>
                     </thead>
                     <tbody>
@@ -377,6 +420,7 @@ class Arboretum extends React.Component{
                             <td style={{textAlign: 'center'}}>{listValue.first}</td>
                             <td style={{textAlign: 'center'}}>{listValue.second}</td>
                             <td style={{textAlign: 'center'}}>{listValue.third}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.fourth}</td>
                           </tr>
                         );
                       })}
@@ -385,6 +429,7 @@ class Arboretum extends React.Component{
                         <td style={{textAlign: 'center'}}>221</td>
                         <td style={{textAlign: 'center'}}>913</td>
                         <td style={{textAlign: 'center'}}>1066</td>
+                        <td style={{textAlign: 'center'}}>1609</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -392,7 +437,7 @@ class Arboretum extends React.Component{
               </Row>
               <Row style={{paddingTop: 45}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2018-2020</h5>
+                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2018-2021</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
@@ -400,6 +445,7 @@ class Arboretum extends React.Component{
                         <th style={{textAlign: 'center'}}>2018</th>
                         <th style={{textAlign: 'center'}}>2019</th>
                         <th style={{textAlign: 'center'}}>2020</th>
+                        <th style={{textAlign: 'center'}}>2021</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -408,6 +454,7 @@ class Arboretum extends React.Component{
                         <td style={{textAlign: 'center'}}>13</td>
                         <td style={{textAlign: 'center'}}>24</td>
                         <td style={{textAlign: 'center'}}>26</td>
+                        <td style={{textAlign: 'center'}}>28</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -418,7 +465,7 @@ class Arboretum extends React.Component{
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 30]}
+                      yDomain={[0, 35]}
                       height={400} 
                       width={400}>
                       <XAxis />
@@ -449,6 +496,7 @@ class Arboretum extends React.Component{
                           {x: '2018', y: 13},
                           {x: '2019', y: 24},
                           {x: '2020', y: 26},
+                          {x: '2021', y: 28},
                         ]}
                       />
                       <LabelSeries
@@ -458,15 +506,17 @@ class Arboretum extends React.Component{
                           {x: '2018', y: 13, yOffset: -25},
                           {x: '2019', y: 24, yOffset: -25},
                           {x: '2020', y: 26, yOffset: -25},
+                          {x: '2021', y: 28, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                       <LineSeries
                         color="#000"
                         strokeStyle='dashed'
                         data={[
-                          {x: '2018', y: 13, yOffset: -25},
-                          {x: '2019', y: 19.5, yOffset: -25},
-                          {x: '2020', y: 26, yOffset: -25},
+                          {x: '2018', y: 16, yOffset: -25},
+                          {x: '2019', y: 20, yOffset: -25},
+                          {x: '2020', y: 25, yOffset: -25},
+                          {x: '2021', y: 30, yOffset: -25},
                         ]} 
                       />
                     </XYPlot>
@@ -475,7 +525,7 @@ class Arboretum extends React.Component{
               </Row>
               <Row style={{paddingTop: 30}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2018-2020</h5>
+                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2018-2021</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
@@ -483,6 +533,7 @@ class Arboretum extends React.Component{
                         <th style={{textAlign: 'center'}}>2018</th>
                         <th style={{textAlign: 'center'}}>2019</th>
                         <th style={{textAlign: 'center'}}>2020</th>
+                        <th style={{textAlign: 'center'}}>2021</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -491,6 +542,7 @@ class Arboretum extends React.Component{
                         <td style={{textAlign: 'center'}}>1.37</td>
                         <td style={{textAlign: 'center'}}>2.55</td>
                         <td style={{textAlign: 'center'}}>2.69</td>
+                        <td style={{textAlign: 'center'}}>2.72</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -532,6 +584,7 @@ class Arboretum extends React.Component{
                           {x: '2018', y: 1.37},
                           {x: '2019', y: 2.55},
                           {x: '2020', y: 2.69},
+                          {x: '2021', y: 2.72},
                         ]}
                       />
                       <LabelSeries
@@ -541,15 +594,17 @@ class Arboretum extends React.Component{
                           {x: '2018', y: 1.37, yOffset: -25},
                           {x: '2019', y: 2.55, yOffset: -25},
                           {x: '2020', y: 2.69, yOffset: -25},
+                          {x: '2021', y: 2.72, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                       <LineSeries
                         color="#000"
                         strokeStyle='dashed'
                         data={[
-                          {x: '2018', y: 1.37, yOffset: -25},
-                          {x: '2019', y: 2.03, yOffset: -25},
-                          {x: '2020', y: 2.69, yOffset: -25},
+                          {x: '2018', y: 1.7, yOffset: -25},
+                          {x: '2019', y: 2.12, yOffset: -25},
+                          {x: '2020', y: 2.54, yOffset: -25},
+                          {x: '2021', y: 2.96, yOffset: -25},
                         ]} 
                       />
                     </XYPlot>

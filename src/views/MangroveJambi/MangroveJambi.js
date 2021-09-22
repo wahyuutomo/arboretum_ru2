@@ -33,118 +33,166 @@ import img14 from "../../assets/14.jpeg"
 import img16 from "../../assets/16.jpeg"
 
 const table_data = [
-    {
-        "no": "1",
-        "nama": "Paku Laut",
-        "jumlah": "14099",
-        "pi": "0.491",
-        "ln_pi": "0.71",
-        "h": "0.35"
-    },
-    {
-        "no": "2",
-        "nama": "Api-Api Putih",
-        "jumlah": "1000",
-        "pi": "0.035",
-        "ln_pi": "3.36",
-        "h": "0.12"
-    },
-    {
-        "no": "3",
-        "nama": "Tancang Putih",
-        "jumlah": "1250",
-        "pi": "0.044",
-        "ln_pi": "3.13",
-        "h": "0.14"
-    },
-    {
-        "no": "4",
-        "nama": "Tancang Merah",
-        "jumlah": "1250",
-        "pi": "0.044",
-        "ln_pi": "3.13",
-        "h": "0.14"
-    },
-    {
-        "no": "5",
-        "nama": "Tingi",
-        "jumlah": "200",
-        "pi": "0.007",
-        "ln_pi": "4.97",
-        "h": "0.03"
-    },
-    {
-        "no": "6",
-        "nama": "Gadelan",
-        "jumlah": "66",
-        "pi": "0.002",
-        "ln_pi": "6.07",
-        "h": "0.01"
-    },
-    {
-        "no": "7",
-        "nama": "Buta-Buta",
-        "jumlah": "833",
-        "pi": "0.029",
-        "ln_pi": "3.54",
-        "h": "0.10"
-    },
-    {
-        "no": "8",
-        "nama": "Bakau Kacang",
-        "jumlah": "4900",
-        "pi": "0.171",
-        "ln_pi": "1.77",
-        "h": "0.30"
-    },
-    {
-        "no": "9",
-        "nama": "Angrek tanduk rusa",
-        "jumlah": "227",
-        "pi": "0.008",
-        "ln_pi": "4.84",
-        "h": "0.04"
-    },
-    {
-        "no": "10",
-        "nama": "Sempur akar",
-        "jumlah": "909",
-        "pi": "0.032",
-        "ln_pi": "3.45",
-        "h": "0.11"
-    },
-    {
-        "no": "11",
-        "nama": "Ketoer",
-        "jumlah": "545",
-        "pi": "0.019",
-        "ln_pi": "3.96",
-        "h": "0.08"
-    },
-    {
-        "no": "12",
-        "nama": "Senduduk",
-        "jumlah": "2045",
-        "pi": "0.071",
-        "ln_pi": "2.64",
-        "h": "0.19"
-    },
-    {
-        "no": "13",
-        "nama": "Akar kait-kait",
-        "jumlah": "909",
-        "pi": "0.032",
-        "ln_pi": "3.45",
-        "h": "0.11"
-    },
-    {
-        "no": "14",
-        "nama": "Unidentified",
-        "jumlah": "455",
-        "pi": "0.016",
-        "ln_pi": "4.14",
-        "h": "0.07"
-    }
+ {
+   "no": 1,
+   "nama": "Paku Laut",
+   "jumlah": 14099,
+   "pi": "0,166",
+   "ln_pi": "1,79",
+   "h": "0,30"
+ },
+ {
+   "no": 2,
+   "nama": "Api-Api Putih",
+   "jumlah": 1700,
+   "pi": "0,020",
+   "ln_pi": "3,91",
+   "h": "0,08"
+ },
+ {
+   "no": 3,
+   "nama": "Tancang Putih",
+   "jumlah": 3951,
+   "pi": "0,047",
+   "ln_pi": "3,07",
+   "h": "0,14"
+ },
+ {
+   "no": 4,
+   "nama": "Tancang Merah",
+   "jumlah": 4551,
+   "pi": "0,054",
+   "ln_pi": "2,92",
+   "h": "0,16"
+ },
+ {
+   "no": 5,
+   "nama": "Tingi",
+   "jumlah": 200,
+   "pi": "0,002",
+   "ln_pi": "6,05",
+   "h": "0,01"
+ },
+ {
+   "no": 6,
+   "nama": "Gadelan",
+   "jumlah": 130,
+   "pi": "0,002",
+   "ln_pi": "6,48",
+   "h": "0,01"
+ },
+ {
+   "no": 7,
+   "nama": "Buta-Buta",
+   "jumlah": 8500,
+   "pi": "0,100",
+   "ln_pi": "2,30",
+   "h": "0,23"
+ },
+ {
+   "no": 8,
+   "nama": "Bakau Kacang",
+   "jumlah": 20400,
+   "pi": "0,241",
+   "ln_pi": "1,42",
+   "h": "0,34"
+ },
+ {
+   "no": 9,
+   "nama": "Angrek tanduk rusa",
+   "jumlah": 682,
+   "pi": "0,008",
+   "ln_pi": "4,82",
+   "h": "0,04"
+ },
+ {
+   "no": 10,
+   "nama": "Sempur akar",
+   "jumlah": 909,
+   "pi": "0,011",
+   "ln_pi": "4,53",
+   "h": "0,05"
+ },
+ {
+   "no": 11,
+   "nama": "Ketoer",
+   "jumlah": 545,
+   "pi": "0,006",
+   "ln_pi": "5,05",
+   "h": "0,03"
+ },
+ {
+   "no": 12,
+   "nama": "Senduduk",
+   "jumlah": 2045,
+   "pi": "0,024",
+   "ln_pi": "3,72",
+   "h": "0,09"
+ },
+ {
+   "no": 13,
+   "nama": "Akar kait-kait",
+   "jumlah": 2727,
+   "pi": "0,032",
+   "ln_pi": "3,44",
+   "h": "0,11"
+ },
+ {
+   "no": 14,
+   "nama": "keduduk merah",
+   "jumlah": 7137,
+   "pi": "0,084",
+   "ln_pi": "2,47",
+   "h": "0,21"
+ },
+ {
+   "no": 15,
+   "nama": "Perepat",
+   "jumlah": 4551,
+   "pi": "0,054",
+   "ln_pi": "2,92",
+   "h": "0,16"
+ },
+ {
+   "no": 16,
+   "nama": "nyirih",
+   "jumlah": 11417,
+   "pi": "0,135",
+   "ln_pi": "2,00",
+   "h": "0,27"
+ },
+ {
+   "no": 17,
+   "nama": "nyuruh",
+   "jumlah": 197,
+   "pi": "0,002",
+   "ln_pi": "6,06",
+   "h": "0,01"
+ },
+ {
+   "no": 18,
+   "nama": "waru",
+   "jumlah": 37,
+   "pi": "0,000",
+   "ln_pi": "7,74",
+   "h": "0,00"
+ },
+ {
+   "no": 19,
+   "nama": "Nipah",
+   "jumlah": 695,
+   "pi": "0,008",
+   "ln_pi": "4,80",
+   "h": "0,04"
+ },
+ {
+   "no": 20,
+   "nama": "Beluntas",
+   "jumlah": 267,
+   "pi": "0,003",
+   "ln_pi": "5,76",
+   "h": "0,02"
+ }
 ]
 
 const table_data_2 = [
@@ -433,7 +481,7 @@ class MangroveJambi extends React.Component{
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h3>Indeks Keanekaragaman Hayati (H') Flora Mangrove Pangkalan Jambi 2019</h3>
+                    <h3>Indeks Keanekaragaman Hayati (H') Flora Mangrove Pangkalan Jambi 2021</h3>
                   </div>
                 </Col>
               </Row>
@@ -465,10 +513,10 @@ class MangroveJambi extends React.Component{
                       })}
                       <tr>
                         <td colSpan="2">Jumlah</td>
-                        <td style={{textAlign: 'center'}}>28688</td>
+                        <td style={{textAlign: 'center'}}>84740</td>
                         <td style={{textAlign: 'center'}}></td>
                         <td style={{textAlign: 'center'}}></td>
-                        <td style={{textAlign: 'center'}}>1.78</td>
+                        <td style={{textAlign: 'center'}}>2.31</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -520,7 +568,7 @@ class MangroveJambi extends React.Component{
               </Row>
               <Row style={{paddingTop: 45}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Indeks Kehati (H') Flora Mangrove Pangkalan Jambi Tahun 2017-2020</h5>
+                  <h5>Indeks Kehati (H') Flora Mangrove Pangkalan Jambi Tahun 2017-2021</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
@@ -545,16 +593,20 @@ class MangroveJambi extends React.Component{
                         <td style={{textAlign: 'center'}}>2020</td>
                         <td style={{textAlign: 'center'}}>1.83</td>
                       </tr>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>2021</td>
+                        <td style={{textAlign: 'center'}}>2.31</td>
+                      </tr>
                     </tbody>
                   </Table>
                 </Col>
                 <Col style={{textAlign: 'center'}}>
                   <div>
-                    <h5>Indeks Kehati Mangrove Pangkalan Jambi Tahun 2017 - 2020</h5>
+                    <h5>Indeks Kehati Mangrove Pangkalan Jambi Tahun 2017 - 2021</h5>
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 2]}
+                      yDomain={[0, 2.5]}
                       height={400} 
                       width={400}>
                       <XAxis />
@@ -586,6 +638,7 @@ class MangroveJambi extends React.Component{
                           {x: '2018', y: 1.42},
                           {x: '2019', y: 1.78},
                           {x: '2020', y: 1.83},
+                          {x: '2021', y: 2.31},
                         ]}
                       />
                       <LabelSeries
@@ -596,6 +649,7 @@ class MangroveJambi extends React.Component{
                           {x: '2018', y: 1.42, yOffset: -25},
                           {x: '2019', y: 1.78, yOffset: -25},
                           {x: '2020', y: 1.83, yOffset: -25},
+                          {x: '2021', y: 2.31, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                     </XYPlot>
