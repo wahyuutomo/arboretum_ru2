@@ -32,7 +32,7 @@ import img3 from "../../assets/3.jpeg"
 import img6 from "../../assets/6.jpeg"
 import img9 from "../../assets/9.jpeg"
 import img14 from "../../assets/14.jpeg"
-import img16 from "../../assets/16.jpeg"
+import poligowo3 from "../../assets/poligowo3.jpeg"
 
 
 const table_data = [
@@ -356,7 +356,7 @@ class Poligowo extends React.Component{
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
                   <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h2>Program Poligowo</h2>
+                    <h2>Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</h2>
                   </div>
                   <div>
                     <ColoredLine/>
@@ -367,41 +367,37 @@ class Poligowo extends React.Component{
                 <Col>
                   <Card body style={{border: 'none'}}>
                     <div style={{textAlign: 'center'}}>
-                      Bencana kebakaran hutan dan lahan yang ada di Indonesia merupakan salah satu bencana 
-                      rutin yang terjadi dalam beberapa tahun terakhir. Imbas bencana ini menyebabkan terjadinya 
-                      kabut asap yang melanda tak hanya di dalam negeri tetapi hingga negara – negara tetangga 
-                      seperti Singapura dan Malaysia. Hal ini menjadikannya tak hanya bencana lokal tetapi 
-                      sebagai bencana nasional. Salah satu provinsi yang terdampak paling parah ialah Riau. 
-                      Kebakaran lahan dan hutan yang ada di Riau ini terjadi akibat beberapa hal baik secara 
-                      disengaja maupun tidak disengaja.
+                      Indonesia memiliki wilayah gambut yang luas yang tersebar dibeberapa provinsi. 
+                      Salah satu provinsi dengan ekosistem mangrove yang luas ialah di Provinsi Riau. 
+                      Ekosistem gambut seringkali dicap sebagai wilayah sumber bencana, saat kemarau tiba 
+                      sering terjadi kebakaran lahan dan hutan tetapi saat musim penghujan tiba sering kali 
+                      terjadi banjur. Sehingga keberadaan lahan gambut ini menjadi krusial apabila tidak 
+                      dikelola dengan baik.
                       <br></br>
                       <br></br>
-                      Menurut Wahana Lingkungan Hidup Indonesia atau Walhi, kebakaran hutan dan lahan di Riau 
-                      merupakan salah satu bencana tahunan yang disebabkan oleh perilaku manusia. Fakta lapangan 
-                      menunjukkan bahwa ada faktor kesengajaan membakar hutan dan lahan. Tujuan pembakaran 
-                      tersebut adalah untuk melakukan pembersihan lahan dalam rangka persiapan pembangunan 
-                      perkebunan.
+                      Oleh karena itu PT Kilang Pertamina Internasional RU II Sungai Paning, sebagai salah 
+                      satu perusahaan yang berada di wilayah Sungai Pakning, Bengkalis, Provinsi Riau ikut 
+                      andil dalam upaya pelestarian keanekaragaman hayati terutama pada ekosistem gambut. 
+                      Salah satunya melalui Program Pelestarian Tanaman Khas Gambut Dengan Metode Penanaman 
+                      Bibit Nanas Dan Tanaman Kayu Secara Polikultur Jajar Legowo (Poligowo).
                       <br></br>
                       <br></br>
-                      Kebakaran lahan dan hutan ini menimbulkan kerugian baik materiil hingga korban jiwa. 
-                      Kebakaran juga menyebabka terjadinya degradasi lahan gambut yang menimbulkan besarnya 
-                      emisi karbon yang lepas di udara dan juga hilangnya biodiversitas di sekitarnya. 
-                      (Johansen, 2015). Bahkan bencana kebakaran hutan dan lahan pada tahun 2016 ini juga 
-                      mengakibatkan kerugian besar kurang lebih US$ 16 milyar di sektor lingkungan hidup, 
-                      ekonomi, wisata, maupun pendidikan (CIFOR, 2018). 
+                      Kendala utama dalam upaya pelestarian gambut ini ialah seringnya terjadi benturan antar 
+                      kepentingan atara konservasi dengan ekonomi. Masyarakat jarang mau melakukan konservasi 
+                      karena merasa dampak konservasi tersebut hanya berdampak pada perbaikan lingkungan saja 
+                      tanpa memberikan manfaat ekonomi kepada mereka. Untuk itu PT Kilang Pertamina Internasional 
+                      RU II Sungai Paning membuat program Pelestarian Tanaman Khas Gambut Dengan Metode Penanaman 
+                      Bibit Nanas Dan Tanaman Kayu Secara Polikultur Jajar Legowo (Poligowo). 
                       <br></br>
                       <br></br>
-                      Di Sungai Pakning, Kabupaten Bengkalis, ketika terjadi bencana kebakaran lahan dan hutan 
-                      menimbulkan banyak kerugian antara lain 86 ha lahan produktif yang terbakar, terganggunya 
-                      aktifitas masyarakat, hingga menimbulkan korban jiwa akibat ISPA.  Oleh karena itu PT 
-                      Pertamina RU II Sungai Paning, sebagai salah satu perusahaan yang berada di wilayah Sungai 
-                      Pakning, Bengkalis, Provinsi Riau ikut andil dalam upaya penanganan bencana kebakaran hutan 
-                      dan lahan melalui program CSR (Coorporate Social Responsibility) dengan Program Kampung 
-                      Gambut Berdikari dengan mitra binaan Petani, MPA, sekolah - sekolah dan beberapa masyarakat 
-                      lainnya. Salah satunya Arboretum Gambut Marsawa Program Keanekaragaman Hayati yang dijadikan 
-                      ebagai pusat pembelajaran tanaman – tanaman gambut dan pengelolaan lahan gambut. Didalamnya 
-                      juga dilakukan konservasi tanaman – tanaman langka seperti Kantong Semar Sumatera ataupun 
-                      Kantong Semar Spectabilis.
+                      Program ini membuat upaya konservasi dapat dilakukan beriringan dengan kegiatan ekonomi 
+                      masyarakat. Sehingga dengan adanya manfaat ekonomi tersebut, kegiatan konservasi yang 
+                      dilakukan akan mampu juga memberikan dampak ekonomi kepada masyarakat, sehingga masyarakat 
+                      mau melakukan konservasi tersebut. Dengan adanya program ini juga sangat membantu penghijauan 
+                      terutama pada lahan – lahan gambut yang ,mulai kritis dan rawan terbakar. Dengan adanya 
+                      program ini juga mampu mencegah kebakaran karena lahan yang digunakan menjadi terawat dan 
+                      tidak berpotensi terhadap kebakaran. Program ini dilakukan di lahan seluas 2,5 ha yang berada 
+                      di dusun Kampung Jawa, Kelurahan Sungai Pakning, Kecamatan Bukit Batu, Kabupaten Bengkalis.
                     </div>
                   </Card>
                 </Col>
@@ -599,11 +595,11 @@ class Poligowo extends React.Component{
                 <Col style={{background: '#fff'}}>
                   <Card as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
                     <Card.Img variant="top" 
-                      src={img16}
+                      src={poligowo3}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title className="text-center">Poligowo</Card.Title>
+                      <Card.Title className="text-center">Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>

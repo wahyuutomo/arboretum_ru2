@@ -25,8 +25,8 @@ import img9 from "../../assets/9.jpeg"
 import img10 from "../../assets/10.jpeg"
 import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
-import img16 from "../../assets/16.jpeg"
 import img19 from "../../assets/19.jpeg"
+import poligowo3 from "../../assets/poligowo3.jpeg"
 
 
 class Dashboard extends React.Component{
@@ -146,11 +146,11 @@ class Dashboard extends React.Component{
                 <Col style={{background: '#fff'}}>
                   <Card as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
                     <Card.Img variant="top" 
-                      src={img16}
+                      src={poligowo3}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Poligowo</Card.Title>
+                      <Card.Title>Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>

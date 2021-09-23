@@ -32,7 +32,7 @@ import img3 from "../../assets/3.jpeg"
 import img6 from "../../assets/6.jpeg"
 import img9 from "../../assets/9.jpeg"
 import img14 from "../../assets/14.jpeg"
-import img16 from "../../assets/16.jpeg"
+import poligowo3 from "../../assets/poligowo3.jpeg"
 
 
 const table_data = [
@@ -660,11 +660,11 @@ class Arboretum extends React.Component{
                 <Col style={{background: '#fff'}}>
                   <Card as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
                     <Card.Img variant="top" 
-                      src={img16}
+                      src={poligowo3}
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title className="text-center">Poligowo</Card.Title>
+                      <Card.Title className="text-center">Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
