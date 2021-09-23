@@ -355,11 +355,11 @@ class Poligowo extends React.Component{
               </Row>
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
-                  <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h2>Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</h2>
-                  </div>
                   <div>
                     <ColoredLine/>
+                  </div>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h2>Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</h2>
                   </div>
                 </Col>
               </Row>
@@ -548,17 +548,17 @@ class Poligowo extends React.Component{
 
               <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
                 <Col>
-                  <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h3>Progam</h3>
-                  </div>
                   <div>
                     <ColoredLine/>
+                  </div>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Progam</h3>
                   </div>
                 </Col>
               </Row>
               <Row>
                 <Col style={{background: '#fff'}}>
-                  <Card as="Button" onClick={()=>{this.props.history.push("/home")}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/home")}}>
                     <Card.Img variant="top" 
                       src={img6}
                       height='240'
@@ -570,7 +570,7 @@ class Poligowo extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="Button" onClick={()=>{this.props.history.push("/arboretum")}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/arboretum")}}>
                     <Card.Img variant="top" 
                       src={img9}
                       height='240'
@@ -582,7 +582,7 @@ class Poligowo extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
                     <Card.Img variant="top" 
                       src={img2}
                       height='240'
@@ -593,7 +593,7 @@ class Poligowo extends React.Component{
                   </Card>
                 </Col>
                 <Col style={{background: '#fff'}}>
-                  <Card as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
                     <Card.Img variant="top" 
                       src={poligowo3}
                       height='240'
