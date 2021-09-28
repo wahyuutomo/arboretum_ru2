@@ -44,7 +44,7 @@ const table_data = [
    "ln_pi": "5,26",
    "h": "0,03"
  },
- {
+  {
    "no": 2,
    "nama": "Gaharu",
    "jumlah": 45,
@@ -173,15 +173,15 @@ const table_data_2 = [
    "jumlah": 45,
    "pi": "0,12",
    "ln_pi": "2,14",
-   "h": "0,25"
+   "h": "0,28"
  },
  {
    "no": 3,
    "nama": "Nangka",
-   "jumlah": 98,
+   "jumlah": 30,
    "pi": "0,26",
    "ln_pi": "1,37",
-   "h": "0,35"
+   "h": "0,22"
  },
  {
    "no": 4,
@@ -440,7 +440,7 @@ class Poligowo extends React.Component{
                         <td style={{textAlign: 'center'}}>384</td>
                         <td style={{textAlign: 'center'}}></td>
                         <td style={{textAlign: 'center'}}></td>
-                        <td style={{textAlign: 'center'}}>1.26</td>
+                        <td style={{textAlign: 'center'}}>1,26</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -481,10 +481,10 @@ class Poligowo extends React.Component{
                       })}
                       <tr>
                         <td colSpan="2" style={{textAlign: 'center'}}>Jumlah</td>
-                        <td style={{textAlign: 'center'}}>384</td>
+                        <td style={{textAlign: 'center'}}>316</td>
                         <td style={{textAlign: 'center'}}></td>
                         <td style={{textAlign: 'center'}}></td>
-                        <td style={{textAlign: 'center'}}>1.26</td>
+                        <td style={{textAlign: 'center'}}>1,22</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -527,7 +527,7 @@ class Poligowo extends React.Component{
                         barWidth={0.5}
                         color="#12939A"
                         data={[
-                          {x: '2020', y: 1.26},
+                          {x: '2020', y: 1.22},
                           {x: '2021', y: 1.26},
                         ]}
                       />
@@ -535,7 +535,7 @@ class Poligowo extends React.Component{
                         labelAnchorX='middle'
 
                         data={[
-                          {x: '2020', y: 1.26, yOffset: -25},
+                          {x: '2020', y: 1.22, yOffset: -25},
                           {x: '2021', y: 1.26, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
