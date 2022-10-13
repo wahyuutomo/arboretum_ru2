@@ -35,260 +35,260 @@ import img14 from "../../assets/14.jpeg"
 import poligowo3 from "../../assets/poligowo3.jpeg"
 
 
-const table_data = [
- {
-   "no": 1,
-   "name": "Nepenthes ampullaria Jack",
-   "first": 51,
-   "second": 56,
-   "third": 56,
-   "fourth": 120,
-   "fifth": 0
- },
- {
-   "no": 2,
-   "name": "Nepenthes rafflesiana Jack",
-   "first": 49,
-   "second": 60,
-   "third": 70,
-   "fourth": 157,
-   "fifth": 0
- },
- {
-   "no": 3,
-   "name": "Nepenthes bicalcarata Hook",
-   "first": 34,
-   "second": 42,
-   "third": 54,
-   "fourth": 75,
-   "fifth": 0
- },
- {
-   "no": 4,
-   "name": "Nepenthes mirabilis (Lour) Druce",
-   "first": 40,
-   "second": 43,
-   "third": 50,
-   "fourth": 80,
-   "fifth": 0
- },
- {
-   "no": 5,
-   "name": "Nepenthes sumatrana",
-   "first": 5,
-   "second": 7,
-   "third": 15,
-   "fourth": 30,
-   "fifth": 0
- },
- {
-   "no": 6,
-   "name": "Nepenthes spectabilis",
-   "first": 10,
-   "second": 11,
-   "third": 20,
-   "fourth": 30,
-   "fifth": 0
- },
- {
-   "no": 7,
-   "name": "Nepenthes albomarginata",
-   "first": 32,
-   "second": 32,
-   "third": 32,
-   "fourth": 40,
-   "fifth": 0
- },
- {
-   "no": 8,
-   "name": "Gomphandra capitulata",
-   "first": null,
-   "second": 3,
-   "third": 3,
-   "fourth": 7,
-   "fifth": 0
- },
- {
-   "no": 9,
-   "name": "Aquilaria malacensis",
-   "first": null,
-   "second": 8,
-   "third": 8,
-   "fourth": 10,
-   "fifth": 0
- },
- {
-   "no": 10,
-   "name": "Melaleuca leucadendron",
-   "first": null,
-   "second": 30,
-   "third": 30,
-   "fourth": 35,
-   "fifth": 0
- },
- {
-   "no": 11,
-   "name": "Cratoxylon arbores",
-   "first": null,
-   "second": 13,
-   "third": 13,
-   "fourth": 19,
-   "fifth": 0
- },
- {
-   "no": 12,
-   "name": "Syzygium aqueum",
-   "first": null,
-   "second": 23,
-   "third": 23,
-   "fourth": 38,
-   "fifth": 0
- },
- {
-   "no": 13,
-   "name": "Syzygium malaccense",
-   "first": null,
-   "second": 3,
-   "third": 3,
-   "fourth": 15,
-   "fifth": 0
- },
- {
-   "no": 14,
-   "name": "Citrus sp.",
-   "first": null,
-   "second": 3,
-   "third": 3,
-   "fourth": 9,
-   "fifth": 0
- },
- {
-   "no": 15,
-   "name": "Hevea brasiliensis",
-   "first": null,
-   "second": 58,
-   "third": 58,
-   "fourth": 74,
-   "fifth": 0
- },
- {
-   "no": 16,
-   "name": "Syzygium leptostemonum",
-   "first": null,
-   "second": 80,
-   "third": 80,
-   "fourth": 80,
-   "fifth": 0
- },
- {
-   "no": 17,
-   "name": "Vitex pubescens",
-   "first": null,
-   "second": 38,
-   "third": 38,
-   "fourth": 42,
-   "fifth": 0
- },
- {
-   "no": 18,
-   "name": "Macaranga trilobata",
-   "first": null,
-   "second": 8,
-   "third": 8,
-   "fourth": 12,
-   "fifth": 0
- },
- {
-   "no": 19,
-   "name": "Gomphandra capitulata",
-   "first": null,
-   "second": 176,
-   "third": 176,
-   "fourth": 256,
-   "fifth": 0
- },
- {
-   "no": 20,
-   "name": "Dimocarpus longan",
-   "first": null,
-   "second": 15,
-   "third": 15,
-   "fourth": 17,
-   "fifth": 0
- },
- {
-   "no": 21,
-   "name": "Artocarpus heterophyllus",
-   "first": null,
-   "second": 5,
-   "third": 5,
-   "fourth": 9,
-   "fifth": 0
- },
- {
-   "no": 22,
-   "name": "Nephelium lappeceum",
-   "first": null,
-   "second": 3,
-   "third": 3,
-   "fourth": 10,
-   "fifth": 0
- },
- {
-   "no": 23,
-   "name": "Shorea leprosula",
-   "first": null,
-   "second": 3,
-   "third": 100,
-   "fourth": 150,
-   "fifth": 0
- },
- {
-   "no": 24,
-   "name": "Setulang",
-   "first": null,
-   "second": 193,
-   "third": 193,
-   "fourth": 243,
-   "fifth": 0
- },
- {
-   "no": 25,
-   "name": "Asplenium nidus",
-   "first": null,
-   "second": null,
-   "third": 3,
-   "fourth": 8,
-   "fifth": 0
- },
- {
-   "no": 26,
-   "name": "Dendobrium bigibbum",
-   "first": null,
-   "second": null,
-   "third": 10,
-   "fourth": 20,
-   "fifth": 0
- },
- {
-   "no": 27,
-   "name": "Caladium bicolor",
-   "first": null,
-   "second": null,
-   "third": null,
-   "fourth": 15,
-   "fifth": 0
- },
- {
-   "no": 28,
-   "name": "Alocasia macrorrhizos",
-   "first": null,
-   "second": null,
-   "third": null,
-   "fourth": 8,
-   "fifth": 0
- }
-]
+// const table_data = [
+//  {
+//    "no": 1,
+//    "name": "Nepenthes ampullaria Jack",
+//    "first": 51,
+//    "second": 56,
+//    "third": 56,
+//    "fourth": 120,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 2,
+//    "name": "Nepenthes rafflesiana Jack",
+//    "first": 49,
+//    "second": 60,
+//    "third": 70,
+//    "fourth": 157,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 3,
+//    "name": "Nepenthes bicalcarata Hook",
+//    "first": 34,
+//    "second": 42,
+//    "third": 54,
+//    "fourth": 75,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 4,
+//    "name": "Nepenthes mirabilis (Lour) Druce",
+//    "first": 40,
+//    "second": 43,
+//    "third": 50,
+//    "fourth": 80,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 5,
+//    "name": "Nepenthes sumatrana",
+//    "first": 5,
+//    "second": 7,
+//    "third": 15,
+//    "fourth": 30,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 6,
+//    "name": "Nepenthes spectabilis",
+//    "first": 10,
+//    "second": 11,
+//    "third": 20,
+//    "fourth": 30,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 7,
+//    "name": "Nepenthes albomarginata",
+//    "first": 32,
+//    "second": 32,
+//    "third": 32,
+//    "fourth": 40,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 8,
+//    "name": "Gomphandra capitulata",
+//    "first": null,
+//    "second": 3,
+//    "third": 3,
+//    "fourth": 7,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 9,
+//    "name": "Aquilaria malacensis",
+//    "first": null,
+//    "second": 8,
+//    "third": 8,
+//    "fourth": 10,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 10,
+//    "name": "Melaleuca leucadendron",
+//    "first": null,
+//    "second": 30,
+//    "third": 30,
+//    "fourth": 35,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 11,
+//    "name": "Cratoxylon arbores",
+//    "first": null,
+//    "second": 13,
+//    "third": 13,
+//    "fourth": 19,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 12,
+//    "name": "Syzygium aqueum",
+//    "first": null,
+//    "second": 23,
+//    "third": 23,
+//    "fourth": 38,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 13,
+//    "name": "Syzygium malaccense",
+//    "first": null,
+//    "second": 3,
+//    "third": 3,
+//    "fourth": 15,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 14,
+//    "name": "Citrus sp.",
+//    "first": null,
+//    "second": 3,
+//    "third": 3,
+//    "fourth": 9,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 15,
+//    "name": "Hevea brasiliensis",
+//    "first": null,
+//    "second": 58,
+//    "third": 58,
+//    "fourth": 74,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 16,
+//    "name": "Syzygium leptostemonum",
+//    "first": null,
+//    "second": 80,
+//    "third": 80,
+//    "fourth": 80,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 17,
+//    "name": "Vitex pubescens",
+//    "first": null,
+//    "second": 38,
+//    "third": 38,
+//    "fourth": 42,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 18,
+//    "name": "Macaranga trilobata",
+//    "first": null,
+//    "second": 8,
+//    "third": 8,
+//    "fourth": 12,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 19,
+//    "name": "Gomphandra capitulata",
+//    "first": null,
+//    "second": 176,
+//    "third": 176,
+//    "fourth": 256,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 20,
+//    "name": "Dimocarpus longan",
+//    "first": null,
+//    "second": 15,
+//    "third": 15,
+//    "fourth": 17,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 21,
+//    "name": "Artocarpus heterophyllus",
+//    "first": null,
+//    "second": 5,
+//    "third": 5,
+//    "fourth": 9,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 22,
+//    "name": "Nephelium lappeceum",
+//    "first": null,
+//    "second": 3,
+//    "third": 3,
+//    "fourth": 10,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 23,
+//    "name": "Shorea leprosula",
+//    "first": null,
+//    "second": 3,
+//    "third": 100,
+//    "fourth": 150,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 24,
+//    "name": "Setulang",
+//    "first": null,
+//    "second": 193,
+//    "third": 193,
+//    "fourth": 243,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 25,
+//    "name": "Asplenium nidus",
+//    "first": null,
+//    "second": null,
+//    "third": 3,
+//    "fourth": 8,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 26,
+//    "name": "Dendobrium bigibbum",
+//    "first": null,
+//    "second": null,
+//    "third": 10,
+//    "fourth": 20,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 27,
+//    "name": "Caladium bicolor",
+//    "first": null,
+//    "second": null,
+//    "third": null,
+//    "fourth": 15,
+//    "fifth": 0
+//  },
+//  {
+//    "no": 28,
+//    "name": "Alocasia macrorrhizos",
+//    "first": null,
+//    "second": null,
+//    "third": null,
+//    "fourth": 8,
+//    "fifth": 0
+//  }
+// ]
 
 const table_data_species = [
  {
