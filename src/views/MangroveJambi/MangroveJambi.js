@@ -19,7 +19,8 @@ import {
   YAxis,
   VerticalBarSeries,
   ChartLabel,
-  LabelSeries
+  LabelSeries,
+  DiscreteColorLegend
 } from 'react-vis';
 
 import { connect } from "react-redux";
@@ -358,6 +359,249 @@ const table_data_2 = [
     },
 ]
 
+const table_data_bird = [
+ {
+   "No": 1,
+   "nama_lokal": "JALAK KERBAU",
+   "spesies": "Acridotheres javanicus (Cabanis, 1851)",
+   "y2022": 2
+ },
+ {
+   "No": 2,
+   "nama_lokal": "Kerak Basi Alis Hitam",
+   "spesies": "Acrocephalus bistrigiceps Swinhoe, 1860",
+   "y2022": 1
+ },
+ {
+   "No": 3,
+   "nama_lokal": "CIPOH KACAT",
+   "spesies": "Aegithina tiphia (Linnaeus, 1758)",
+   "y2022": 5
+ },
+ {
+   "No": 4,
+   "nama_lokal": "WALET SARANG PUTIH",
+   "spesies": "Aerodramus hirundinaceus (Stresemann, 1914)",
+   "y2022": 4
+ },
+ {
+   "No": 5,
+   "nama_lokal": "Burung-Madu Kelapa",
+   "spesies": "Anthreptes malacensis (Scopoli, 1786)",
+   "y2022": 2
+ },
+ {
+   "No": 6,
+   "nama_lokal": "Burung Madu Polos",
+   "spesies": "Anthreptes simplex (S.Muller, 1843)",
+   "y2022": 2
+ },
+ {
+   "No": 7,
+   "nama_lokal": "Cingcoang Biru",
+   "spesies": "Brachypteryx montana Horsfield, 1821",
+   "y2022": 1
+ },
+ {
+   "No": 8,
+   "nama_lokal": "KOKOKAN LAUT",
+   "spesies": "Butorides striata (Linnaeus, 1758)",
+   "y2022": 1
+ },
+ {
+   "No": 9,
+   "nama_lokal": "Wiwik Kelabu",
+   "spesies": "Cacomantis merulinus (Scopoli, 1786)",
+   "y2022": 1
+ },
+ {
+   "No": 10,
+   "nama_lokal": "Layang-layang Loreng",
+   "spesies": "Cecropis striolata (Schlegel, 1844)",
+   "y2022": 3
+ },
+ {
+   "No": 11,
+   "nama_lokal": "WALET SAPI",
+   "spesies": "Collocalia esculenta (Linnaeus, 1758)",
+   "y2022": 9
+ },
+ {
+   "No": 12,
+   "nama_lokal": "LAYANG-LAYANG RUMAH",
+   "spesies": "Delichon dasypus (Bonaparte, 1850)",
+   "y2022": 9
+ },
+ {
+   "No": 13,
+   "nama_lokal": "SIKATAN EMAS",
+   "spesies": "Ficedula zanthopygia (Hay, 1845)",
+   "y2022": 6
+ },
+ {
+   "No": 14,
+   "nama_lokal": "PERKUTUT JAWA",
+   "spesies": "Geopelia striata (Linnaeus, 1766)",
+   "y2022": 3
+ },
+ {
+   "No": 15,
+   "nama_lokal": "JINJING BUKIT",
+   "spesies": "Hemipus picatus (Sykes, 1832)",
+   "y2022": 4
+ },
+ {
+   "No": 16,
+   "nama_lokal": "Kapinis Jarum Pantat Putih",
+   "spesies": "Hirundapus cochinchinensis (Oustalet, 1878)",
+   "y2022": 6
+ },
+ {
+   "No": 17,
+   "nama_lokal": "LAYANG-LAYANG BATU",
+   "spesies": "Hirundo tahitica Gmelin, 1789",
+   "y2022": 10
+ },
+ {
+   "No": 18,
+   "nama_lokal": "Burung-Madu Bakau",
+   "spesies": "Leptocoma calcostetha (Jardine, 1843)",
+   "y2022": 5
+ },
+ {
+   "No": 19,
+   "nama_lokal": "Bondol Rawa",
+   "spesies": "Lonchura malacca (Linnaeus, 1766)",
+   "y2022": 7
+ },
+ {
+   "No": 20,
+   "nama_lokal": "KIRIK-KIRIK LAUT",
+   "spesies": "Merops philippinus Linnaeus, 1766",
+   "y2022": 7
+ },
+ {
+   "No": 21,
+   "nama_lokal": "Cinenen Kelabu",
+   "spesies": "Orthotomus ruficeps (Lesson, 1830)",
+   "y2022": 12
+ },
+ {
+   "No": 22,
+   "nama_lokal": "Takur Topi Emas",
+   "spesies": "Psilopogon henricii (Temminck, 1831)",
+   "y2022": 2
+ },
+ {
+   "No": 23,
+   "nama_lokal": "Takur Tutut",
+   "spesies": "Psilopogon rafflesii (R.Lesson, 1839)",
+   "y2022": 1
+ },
+ {
+   "No": 24,
+   "nama_lokal": "KUTILANG",
+   "spesies": "Pycnonotus aurigaster (Vieillot, 1818)",
+   "y2022": 4
+ },
+ {
+   "No": 25,
+   "nama_lokal": "MERBAH MATA-MERAH",
+   "spesies": "Pycnonotus brunneus (Blyth, 1845)",
+   "y2022": 2
+ },
+ {
+   "No": 26,
+   "nama_lokal": "MERBAH CERUCUK",
+   "spesies": "Pycnonotus goiavier (Scopoli, 1786)",
+   "y2022": 5
+ },
+ {
+   "No": 27,
+   "nama_lokal": "MERBAH BELUKAR",
+   "spesies": "Pycnonotus plumosus (Blyth, 1845)",
+   "y2022": 4
+ },
+ {
+   "No": 28,
+   "nama_lokal": "KAPINIS JARUM KECIL",
+   "spesies": "Rhaphidura leucopygialis (Blyth, 1849)",
+   "y2022": 5
+ },
+ {
+   "No": 29,
+   "nama_lokal": "TEKUKUR Biasa",
+   "spesies": "Spilopelia chinensis (Scopoli, 1786)",
+   "y2022": 2
+ },
+ {
+   "No": 30,
+   "nama_lokal": "Cekakak Sungai",
+   "spesies": "Todirhamphus chloris (Boddaert, 1783)",
+   "y2022": 12
+ }
+]
+
+const table_data_mamalia = [
+ {
+   "No": 1,
+   "nama_lokal": "Bajing Kelapa",
+   "spesies": "Callosciurus notatus (Boddaert, 1785)",
+   "y2022": ""
+ },
+ {
+   "No": 2,
+   "nama_lokal": "Monyet Ekor Panjang",
+   "spesies": "Macaca fascicularis (Raffles, 1821)",
+   "y2022": ""
+ },
+ {
+   "No": 3,
+   "nama_lokal": "Babi Hutan",
+   "spesies": "Sus scrofa Linnaeus, 1758",
+   "y2022": ""
+ },
+ {
+   "No": 4,
+   "nama_lokal": "Simpai Hitam Sumatera",
+   "spesies": "Presbytis melalophos",
+   "y2022": ""
+ }
+]
+
+const table_data_herpetofauna = [
+ {
+   "No": 1,
+   "nama_lokal": "Cicak Rumah Asia",
+   "spesies": "Hemidactylus frenatus Schlegel, 1836",
+   "y2022": 3
+ },
+ {
+   "No": 2,
+   "nama_lokal": "Biawak Air",
+   "spesies": "Varanus salvator (Laurenti, 1768)",
+   "y2022": 1
+ },
+ {
+   "No": 3,
+   "nama_lokal": "Kadal Bakau",
+   "spesies": "Emoia atrocostata (Lesson, 1830)",
+   "y2022": 1
+ },
+ {
+   "No": 4,
+   "nama_lokal": "Buaya",
+   "spesies": "Crocodylidae",
+   "y2022": 1
+ },
+ {
+   "No": 5,
+   "nama_lokal": "Ular Air Muka Anjing",
+   "spesies": "Cerberus rhyncops (Schneider, 1799)",
+   "y2022": 1
+ }
+]
+
 class MangroveJambi extends React.Component{
   constructor(props) {
     super(props);
@@ -522,53 +766,10 @@ class MangroveJambi extends React.Component{
                   </Table>
                 </Col>
               </Row>
-              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
-                <Col>
-                  <div style={{alignItems: 'center', textAlign: 'center'}}>
-                    <h3>Indeks Keanekaragaman Hayati (H') Flora Mangrove Pangkalan Jambi 2020</h3>
-                  </div>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th style={{textAlign: 'center'}}>No</th>
-                        <th style={{textAlign: 'center'}}>Nama Ilmiah</th>
-                        <th style={{textAlign: 'center'}}>Jumlah</th>
-                        <th style={{textAlign: 'center'}}>Pi</th>
-                        <th style={{textAlign: 'center'}}>In (Pi)</th>
-                        <th style={{textAlign: 'center'}}>H'</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {table_data_2.map(( listValue, index ) => {
-                        return (
-                          <tr key={index}>
-                            <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.nama}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.jumlah}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.pi}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.ln_pi}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.h}</td>
-                          </tr>
-                        );
-                      })}
-                      <tr>
-                        <td colSpan="2">Jumlah</td>
-                        <td style={{textAlign: 'center'}}>31145</td>
-                        <td style={{textAlign: 'center'}}></td>
-                        <td style={{textAlign: 'center'}}></td>
-                        <td style={{textAlign: 'center'}}>1.83</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
+
               <Row style={{paddingTop: 45}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Indeks Kehati (H') Flora Mangrove Pangkalan Jambi Tahun 2017-2021</h5>
+                  <h5>Indeks Kehati (H') Flora Mangrove Pangkalan Jambi Tahun 2017-2022</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
@@ -597,16 +798,20 @@ class MangroveJambi extends React.Component{
                         <td style={{textAlign: 'center'}}>2021</td>
                         <td style={{textAlign: 'center'}}>2.31</td>
                       </tr>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>2022</td>
+                        <td style={{textAlign: 'center'}}>2.64</td>
+                      </tr>
                     </tbody>
                   </Table>
                 </Col>
                 <Col style={{textAlign: 'center'}}>
                   <div>
-                    <h5>Indeks Kehati Mangrove Pangkalan Jambi Tahun 2017 - 2021</h5>
+                    <h5>Indeks Kehati (H') Flora dari tahun 2017 - 2022 di Mangrove Education Center (MEC) Pangkalan Jambi</h5>
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 2.5]}
+                      yDomain={[0, 2.8]}
                       height={400} 
                       width={400}>
                       <XAxis />
@@ -639,6 +844,7 @@ class MangroveJambi extends React.Component{
                           {x: '2019', y: 1.78},
                           {x: '2020', y: 1.83},
                           {x: '2021', y: 2.31},
+                          {x: '2022', y: 2.64},
                         ]}
                       />
                       <LabelSeries
@@ -650,12 +856,358 @@ class MangroveJambi extends React.Component{
                           {x: '2019', y: 1.78, yOffset: -25},
                           {x: '2020', y: 1.83, yOffset: -25},
                           {x: '2021', y: 2.31, yOffset: -25},
+                          {x: '2022', y: 2.64, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                     </XYPlot>
                   </div>
                 </Col>
               </Row>
+
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
+                <Col>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Jumlah Spesies Burung di Mangrove Pangkalan Jambi</h3>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
+                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {table_data_bird.map(( listValue, index ) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{textAlign: 'center'}}>{index + 1}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                          </tr>
+                        );
+                      })}
+                      <tr>
+                        <td colSpan="3">Jumlah</td>
+                        <td style={{textAlign: 'center'}}>137</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+
+
+              <Row style={{paddingTop: 45}}>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>Diagram Perbandingan Indeks Ekologi Burung Tahun 2021 dan 2022 di Mangrove Education Center Pangkalan Jambi: Indeks Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E)</h5>
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[0, 7.0]}
+                      height={400} 
+                      width={600}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: 'H\'', y: 2.86},
+                          {x: 'R', y: 4.48},
+                          {x: 'E', y: 0.74},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: 'H\'', y: 2.86, yOffset: -25, xOffset: -25},
+                          {x: 'R', y: 4.48, yOffset: -25, xOffset: -25},
+                          {x: 'E', y: 0.89, yOffset: -25, xOffset: -25},
+                        ]} 
+                        getLabel={d => d.y}/>
+
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#ff839A"
+                        data={[
+                          {x: 'H\'', y: 3.17},
+                          {x: 'R', y: 5.89},
+                          {x: 'E', y: 0.93},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: 'H\'', y: 3.17, yOffset: -25, xOffset: 25},
+                          {x: 'R', y: 5.89, yOffset: -25, xOffset: 25},
+                          {x: 'E', y: 0.93, yOffset: -25, xOffset: 25},
+                        ]} 
+                        getLabel={d => d.y}/>
+                    </XYPlot>
+                    <DiscreteColorLegend
+                      width={180}
+                      items={[{title: "2021", color: "#12939A"},{title: "2022", color: "#ff839A"}]}
+                    />
+                  </div>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+              </Row>
+
+
+
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
+                <Col>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Jumlah Spesies Mamalia di Mangrove Pangkalan Jambi</h3>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
+                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {table_data_mamalia.map(( listValue, index ) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{textAlign: 'center'}}>{index + 1}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                          </tr>
+                        );
+                      })}
+                      <tr>
+                        <td colSpan="3">Jumlah</td>
+                        <td style={{textAlign: 'center'}}>11</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+
+              <Row style={{paddingTop: 45}}>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>Diagram Perbandingan Indeks Ekologi Mamalia Tahun 2021 dan 2022 di Mangrove Education Center Pangkalan Jambi: Indeks Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E)</h5>
+
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[0, 3.0]}
+                      height={400} 
+                      width={600}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: 'H\'', y: 1.12},
+                          {x: 'R', y: 1.04},
+                          {x: 'E', y: 0.89},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: 'H\'', y: 1.12, yOffset: -25, xOffset: -25},
+                          {x: 'R', y: 1.04, yOffset: -25, xOffset: -25},
+                          {x: 'E', y: 0.81, yOffset: -25, xOffset: -25},
+                        ]} 
+                        getLabel={d => d.y}/>
+
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#ff839A"
+                        data={[
+                          {x: 'H\'', y: 1.27},
+                          {x: 'R', y: 1.37},
+                          {x: 'E', y: 0.92},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: 'H\'', y: 1.27, yOffset: -25, xOffset: 25},
+                          {x: 'R', y: 1.37, yOffset: -25, xOffset: 25},
+                          {x: 'E', y: 0.92, yOffset: -25, xOffset: 25},
+                        ]} 
+                        getLabel={d => d.y}/>
+                    </XYPlot>
+                    <DiscreteColorLegend
+                      width={180}
+                      items={[{title: "2021", color: "#12939A"},{title: "2022", color: "#ff839A"}]}
+                    />
+                  </div>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+              </Row>
+
+
+
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
+                <Col>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Jumlah Spesies Herpetofauna di Mangrove Pangkalan Jambi</h3>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
+                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {table_data_herpetofauna.map(( listValue, index ) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{textAlign: 'center'}}>{index + 1}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                          </tr>
+                        );
+                      })}
+                      <tr>
+                        <td colSpan="3">Jumlah</td>
+                        <td style={{textAlign: 'center'}}>7</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+
+
+              <Row style={{paddingTop: 45}}>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>Diagram Indeks Ekologi Herpetofauna di Mangrove Education Center Pangkalan Jambi: Indeks Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E)</h5>
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[0, 3.0]}
+                      height={400} 
+                      width={400}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: 'H\'', y: 1.2},
+                          {x: 'R', y: 2.06},
+                          {x: 'E', y: 0.74},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: 'H\'', y: 1.2, yOffset: -25},
+                          {x: 'R', y: 2.06, yOffset: -25},
+                          {x: 'E', y: 0.81, yOffset: -25},
+                        ]} 
+                        getLabel={d => d.y}/>
+                    </XYPlot>
+                  </div>
+                </Col>
+                <Col style={{textAlign: 'center'}}>
+                </Col>
+              </Row>
+
+
 
               <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
                 <Col>
