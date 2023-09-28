@@ -27,6 +27,7 @@ import img11 from "../../assets/11.jpeg"
 import img14 from "../../assets/14.jpeg"
 import img19 from "../../assets/19.jpeg"
 import poligowo3 from "../../assets/poligowo3.jpeg"
+import kda3 from "../../assets/kda3.jpeg"
 
 
 class Dashboard extends React.Component{
@@ -152,6 +153,18 @@ class Dashboard extends React.Component{
                     <Card.Body className="text-center">
                       <Card.Title>Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
                     </Card.Body>
+                  </Card>
+                </Col>
+                <Col style={{background: '#fff'}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/konservasi-daerah-aliran")}}>
+                    <Card.Img variant="top" 
+                      src={kda3}
+                      height='240'
+                      />
+                    <Card.Body className="text-center">
+                      <Card.Title>Konservasi Daerah Aliran Sungai Dayang</Card.Title>
+                    </Card.Body>
+                    
                   </Card>
                 </Col>
               </Row>

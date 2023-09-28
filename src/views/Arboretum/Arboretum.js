@@ -30,719 +30,840 @@ import logo_pertamina from "../../assets/logo_pertamina.png"
 import img2 from "../../assets/2.jpeg"
 import img3 from "../../assets/3.jpeg"
 import img6 from "../../assets/6.jpeg"
+import kda3 from "../../assets/kda3.jpeg"
 import img9 from "../../assets/9.jpeg"
 import img14 from "../../assets/14.jpeg"
 import poligowo3 from "../../assets/poligowo3.jpeg"
 
-
-// const table_data = [
-//  {
-//    "no": 1,
-//    "name": "Nepenthes ampullaria Jack",
-//    "first": 51,
-//    "second": 56,
-//    "third": 56,
-//    "fourth": 120,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 2,
-//    "name": "Nepenthes rafflesiana Jack",
-//    "first": 49,
-//    "second": 60,
-//    "third": 70,
-//    "fourth": 157,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 3,
-//    "name": "Nepenthes bicalcarata Hook",
-//    "first": 34,
-//    "second": 42,
-//    "third": 54,
-//    "fourth": 75,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 4,
-//    "name": "Nepenthes mirabilis (Lour) Druce",
-//    "first": 40,
-//    "second": 43,
-//    "third": 50,
-//    "fourth": 80,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 5,
-//    "name": "Nepenthes sumatrana",
-//    "first": 5,
-//    "second": 7,
-//    "third": 15,
-//    "fourth": 30,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 6,
-//    "name": "Nepenthes spectabilis",
-//    "first": 10,
-//    "second": 11,
-//    "third": 20,
-//    "fourth": 30,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 7,
-//    "name": "Nepenthes albomarginata",
-//    "first": 32,
-//    "second": 32,
-//    "third": 32,
-//    "fourth": 40,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 8,
-//    "name": "Gomphandra capitulata",
-//    "first": null,
-//    "second": 3,
-//    "third": 3,
-//    "fourth": 7,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 9,
-//    "name": "Aquilaria malacensis",
-//    "first": null,
-//    "second": 8,
-//    "third": 8,
-//    "fourth": 10,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 10,
-//    "name": "Melaleuca leucadendron",
-//    "first": null,
-//    "second": 30,
-//    "third": 30,
-//    "fourth": 35,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 11,
-//    "name": "Cratoxylon arbores",
-//    "first": null,
-//    "second": 13,
-//    "third": 13,
-//    "fourth": 19,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 12,
-//    "name": "Syzygium aqueum",
-//    "first": null,
-//    "second": 23,
-//    "third": 23,
-//    "fourth": 38,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 13,
-//    "name": "Syzygium malaccense",
-//    "first": null,
-//    "second": 3,
-//    "third": 3,
-//    "fourth": 15,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 14,
-//    "name": "Citrus sp.",
-//    "first": null,
-//    "second": 3,
-//    "third": 3,
-//    "fourth": 9,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 15,
-//    "name": "Hevea brasiliensis",
-//    "first": null,
-//    "second": 58,
-//    "third": 58,
-//    "fourth": 74,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 16,
-//    "name": "Syzygium leptostemonum",
-//    "first": null,
-//    "second": 80,
-//    "third": 80,
-//    "fourth": 80,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 17,
-//    "name": "Vitex pubescens",
-//    "first": null,
-//    "second": 38,
-//    "third": 38,
-//    "fourth": 42,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 18,
-//    "name": "Macaranga trilobata",
-//    "first": null,
-//    "second": 8,
-//    "third": 8,
-//    "fourth": 12,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 19,
-//    "name": "Gomphandra capitulata",
-//    "first": null,
-//    "second": 176,
-//    "third": 176,
-//    "fourth": 256,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 20,
-//    "name": "Dimocarpus longan",
-//    "first": null,
-//    "second": 15,
-//    "third": 15,
-//    "fourth": 17,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 21,
-//    "name": "Artocarpus heterophyllus",
-//    "first": null,
-//    "second": 5,
-//    "third": 5,
-//    "fourth": 9,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 22,
-//    "name": "Nephelium lappeceum",
-//    "first": null,
-//    "second": 3,
-//    "third": 3,
-//    "fourth": 10,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 23,
-//    "name": "Shorea leprosula",
-//    "first": null,
-//    "second": 3,
-//    "third": 100,
-//    "fourth": 150,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 24,
-//    "name": "Setulang",
-//    "first": null,
-//    "second": 193,
-//    "third": 193,
-//    "fourth": 243,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 25,
-//    "name": "Asplenium nidus",
-//    "first": null,
-//    "second": null,
-//    "third": 3,
-//    "fourth": 8,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 26,
-//    "name": "Dendobrium bigibbum",
-//    "first": null,
-//    "second": null,
-//    "third": 10,
-//    "fourth": 20,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 27,
-//    "name": "Caladium bicolor",
-//    "first": null,
-//    "second": null,
-//    "third": null,
-//    "fourth": 15,
-//    "fifth": 0
-//  },
-//  {
-//    "no": 28,
-//    "name": "Alocasia macrorrhizos",
-//    "first": null,
-//    "second": null,
-//    "third": null,
-//    "fourth": 8,
-//    "fifth": 0
-//  }
-// ]
-
 const table_data_species = [
- {
-   "No": 1,
-   "spesies": "Alocasia macrorrhizos",
-   "nama_lokal": "Taro",
-   "y2021": 8,
-   "y2022": 33
- },
- {
-   "No": 2,
-   "spesies": "Alphonsea avanica",
-   "nama_lokal": "Setulang",
-   "y2021": 243,
-   "y2022": 4
- },
- {
-   "No": 3,
-   "spesies": "Alstonia pneumatophore",
-   "nama_lokal": "",
-   "y2021": null,
-   "y2022": 3
- },
- {
-   "No": 4,
-   "spesies": "Anacardium occidentale",
-   "nama_lokal": "Jambu Mete",
-   "y2021": null,
-   "y2022": 3
- },
- {
-   "No": 5,
-   "spesies": "Antidesma bunius",
-   "nama_lokal": "Buni",
-   "y2021": null,
-   "y2022": 3
- },
- {
-   "No": 6,
-   "spesies": "Areca catechu",
-   "nama_lokal": "Pinang",
-   "y2021": 9,
-   "y2022": 5
- },
- {
-   "No": 7,
-   "spesies": "Artocarpus heterophyllus",
-   "nama_lokal": "Nangka",
-   "y2021": null,
-   "y2022": 3
- },
- {
-   "No": 8,
-   "spesies": "Artocarpus integer",
-   "nama_lokal": "Cempedak",
-   "y2021": null,
-   "y2022": 40
- },
- {
-   "No": 9,
-   "spesies": "Asplenium Nidus",
-   "nama_lokal": "Paku",
-   "y2021": 8,
-   "y2022": 5
- },
- {
-   "No": 10,
-   "spesies": "Caladium bicolor",
-   "nama_lokal": "Keladi",
-   "y2021": 15,
-   "y2022": 5
- },
- {
-   "No": 11,
-   "spesies": "Cocos nucifera",
-   "nama_lokal": "Kelapa",
-   "y2021": null,
-   "y2022": 2
- },
- {
-   "No": 12,
-   "spesies": "Cratoxylon arborescens",
-   "nama_lokal": "Geronggang",
-   "y2021": 19,
-   "y2022": 68
- },
- {
-   "No": 13,
-   "spesies": "Dendrodium Bigibbum",
-   "nama_lokal": "Anggrek",
-   "y2021": 20,
-   "y2022": 80
- },
- {
-   "No": 14,
-   "spesies": "Dillenia exima",
-   "nama_lokal": "Simpu",
-   "y2021": null,
-   "y2022": 10
- },
- {
-   "No": 15,
-   "spesies": "Dimocarpus longan",
-   "nama_lokal": "Mata Kucing",
-   "y2021": 17,
-   "y2022": 5
- },
- {
-   "No": 16,
-   "spesies": "Elaeis guinensis",
-   "nama_lokal": "Sawit",
-   "y2021": 7,
-   "y2022": 4
- },
- {
-   "No": 17,
-   "spesies": "Gomphandra capitulate",
-   "nama_lokal": "Malasiro",
-   "y2021": null,
-   "y2022": 11
- },
- {
-   "No": 18,
-   "spesies": "Hevea brasiliensis",
-   "nama_lokal": "Karet",
-   "y2021": 74,
-   "y2022": 15
- },
- {
-   "No": 19,
-   "spesies": "Macaranga pruinosa",
-   "nama_lokal": "Makaranga",
-   "y2021": 12,
-   "y2022": 15
- },
- {
-   "No": 20,
-   "spesies": "Mangifera indica",
-   "nama_lokal": "Mangga",
-   "y2021": null,
-   "y2022": 19
- },
- {
-   "No": 21,
-   "spesies": "Melaleuca leucadendro",
-   "nama_lokal": "Gelam",
-   "y2021": 35,
-   "y2022": 10
- },
- {
-   "No": 22,
-   "spesies": "Melcope lunu-ancenda",
-   "nama_lokal": "Kayu bukam",
-   "y2021": null,
-   "y2022": 11
- },
- {
-   "No": 23,
-   "spesies": "Nepenthes albomarginata",
-   "nama_lokal": "Kantong Beruk",
-   "y2021": 40,
-   "y2022": 17
- },
- {
-   "No": 24,
-   "spesies": "Nepenthes ampullaria jack",
-   "nama_lokal": "kantong semar",
-   "y2021": 120,
-   "y2022": 17
- },
- {
-   "No": 25,
-   "spesies": "Nepenthes bicalcarata Hook",
-   "nama_lokal": "Kantong Semar",
-   "y2021": 75,
-   "y2022": 3
- },
- {
-   "No": 26,
-   "spesies": "Nepenthes gracilis",
-   "nama_lokal": "Kantong Semar Gracilis",
-   "y2021": null,
-   "y2022": 6
- },
- {
-   "No": 27,
-   "spesies": "Nepenthes mirabilis",
-   "nama_lokal": "Kantong semar mirabilis",
-   "y2021": 80,
-   "y2022": 28
- },
- {
-   "No": 28,
-   "spesies": "Nepenthes rafflesiana",
-   "nama_lokal": "Kantong semar",
-   "y2021": 157,
-   "y2022": 20
- },
- {
-   "No": 29,
-   "spesies": "Nepenthes spectabilis",
-   "nama_lokal": "Kantong Semar",
-   "y2021": 30,
-   "y2022": 10
- },
- {
-   "No": 30,
-   "spesies": "Nepenthes sumantrana",
-   "nama_lokal": "Kantong semar sumatra",
-   "y2021": 30,
-   "y2022": 8
- },
- {
-   "No": 31,
-   "spesies": "Persea americana",
-   "nama_lokal": "Alpukat",
-   "y2021": null,
-   "y2022": 7
- },
- {
-   "No": 32,
-   "spesies": "Rhodomtrus tomentosa",
-   "nama_lokal": "Kalimunting",
-   "y2021": null,
-   "y2022": 11
- },
- {
-   "No": 33,
-   "spesies": "Senna siamea",
-   "nama_lokal": "Johar",
-   "y2021": null,
-   "y2022": 71
- },
- {
-   "No": 34,
-   "spesies": "Shorea balangeran",
-   "nama_lokal": "Blangeran",
-   "y2021": null,
-   "y2022": 19
- },
- {
-   "No": 35,
-   "spesies": "Shorea leprosula",
-   "nama_lokal": "Meranti",
-   "y2021": 150,
-   "y2022": 15
- },
- {
-   "No": 36,
-   "spesies": "Stenochlaena palustris",
-   "nama_lokal": "Iding-iding",
-   "y2021": null,
-   "y2022": 20
- },
- {
-   "No": 37,
-   "spesies": "Syzygium aqueum",
-   "nama_lokal": "Jambu Air Darsono",
-   "y2021": 38,
-   "y2022": 23
- },
- {
-   "No": 38,
-   "spesies": "Syzygium cumini",
-   "nama_lokal": "kelad merah",
-   "y2021": 15,
-   "y2022": 25
- },
- {
-   "No": 39,
-   "spesies": "Syzygium leptostemon",
-   "nama_lokal": "Kelad tikus",
-   "y2021": 80,
-   "y2022": 27
- },
- {
-   "No": 40,
-   "spesies": "Syzygium zeylanicum",
-   "nama_lokal": "Nasi Nasi",
-   "y2021": null,
-   "y2022": 28
- },
- {
-   "No": 41,
-   "spesies": "Vitex pubescens",
-   "nama_lokal": "Leban",
-   "y2021": 42,
-   "y2022": 16
- }
+    {
+      "No": 1,
+      "spesies": "Adenanthera pavonina",
+      "nama_lokal": "Saga",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 3
+    },
+    {
+      "No": 2,
+      "spesies": "Aglaonema sp.",
+      "nama_lokal": "Sri Rejeki",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 2
+    },
+    {
+      "No": 3,
+      "spesies": "Alocasia macrorrhizos",
+      "nama_lokal": "Taro",
+      "y2021": 8,
+      "y2022": 33,
+      "y2023": 3
+    },
+    {
+      "No": 4,
+      "spesies": "Alphonsea avanica",
+      "nama_lokal": "Setulang",
+      "y2021": 243,
+      "y2022": 4,
+      "y2023": 44
+    },
+    {
+      "No": 5,
+      "spesies": "Alstonia pneumatophore",
+      "nama_lokal": "Pulai rawa",
+      "y2021": 0,
+      "y2022": 3,
+      "y2023": 0
+    },
+    {
+      "No": 6,
+      "spesies": "Anacardium occidentale",
+      "nama_lokal": "Jambu Mete",
+      "y2021": 0,
+      "y2022": 3,
+      "y2023": 4
+    },
+    {
+      "No": 7,
+      "spesies": "Antidesma bunius",
+      "nama_lokal": "Buni",
+      "y2021": 0,
+      "y2022": 3,
+      "y2023": 2
+    },
+    {
+      "No": 8,
+      "spesies": "Aquilaria malaccensis",
+      "nama_lokal": "Gaharu",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 24
+    },
+    {
+      "No": 9,
+      "spesies": "Areca catechu",
+      "nama_lokal": "Pinang",
+      "y2021": 9,
+      "y2022": 5,
+      "y2023": 3
+    },
+    {
+      "No": 10,
+      "spesies": "Arenga pinnata",
+      "nama_lokal": "Aren",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 28
+    },
+    {
+      "No": 11,
+      "spesies": "Artocarpus heterophyllus",
+      "nama_lokal": "Nangka",
+      "y2021": 0,
+      "y2022": 3,
+      "y2023": 8
+    },
+    {
+      "No": 12,
+      "spesies": "Artocarpus integer",
+      "nama_lokal": "Cempedak",
+      "y2021": 0,
+      "y2022": 40,
+      "y2023": 3
+    },
+    {
+      "No": 13,
+      "spesies": "Asplenium nidus",
+      "nama_lokal": "Paku Sarang Burung",
+      "y2021": 8,
+      "y2022": 5,
+      "y2023": 2
+    },
+    {
+      "No": 14,
+      "spesies": "Begonia sp.",
+      "nama_lokal": "Begonia",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 15,
+      "spesies": "Caladium bicolor",
+      "nama_lokal": "Keladi Merah",
+      "y2021": 15,
+      "y2022": 5,
+      "y2023": 2
+    },
+    {
+      "No": 16,
+      "spesies": "Caladium lindenii",
+      "nama_lokal": "Keladi ",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 2
+    },
+    {
+      "No": 17,
+      "spesies": "Calamus rotang",
+      "nama_lokal": "Rotan",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 10
+    },
+    {
+      "No": 18,
+      "spesies": "Calophyllum dioscurii",
+      "nama_lokal": "Mentangor",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 5
+    },
+    {
+      "No": 19,
+      "spesies": "Citrus sp.",
+      "nama_lokal": "Jeruk",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 6
+    },
+    {
+      "No": 20,
+      "spesies": "Cocos nucifera",
+      "nama_lokal": "Kelapa",
+      "y2021": 0,
+      "y2022": 2,
+      "y2023": 0
+    },
+    {
+      "No": 21,
+      "spesies": "Cotylelobium melanoxylon",
+      "nama_lokal": "Resak",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 2
+    },
+    {
+      "No": 22,
+      "spesies": "Cratoxylon arborescens",
+      "nama_lokal": "Geronggang",
+      "y2021": 19,
+      "y2022": 68,
+      "y2023": 65
+    },
+    {
+      "No": 23,
+      "spesies": "Dendrodium Bigibbum",
+      "nama_lokal": "Anggrek",
+      "y2021": 20,
+      "y2022": 80,
+      "y2023": 0
+    },
+    {
+      "No": 24,
+      "spesies": "Dillenia exima",
+      "nama_lokal": "Simpu",
+      "y2021": 0,
+      "y2022": 10,
+      "y2023": 0
+    },
+    {
+      "No": 25,
+      "spesies": "Dimocarpus longan",
+      "nama_lokal": "Mata Kucing",
+      "y2021": 17,
+      "y2022": 5,
+      "y2023": 0
+    },
+    {
+      "No": 26,
+      "spesies": "Dracaena marginata",
+      "nama_lokal": "Manggar",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 27,
+      "spesies": "Dracaena sp.",
+      "nama_lokal": "Drakaena",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 28,
+      "spesies": "Dyera costulata",
+      "nama_lokal": "Jelutung",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 29,
+      "spesies": "Elaeis guinensis",
+      "nama_lokal": "Sawit",
+      "y2021": 7,
+      "y2022": 4,
+      "y2023": 10
+    },
+    {
+      "No": 30,
+      "spesies": "Gomphandra capitulate",
+      "nama_lokal": "Mesiro",
+      "y2021": 0,
+      "y2022": 11,
+      "y2023": 90
+    },
+    {
+      "No": 31,
+      "spesies": "Heliconia psittacorum",
+      "nama_lokal": "Supit Udang",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 6
+    },
+    {
+      "No": 32,
+      "spesies": "Hevea brasiliensis",
+      "nama_lokal": "Karet",
+      "y2021": 74,
+      "y2022": 15,
+      "y2023": 140
+    },
+    {
+      "No": 33,
+      "spesies": "Macaranga pruinosa",
+      "nama_lokal": "Makaranga",
+      "y2021": 12,
+      "y2022": 15,
+      "y2023": 0
+    },
+    {
+      "No": 34,
+      "spesies": "Macaranga triloba",
+      "nama_lokal": "Mahang",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 10
+    },
+    {
+      "No": 35,
+      "spesies": "Mangifera indica",
+      "nama_lokal": "Mangga",
+      "y2021": 0,
+      "y2022": 19,
+      "y2023": 5
+    },
+    {
+      "No": 36,
+      "spesies": "Manilkara zapota",
+      "nama_lokal": "Sawo",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 37,
+      "spesies": "Maranta arundinacea",
+      "nama_lokal": "Garut",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 2
+    },
+    {
+      "No": 38,
+      "spesies": "Melaleuca leucadendra",
+      "nama_lokal": "Gelam",
+      "y2021": 35,
+      "y2022": 10,
+      "y2023": 47
+    },
+    {
+      "No": 39,
+      "spesies": "Melcope lunu-ancenda",
+      "nama_lokal": "Kayu bukam",
+      "y2021": 0,
+      "y2022": 11,
+      "y2023": 0
+    },
+    {
+      "No": 40,
+      "spesies": "Melicote ptelefolia",
+      "nama_lokal": "Tenggek Burung",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 10
+    },
+    {
+      "No": 41,
+      "spesies": "Nepenthes albomarginata",
+      "nama_lokal": "Kantong Beruk",
+      "y2021": 40,
+      "y2022": 17,
+      "y2023": 3
+    },
+    {
+      "No": 42,
+      "spesies": "Nepenthes ampularia",
+      "nama_lokal": "Kantung Semar",
+      "y2021": 120,
+      "y2022": 17,
+      "y2023": 88
+    },
+    {
+      "No": 43,
+      "spesies": "Nepenthes bicalcarata",
+      "nama_lokal": "Kantung Semar",
+      "y2021": 75,
+      "y2022": 3,
+      "y2023": 2
+    },
+    {
+      "No": 44,
+      "spesies": "Nepenthes gracilis",
+      "nama_lokal": "Kantong Semar Gracilis",
+      "y2021": 0,
+      "y2022": 6,
+      "y2023": 6
+    },
+    {
+      "No": 45,
+      "spesies": "Nepenthes gracilis x ampullaria",
+      "nama_lokal": "Kantung Semar",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 46,
+      "spesies": "Nepenthes mirabilis",
+      "nama_lokal": "Kantong semar mirabilis",
+      "y2021": 80,
+      "y2022": 28,
+      "y2023": 5
+    },
+    {
+      "No": 47,
+      "spesies": "Nepenthes rafflesiana ",
+      "nama_lokal": "Kantong semar",
+      "y2021": 157,
+      "y2022": 20,
+      "y2023": 13
+    },
+    {
+      "No": 48,
+      "spesies": "Nepenthes spectabilis",
+      "nama_lokal": "Kantong Semar",
+      "y2021": 30,
+      "y2022": 10,
+      "y2023": 4
+    },
+    {
+      "No": 49,
+      "spesies": "Nepenthes sumantrana",
+      "nama_lokal": "Kantong semar sumatra",
+      "y2021": 30,
+      "y2022": 8,
+      "y2023": 3
+    },
+    {
+      "No": 50,
+      "spesies": "Nephelium lappaceum",
+      "nama_lokal": "Rambutan",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 5
+    },
+    {
+      "No": 51,
+      "spesies": "Persea americana",
+      "nama_lokal": "Alpukat",
+      "y2021": 0,
+      "y2022": 7,
+      "y2023": 1
+    },
+    {
+      "No": 52,
+      "spesies": "Pometia pinnata",
+      "nama_lokal": "Matoa",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 53,
+      "spesies": "Rhodomtrus tomentosa",
+      "nama_lokal": "Kalimunting ",
+      "y2021": 0,
+      "y2022": 11,
+      "y2023": 0
+    },
+    {
+      "No": 54,
+      "spesies": "Sanseviera trifasciata",
+      "nama_lokal": "Lidah Mertua",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 6
+    },
+    {
+      "No": 55,
+      "spesies": "Senna siamea",
+      "nama_lokal": "Johar",
+      "y2021": 0,
+      "y2022": 71,
+      "y2023": 0
+    },
+    {
+      "No": 56,
+      "spesies": "Shorea balangeran",
+      "nama_lokal": "Blangeran",
+      "y2021": 0,
+      "y2022": 19,
+      "y2023": 2
+    },
+    {
+      "No": 57,
+      "spesies": "Shorea leprosula",
+      "nama_lokal": "Meranti Tembaga",
+      "y2021": 150,
+      "y2022": 15,
+      "y2023": 10
+    },
+    {
+      "No": 58,
+      "spesies": "Shorea pauciflora",
+      "nama_lokal": "Meranti",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 15
+    },
+    {
+      "No": 59,
+      "spesies": "Spatholobus littoralis",
+      "nama_lokal": "Bajaka/kait-kait",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 3
+    },
+    {
+      "No": 60,
+      "spesies": "Stenochlaena palustris",
+      "nama_lokal": "Iding-iding",
+      "y2021": 0,
+      "y2022": 20,
+      "y2023": 0
+    },
+    {
+      "No": 61,
+      "spesies": "Syzygium aqueum",
+      "nama_lokal": "Jambu Air ",
+      "y2021": 38,
+      "y2022": 23,
+      "y2023": 22
+    },
+    {
+      "No": 62,
+      "spesies": "Syzygium cumini",
+      "nama_lokal": "kelad merah",
+      "y2021": 15,
+      "y2022": 25,
+      "y2023": 16
+    },
+    {
+      "No": 63,
+      "spesies": "Syzygium leptostemon",
+      "nama_lokal": "Kelad tikus",
+      "y2021": 80,
+      "y2022": 27,
+      "y2023": 52
+    },
+    {
+      "No": 64,
+      "spesies": "Syzygium malaccense",
+      "nama_lokal": "Jambu Bol/jamaika",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 2
+    },
+    {
+      "No": 65,
+      "spesies": "Syzygium polyanthum",
+      "nama_lokal": "Salam",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 1
+    },
+    {
+      "No": 66,
+      "spesies": "Syzygium zeylanicum",
+      "nama_lokal": "Nasi Nasi",
+      "y2021": 0,
+      "y2022": 28,
+      "y2023": 28
+    },
+    {
+      "No": 67,
+      "spesies": "Vitex pubescens",
+      "nama_lokal": "Leban",
+      "y2021": 42,
+      "y2022": 16,
+      "y2023": 18
+    },
+    {
+      "No": 68,
+      "spesies": "Vitis sp.",
+      "nama_lokal": "Anggur",
+      "y2021": 0,
+      "y2022": 0,
+      "y2023": 3
+    }
 ]
-
+  
 const table_data_bird = [
- {
-   "No": 1,
-   "nama_lokal": "Kehicap Ranting",
-   "spesies": "Hypothymis azurea (Boddaert, 1783)",
-   "y2022": 5
- },
- {
-   "No": 2,
-   "nama_lokal": "Tekukur Biasa",
-   "spesies": "Spilopelia chinensis (Scopoli, 1786)",
-   "y2022": 5
- },
- {
-   "No": 3,
-   "nama_lokal": "Cekakak Sungai",
-   "spesies": "Todirhamphus chloris (Boddaert, 1783)",
-   "y2022": 4
- },
- {
-   "No": 4,
-   "nama_lokal": "Kapinis Jarum Pantat Putih",
-   "spesies": "Hirundapus cochinchinensis (Oustalet, 1878)",
-   "y2022": 4
- },
- {
-   "No": 5,
-   "nama_lokal": "Perkutut Jawa",
-   "spesies": "Geopelia striata (Linnaeus, 1766)",
-   "y2022": 4
- },
- {
-   "No": 6,
-   "nama_lokal": "Cinenen Belukar",
-   "spesies": "Orthotomus atrogularis Temminck, 1836",
-   "y2022": 3
- },
- {
-   "No": 7,
-   "nama_lokal": "Cinenen Kelabu",
-   "spesies": "Orthotomus ruficeps (Lesson, 1830)",
-   "y2022": 3
- },
- {
-   "No": 8,
-   "nama_lokal": "Layang-layang Rumah",
-   "spesies": "Delichon dasypus (Bonaparte, 1850)",
-   "y2022": 3
- },
- {
-   "No": 9,
-   "nama_lokal": "Cipoh Kacat",
-   "spesies": "Aegithina tiphia (Linnaeus, 1758)",
-   "y2022": 3
- },
- {
-   "No": 10,
-   "nama_lokal": "Bubut Besar",
-   "spesies": "Centropus sinensis (Stephens, 1815)",
-   "y2022": 2
- },
- {
-   "No": 11,
-   "nama_lokal": "Merbah Belukar",
-   "spesies": "Pycnonotus plumosus (Blyth, 1845)",
-   "y2022": 2
- },
- {
-   "No": 12,
-   "nama_lokal": "Pelanduk Semak",
-   "spesies": "Malacocincla sepiaria (Horsfield, 1821)",
-   "y2022": 2
- },
- {
-   "No": 13,
-   "nama_lokal": "Sikatan Bubik",
-   "spesies": "Muscicapa latirostris Raffles, 1822",
-   "y2022": 2
- },
- {
-   "No": 14,
-   "nama_lokal": "Bubut Alang-alang",
-   "spesies": "Centropus bengalensis (Gmelin, 1788)",
-   "y2022": 1
- },
- {
-   "No": 15,
-   "nama_lokal": "Burung Madu Kelapa",
-   "spesies": "Anthreptes malacensis (Scopoli, 1786)",
-   "y2022": 1
- },
- {
-   "No": 16,
-   "nama_lokal": "Punai Gading",
-   "spesies": "Treron vernans (Linnaeus, 1771)",
-   "y2022": 1
- },
- {
-   "No": 17,
-   "nama_lokal": "Srigunting Batu",
-   "spesies": "Dicrurus paradiseus (Linnaeus, 1766)",
-   "y2022": 1
- },
- {
-   "No": 18,
-   "nama_lokal": "Takur Tutut",
-   "spesies": "Psilopogon rafflesii (R.Lesson, 1839)",
-   "y2022": 1
- },
- {
-   "No": 19,
-   "nama_lokal": "Kipasan Belang",
-   "spesies": "Rhipidura javanica (Sparrman, 1788)",
-   "y2022": 1
- }
+  {
+    "No": 1,
+    "nama_lokal": "Cikrak bambu",
+    "spesies": "Abroscopus superciliaris",
+    "y2022": 0,
+    "y2023": 3
+  },
+  {
+    "No": 2,
+    "nama_lokal": "Cipoh Kacat",
+    "spesies": "Aegithina tiphia (Linnaeus, 1758)",
+    "y2022": 3,
+    "y2023": 1
+  },
+  {
+    "No": 3,
+    "nama_lokal": "Burung Madu Kelapa",
+    "spesies": "Anthreptes malacensis (Scopoli, 1786)",
+    "y2022": 1,
+    "y2023": 4
+  },
+  {
+    "No": 4,
+    "nama_lokal": "Bubut Alang-alang",
+    "spesies": "Centropus bengalensis (Gmelin, 1788)",
+    "y2022": 1,
+    "y2023": 1
+  },
+  {
+    "No": 5,
+    "nama_lokal": "Bubut Besar",
+    "spesies": "Centropus sinensis (Stephens, 1815)",
+    "y2022": 2,
+    "y2023": 2
+  },
+  {
+    "No": 6,
+    "nama_lokal": "Layang-layang Rumah",
+    "spesies": "Delichon dasypus (Bonaparte, 1850)",
+    "y2022": 3,
+    "y2023": 4
+  },
+  {
+    "No": 7,
+    "nama_lokal": "Caladi Tilik",
+    "spesies": "Dendrocopos moluccensis (Gmelin, 1788)",
+    "y2022": 0,
+    "y2023": 5
+  },
+  {
+    "No": 8,
+    "nama_lokal": "Srigunting Batu",
+    "spesies": "Dicrurus paradiseus (Linnaeus, 1766)",
+    "y2022": 1,
+    "y2023": 2
+  },
+  {
+    "No": 9,
+    "nama_lokal": "Pelatuk Besi",
+    "spesies": "Dinopium javanense (Ljungh, 1797)",
+    "y2022": 0,
+    "y2023": 2
+  },
+  {
+    "No": 10,
+    "nama_lokal": "Perkutut Jawa",
+    "spesies": "Geopelia striata (Linnaeus, 1766)",
+    "y2022": 4,
+    "y2023": 2
+  },
+  {
+    "No": 11,
+    "nama_lokal": "Kapinis Jarum Pantat Putih",
+    "spesies": "Hirundapus cochinchinensis (Oustalet, 1878)",
+    "y2022": 4,
+    "y2023": 4
+  },
+  {
+    "No": 12,
+    "nama_lokal": "Layang-layang Batu",
+    "spesies": "Hirundo tahitica (Gmelin, 1789)",
+    "y2022": 0,
+    "y2023": 4
+  },
+  {
+    "No": 13,
+    "nama_lokal": "Walet Palem asia",
+    "spesies": "Hydrochous gigas (Hartert & Butler, 1901)",
+    "y2022": 0,
+    "y2023": 4
+  },
+  {
+    "No": 14,
+    "nama_lokal": "Kehicap Ranting",
+    "spesies": "Hypothymis azurea (Boddaert, 1783)",
+    "y2022": 5,
+    "y2023": 0
+  },
+  {
+    "No": 15,
+    "nama_lokal": "Pelanduk Semak",
+    "spesies": "Malacocincla sepiaria (Horsfield, 1821)",
+    "y2022": 2,
+    "y2023": 1
+  },
+  {
+    "No": 16,
+    "nama_lokal": "Sikatan Bubik",
+    "spesies": "Muscicapa latirostris Raffles, 1822",
+    "y2022": 2,
+    "y2023": 0
+  },
+  {
+    "No": 17,
+    "nama_lokal": "Cinenen Belukar",
+    "spesies": "Orthotomus atrogularis Temminck, 1836",
+    "y2022": 3,
+    "y2023": 1
+  },
+  {
+    "No": 18,
+    "nama_lokal": "Cinenen Kelabu",
+    "spesies": "Orthotomus ruficeps (Lesson, 1830) ",
+    "y2022": 3,
+    "y2023": 3
+  },
+  {
+    "No": 19,
+    "nama_lokal": "Takur Tutut",
+    "spesies": "Psilopogon rafflesii (R.Lesson, 1839)",
+    "y2022": 1,
+    "y2023": 0
+  },
+  {
+    "No": 20,
+    "nama_lokal": "Merbah Belukar",
+    "spesies": "Pycnonotus plumosus (Blyth, 1845)",
+    "y2022": 2,
+    "y2023": 2
+  },
+  {
+    "No": 21,
+    "nama_lokal": "Kapinis Jarum Kecil",
+    "spesies": "Rhaphidura leucopygialis (Blyth, 1849)",
+    "y2022": 0,
+    "y2023": 6
+  },
+  {
+    "No": 22,
+    "nama_lokal": "Kipasan Belang",
+    "spesies": "Rhipidura javanica (Sparrman, 1788)",
+    "y2022": 1,
+    "y2023": 0
+  },
+  {
+    "No": 23,
+    "nama_lokal": "Tekukur Biasa",
+    "spesies": "Spilopelia chinensis (Scopoli, 1786) ",
+    "y2022": 5,
+    "y2023": 4
+  },
+  {
+    "No": 24,
+    "nama_lokal": "Cekakak Sungai",
+    "spesies": "Todirhamphus chloris (Boddaert, 1783)",
+    "y2022": 4,
+    "y2023": 2
+  },
+  {
+    "No": 25,
+    "nama_lokal": "Punai Gading",
+    "spesies": "Treron vernans (Linnaeus, 1771)",
+    "y2022": 1,
+    "y2023": 5
+  }
 ]
 
 const table_data_mamalia = [
- {
-   "No": 1,
-   "nama_lokal": "Bajing Kelapa",
-   "spesies": "Callosciurus notatus (Boddaert, 1785)",
-   "FIELD4": "LC",
-   "FIELD5": "NA",
-   "FIELD6": "Tidak dilindungi",
-   "jumlah": 4
- },
- {
-   "No": 2,
-   "nama_lokal": "Lutung Kelabu",
-   "spesies": "Trachypithecus cristatus (Raffles, 1821)",
-   "FIELD4": "VU",
-   "FIELD5": "II",
-   "FIELD6": "Dilindungi",
-   "jumlah": 6
- },
- {
-   "No": 3,
-   "nama_lokal": "Tupai",
-   "spesies": "Tupaia glis (Diard, 1820)",
-   "FIELD4": "LC",
-   "FIELD5": "NA",
-   "FIELD6": "Dilindungi",
-   "jumlah": 4
- },
- {
-   "No": 4,
-   "nama_lokal": "Monyet Ekor Panjang",
-   "spesies": "Macaca fascicularis (Raffles, 1821)",
-   "FIELD4": "EN",
-   "FIELD5": "II",
-   "FIELD6": "Tidak dilindungi",
-   "jumlah": 4
- },
- {
-   "No": 5,
-   "nama_lokal": "Simpai Hitam Sumatera",
-   "spesies": "Presbytis melalophos",
-   "FIELD4": "EN",
-   "FIELD5": "NA",
-   "FIELD6": "Dilindungi",
-   "jumlah": 5
- }
+  {
+    "No": 1,
+    "nama_lokal": "Bajing Kelapa",
+    "spesies": "Callosciurus notatus (Boddaert, 1785)",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 4,
+    "y2023": 3
+  },
+  {
+    "No": 2,
+    "nama_lokal": "Lutung Kelabu",
+    "spesies": "Trachypithecus cristatus (Raffles, 1821)",
+    "iucn": "VU",
+    "cites": "II",
+    "status": "Dilindungi",
+    "y2022": 6,
+    "y2023": 7
+  },
+  {
+    "No": 3,
+    "nama_lokal": "Tupai",
+    "spesies": "Tupaia glis (Diard, 1820)",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 4,
+    "y2023": 0
+  },
+  {
+    "No": 4,
+    "nama_lokal": "Monyet Ekor Panjang",
+    "spesies": "Macaca fascicularis (Raffles, 1821)",
+    "iucn": "EN",
+    "cites": "II",
+    "status": "Tidak Dilindungi",
+    "y2022": 4,
+    "y2023": 9
+  },
+  {
+    "No": 5,
+    "nama_lokal": "Simpai Hitam Sumatera",
+    "spesies": "Presbytis melalophos",
+    "iucn": "EN",
+    "cites": "II",
+    "status": "Dilindungi",
+    "y2022": 5,
+    "y2023": 4
+  },
+  {
+    "No": 7,
+    "nama_lokal": "Sigung",
+    "spesies": "Mydaus javanensis (Desmarest, 1818)",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 0,
+    "y2023": 1
+  }
+]
+
+const table_data_hepertofauna = [
+  {
+    "No": 1,
+    "spesies": "Varanus salvator (Laurenti, 1768)",
+    "nama_lokal": "Biawak",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 0,
+    "y2023": 2
+  },
+  {
+    "No": 2,
+    "spesies": "Hemidactylus frenatus (Schlegel, 1836)",
+    "nama_lokal": "Cicak Rumah",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 1,
+    "y2023": 1
+  },
+  {
+    "No": 3,
+    "spesies": "Ophiopohagus hannah (Cantor, 1836)",
+    "nama_lokal": "Ular Kobra Raja",
+    "iucn": "VU",
+    "cites": "II",
+    "status": "Tidak Dilindungi",
+    "y2022": 0,
+    "y2023": 1
+  },
+  {
+    "No": 4,
+    "spesies": "Malayopython reticulatus (Schneider, 1801)",
+    "nama_lokal": "Ular Sanca Batik",
+    "iucn": "LC",
+    "cites": "NA",
+    "status": "Tidak Dilindungi",
+    "y2022": 0,
+    "y2023": 2
+  }
 ]
 
 class Arboretum extends React.Component{
@@ -891,6 +1012,7 @@ class Arboretum extends React.Component{
                       <tr>
                         <td style={{textAlign: 'center'}}>2021</td>
                         <td style={{textAlign: 'center'}}>2022</td>
+                        <td style={{textAlign: 'center'}}>2023</td>
                       </tr>
                     </thead>
                     <tbody>
@@ -902,6 +1024,7 @@ class Arboretum extends React.Component{
                             <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
                             <td style={{textAlign: 'center'}}>{listValue.y2021}</td>
                             <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
                           </tr>
                         );
                       })}
@@ -909,6 +1032,7 @@ class Arboretum extends React.Component{
                         <td colSpan="3">Jumlah</td>
                         <td style={{textAlign: 'center'}}>1324</td>
                         <td style={{textAlign: 'center'}}>725</td>
+                        <td style={{textAlign: 'center'}}>853</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -917,26 +1041,26 @@ class Arboretum extends React.Component{
 
               <Row style={{paddingTop: 45}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2018-2022</h5>
+                  <h5>Jumlah Spesies di Arboretum Gambut Tahun 2019-2023</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
                         <th></th>
-                        <th style={{textAlign: 'center'}}>2018</th>
                         <th style={{textAlign: 'center'}}>2019</th>
                         <th style={{textAlign: 'center'}}>2020</th>
                         <th style={{textAlign: 'center'}}>2021</th>
                         <th style={{textAlign: 'center'}}>2022</th>
+                        <th style={{textAlign: 'center'}}>2023</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td style={{textAlign: 'center'}}>Jumlah Spesies</td>
-                        <td style={{textAlign: 'center'}}>13</td>
                         <td style={{textAlign: 'center'}}>24</td>
                         <td style={{textAlign: 'center'}}>26</td>
                         <td style={{textAlign: 'center'}}>28</td>
                         <td style={{textAlign: 'center'}}>41</td>
+                        <td style={{textAlign: 'center'}}>58</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -947,9 +1071,9 @@ class Arboretum extends React.Component{
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 45]}
+                      yDomain={[0, 60]}
                       height={400} 
-                      width={400}>
+                      width={600}>
                       <XAxis />
                       <YAxis />
                       <ChartLabel
@@ -975,33 +1099,33 @@ class Arboretum extends React.Component{
                         barWidth={0.5}
                         color="#12939A"
                         data={[
-                          {x: '2018', y: 13},
                           {x: '2019', y: 24},
                           {x: '2020', y: 26},
                           {x: '2021', y: 28},
                           {x: '2022', y: 41},
+                          {x: '2023', y: 58},
                         ]}
                       />
                       <LabelSeries
                         labelAnchorX='middle'
 
                         data={[
-                          {x: '2018', y: 13, yOffset: -25},
                           {x: '2019', y: 24, yOffset: -25},
                           {x: '2020', y: 26, yOffset: -25},
                           {x: '2021', y: 28, yOffset: -25},
                           {x: '2022', y: 41, yOffset: -25},
+                          {x: '2023', y: 58, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                       <LineSeries
                         color="#000"
                         strokeStyle='dashed'
                         data={[
-                          {x: '2018', y: 16, yOffset: -25},
                           {x: '2019', y: 20, yOffset: -25},
                           {x: '2020', y: 25, yOffset: -25},
                           {x: '2021', y: 30, yOffset: -25},
                           {x: '2022', y: 43, yOffset: -25},
+                          {x: '2023', y: 58, yOffset: -25},
                         ]} 
                       />
                     </XYPlot>
@@ -1010,26 +1134,26 @@ class Arboretum extends React.Component{
               </Row>
               <Row style={{paddingTop: 30}}>
                 <Col style={{textAlign: 'center'}}>
-                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2018-2022</h5>
+                  <h5>Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2019-2023</h5>
                   <Table striped bordered hover size="sm">
                     <thead>
                       <tr>
                         <th></th>
-                        <th style={{textAlign: 'center'}}>2018</th>
                         <th style={{textAlign: 'center'}}>2019</th>
                         <th style={{textAlign: 'center'}}>2020</th>
                         <th style={{textAlign: 'center'}}>2021</th>
                         <th style={{textAlign: 'center'}}>2022</th>
+                        <th style={{textAlign: 'center'}}>2023</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td style={{textAlign: 'center'}}>Indeks Kehati</td>
-                        <td style={{textAlign: 'center'}}>1.37</td>
                         <td style={{textAlign: 'center'}}>2.55</td>
                         <td style={{textAlign: 'center'}}>2.69</td>
                         <td style={{textAlign: 'center'}}>2.72</td>
                         <td style={{textAlign: 'center'}}>3.10</td>
+                        <td style={{textAlign: 'center'}}>3.16</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -1040,9 +1164,9 @@ class Arboretum extends React.Component{
                     <XYPlot 
                       className="clustered-stacked-bar-chart-example"
                       xType="ordinal"
-                      yDomain={[0, 3.5]}
+                      yDomain={[0, 5]}
                       height={400} 
-                      width={400}>
+                      width={600}>
                       <XAxis />
                       <YAxis />
                       <ChartLabel
@@ -1068,33 +1192,36 @@ class Arboretum extends React.Component{
                         barWidth={0.5}
                         color="#12939A"
                         data={[
-                          {x: '2018', y: 1.37},
+                          //{x: '2018', y: 1.37},
                           {x: '2019', y: 2.55},
                           {x: '2020', y: 2.69},
                           {x: '2021', y: 2.72},
                           {x: '2022', y: 3.10},
+                          {x: '2023', y: 3.16},
                         ]}
                       />
                       <LabelSeries
                         labelAnchorX='middle'
 
                         data={[
-                          {x: '2018', y: 1.37, yOffset: -25},
+                          //{x: '2018', y: 1.37, yOffset: -25},
                           {x: '2019', y: 2.55, yOffset: -25},
                           {x: '2020', y: 2.69, yOffset: -25},
                           {x: '2021', y: 2.72, yOffset: -25},
                           {x: '2022', y: 3.10, yOffset: -25},
+                          {x: '2023', y: 3.16, yOffset: -25},
                         ]} 
                         getLabel={d => d.y}/>
                       <LineSeries
                         color="#000"
                         strokeStyle='dashed'
                         data={[
-                          {x: '2018', y: 1.7, yOffset: -25},
+                          //{x: '2018', y: 1.7, yOffset: -25},
                           {x: '2019', y: 2.12, yOffset: -25},
                           {x: '2020', y: 2.54, yOffset: -25},
                           {x: '2021', y: 2.96, yOffset: -25},
                           {x: '2022', y: 3.30, yOffset: -25},
+                          {x: '2023', y: 3.36, yOffset: -25},
                         ]} 
                       />
                     </XYPlot>
@@ -1121,6 +1248,10 @@ class Arboretum extends React.Component{
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
                         <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
                       </tr>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>2022</td>
+                        <td style={{textAlign: 'center'}}>2023</td>
+                      </tr>
                     </thead>
                     <tbody>
                       {table_data_bird.map(( listValue, index ) => {
@@ -1130,15 +1261,84 @@ class Arboretum extends React.Component{
                             <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
                             <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
                             <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
                           </tr>
                         );
                       })}
                       <tr>
                         <td colSpan="3">Jumlah</td>
-                        <td style={{textAlign: 'center'}}>40</td>
+                        <td style={{textAlign: 'center'}}>48</td>
+                        <td style={{textAlign: 'center'}}>62</td>
                       </tr>
                     </tbody>
                   </Table>
+                </Col>
+              </Row>
+
+              <Row style={{paddingTop: 45}}>
+                <Col md={4} style={{textAlign: 'center'}}>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>H' Burung</h5>
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[2.5, 3]}
+                      height={400} 
+                      width={600}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        text=""
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: '2021', y: 2.89},
+                          {x: '2022', y: 2.8},
+                          {x: '2023', y: 2.92},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: '2021', y: 2.89, yOffset: 20},
+                          {x: '2022', y: 2.8, yOffset: 20},
+                          {x: '2023', y: 2.92, yOffset: 20},
+                        ]} 
+                        getLabel={d => d.y}/>
+                      <LineSeries
+                        color="#000"
+                        strokeStyle='dashed'
+                        data={[
+                          {x: '2021', y: 2.86, yOffset: -25},
+                          {x: '2022', y: 2.87, yOffset: -25},
+                          {x: '2023', y: 2.89, yOffset: -25},
+                        ]} 
+                      />
+                    </XYPlot>
+                  </div>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
                 </Col>
               </Row>
 
@@ -1159,10 +1359,14 @@ class Arboretum extends React.Component{
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
                         <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}> </th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}> </th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}> </th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>IUCN</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>CITES</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>P.106/2018</th>
                         <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
+                      </tr>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>2022</td>
+                        <td style={{textAlign: 'center'}}>2023</td>
                       </tr>
                     </thead>
                     <tbody>
@@ -1172,22 +1376,209 @@ class Arboretum extends React.Component{
                             <td style={{textAlign: 'center'}}>{index + 1}</td>
                             <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
                             <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.FIELD4}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.FIELD5}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.FIELD6}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.jumlah}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.iucn}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.cites}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.status}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
                           </tr>
                         );
                       })}
                       <tr>
                         <td colSpan="6">Jumlah</td>
-                        <td style={{textAlign: 'center'}}>40</td>
+                        <td style={{textAlign: 'center'}}>23</td>
+                        <td style={{textAlign: 'center'}}>24</td>
                       </tr>
                     </tbody>
                   </Table>
                 </Col>
               </Row>
 
+              <Row style={{paddingTop: 45}}>
+                <Col md={4} style={{textAlign: 'center'}}>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>H' Mamalia</h5>
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[0, 2]}
+                      height={400} 
+                      width={600}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        text=""
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: '2021', y: 0.69},
+                          {x: '2022', y: 1.59},
+                          {x: '2023', y: 1.42},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: '2021', y: 0.69, yOffset: 20},
+                          {x: '2022', y: 1.59, yOffset: 20},
+                          {x: '2023', y: 1.42, yOffset: 20},
+                        ]} 
+                        getLabel={d => d.y}/>
+                      <LineSeries
+                        color="#000"
+                        strokeStyle='dashed'
+                        data={[
+                          {x: '2021', y: 0.8, yOffset: -25},
+                          {x: '2022', y: 1.2, yOffset: -25},
+                          {x: '2023', y: 1.7, yOffset: -25},
+                        ]} 
+                      />
+                    </XYPlot>
+                  </div>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
+                </Col>
+              </Row>
+
+              <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
+                <Col>
+                  <div style={{alignItems: 'center', textAlign: 'center'}}>
+                    <h3>Jumlah Spesies Herpetofauna di Arboretum Gambut</h3>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col>
+                  <Table striped bordered hover size="sm">
+                    <thead>
+                      <tr>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>IUCN</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>CITES</th>
+                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>P.106/2018</th>
+                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
+                      </tr>
+                      <tr>
+                        <td style={{textAlign: 'center'}}>2022</td>
+                        <td style={{textAlign: 'center'}}>2023</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {table_data_hepertofauna.map(( listValue, index ) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{textAlign: 'center'}}>{index + 1}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.iucn}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.cites}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.status}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
+                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
+                          </tr>
+                        );
+                      })}
+                      <tr>
+                        <td colSpan="6">Jumlah</td>
+                        <td style={{textAlign: 'center'}}>23</td>
+                        <td style={{textAlign: 'center'}}>24</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
+
+
+              <Row style={{paddingTop: 45}}>
+                <Col md={4} style={{textAlign: 'center'}}>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
+                  <div>
+                    <h5>H' Herpetofauna</h5>
+                    <XYPlot 
+                      className="clustered-stacked-bar-chart-example"
+                      xType="ordinal"
+                      yDomain={[0, 2]}
+                      height={400} 
+                      width={600}>
+                      <XAxis />
+                      <YAxis />
+                      <ChartLabel
+                        text=""
+                        className="alt-x-label"
+                        includeMargin={false}
+                        xPercent={0.6}
+                        yPercent={1.12}
+                      />
+                      <ChartLabel
+                        text=""
+                        className="alt-y-label"
+                        includeMargin={false}
+                        xPercent={0.06}
+                        yPercent={0.06}
+                        style={{
+                          transform: 'rotate(-90)',
+                          textAnchor: 'end'
+                        }}
+                      />
+                      <VerticalBarSeries
+                        className="clustered-stacked-bar-chart-example"
+                        barWidth={0.5}
+                        color="#12939A"
+                        data={[
+                          {x: '2021', y: 0},
+                          {x: '2022', y: 0.37},
+                          {x: '2023', y: 1.33},
+                        ]}
+                      />
+                      <LabelSeries
+                        labelAnchorX='middle'
+
+                        data={[
+                          {x: '2021', y: 0, yOffset: -20},
+                          {x: '2022', y: 0.37, yOffset: -10},
+                          {x: '2023', y: 1.33, yOffset: -20},
+                        ]} 
+                        getLabel={d => d.y}/>
+                      <LineSeries
+                        color="#000"
+                        strokeStyle='dashed'
+                        data={[
+                          {x: '2021', y: 0.0, yOffset: -25},
+                          {x: '2022', y: 0.55, yOffset: -25},
+                          {x: '2023', y: 1.2, yOffset: -25},
+                        ]} 
+                      />
+                    </XYPlot>
+                  </div>
+                </Col>
+                <Col md={4} style={{textAlign: 'center'}}>
+                </Col>
+              </Row>
 
 
               <Row style={{background: '#fff', paddingTop: 30, paddingBottom: 10}}>
@@ -1232,7 +1623,7 @@ class Arboretum extends React.Component{
                       height='240'
                       />
                     <Card.Body className="text-center">
-                      <Card.Title>Mangrove Pangkalan Jambi</Card.Title>
+                      <Card.Title className="text-center">Mangrove Pangkalan Jambi</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -1245,6 +1636,18 @@ class Arboretum extends React.Component{
                     <Card.Body className="text-center">
                       <Card.Title className="text-center">Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
                     </Card.Body>
+                  </Card>
+                </Col>
+                <Col style={{background: '#fff'}}>
+                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/konservasi-daerah-aliran")}}>
+                    <Card.Img variant="top" 
+                      src={kda3}
+                      height='240'
+                      />
+                    <Card.Body className="text-center">
+                      <Card.Title>Konservasi Daerah Aliran Sungai Dayang</Card.Title>
+                    </Card.Body>
+                    
                   </Card>
                 </Col>
               </Row>
