@@ -4,15 +4,18 @@ import 'react-vis/dist/style.css';
 
 import Card from 'react-bootstrap/Card';
 
-import Carousel from 'react-bootstrap/Carousel';
 import Table from 'react-bootstrap/Table';
-import ListGroup from 'react-bootstrap/ListGroup';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import ColoredLine from '../../components/Common/ColoredLine.js'
+
+import Program from '../../components/Program/Program.js'
+import Header from '../../components/Header/Header.js'
+import Footer from '../../components/Footer/Footer.js'
+import Gallery from '../../components/Gallery/Gallery.js'
 
 import {
   XYPlot,
@@ -25,15 +28,6 @@ import {
 } from 'react-vis';
 
 import { connect } from "react-redux";
-
-import logo_pertamina from "../../assets/logo_pertamina.png"
-import img2 from "../../assets/2.jpeg"
-import img3 from "../../assets/3.jpeg"
-import img6 from "../../assets/6.jpeg"
-import kda3 from "../../assets/kda3.jpeg"
-import img9 from "../../assets/9.jpeg"
-import img14 from "../../assets/14.jpeg"
-import poligowo3 from "../../assets/poligowo3.jpeg"
 
 import * as table_data from "./data.js"
 
@@ -61,58 +55,10 @@ class Arboretum extends React.Component{
             </Col>
             <Col >
               {/* HEADER */}
-              <Row style={{height: 60, padding:10}}>
-                <Col sm={8} md={8} lg={9} style={{background: '#fff'}}>
-                  <div style={{fontSize: 24, textAlignVertical:'center'}}>Pertamina RU II Sungai Pakning</div>
-                </Col>
-                <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img alt="" src={logo_pertamina} height="35"/></Col>
-              </Row>
+              <Header />
 
               {/* CAROUSEL */}
-              <Row>
-                <Col style={{padding: 0}}>    
-                  <Carousel style={{height: 400}}>
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100"
-                        src={img2}
-                        alt="First slide"
-                        height="400"
-                      />
-                      <Carousel.Caption>
-                        <h3> </h3>
-                        <p> </p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100"
-                        src={img14}
-                        alt="Third slide"
-                        height="400"
-                      />
-
-                      <Carousel.Caption>
-                        <h3> </h3>
-                        <p> </p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100"
-                        src={img3}
-                        alt="Third slide"
-                        height="400"
-                      />
-
-                      <Carousel.Caption>
-                        <h3> </h3>
-                        <p> </p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  </Carousel>
-                </Col> 
-              </Row>
+              <Gallery />
 
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
@@ -703,97 +649,11 @@ class Arboretum extends React.Component{
               </Row>
 
               {/* PROGRAM CARDS */}
-              <Row>
-                <Col style={{background: '#fff'}}>
-                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/home")}}>
-                    <Card.Img variant="top" 
-                      src={img6}
-                      height='240'
-                      />
-                    <Card.Body className="text-center">
-                      <Card.Title className="text-center">Home</Card.Title>
-                    </Card.Body>
-                    
-                  </Card>
-                </Col>
-                <Col style={{background: '#fff'}}>
-                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/arboretum")}}>
-                    <Card.Img variant="top" 
-                      src={img9}
-                      height='240'
-                      />
-                    <Card.Body className="text-center">
-                      <Card.Title className="text-center">Arboretum Gambut</Card.Title>
-                    </Card.Body>
-                    
-                  </Card>
-                </Col>
-                <Col style={{background: '#fff'}}>
-                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/mangrove-pangkalan-jambi")}}>
-                    <Card.Img variant="top" 
-                      src={img2}
-                      height='240'
-                      />
-                    <Card.Body className="text-center">
-                      <Card.Title className="text-center">Mangrove Pangkalan Jambi</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col style={{background: '#fff'}}>
-                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/poligowo")}}>
-                    <Card.Img variant="top" 
-                      src={poligowo3}
-                      height='240'
-                      />
-                    <Card.Body className="text-center">
-                      <Card.Title className="text-center">Penanaman Tanaman Kayu Khas Gambut Metode Poligowo</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col style={{background: '#fff'}}>
-                  <Card style={{borderWidth:0}} as="Button" onClick={()=>{this.props.history.push("/konservasi-daerah-aliran")}}>
-                    <Card.Img variant="top" 
-                      src={kda3}
-                      height='240'
-                      />
-                    <Card.Body className="text-center">
-                      <Card.Title>Konservasi Daerah Aliran Sungai Dayang</Card.Title>
-                    </Card.Body>
-                    
-                  </Card>
-                </Col>
-              </Row>
+              {<Program history={this.props.history}/>}
 
               {/* FOOTER */}
-              <Row style={{paddingTop: 30}}>
-                <Col>
-                  <ColoredLine/>
-                </Col>
-              </Row>
-              <Row style={{paddingTop: 20, paddingLeft: 30, paddingBottom: 10, height: 200, background: '#fff'}}>
-                <Col>
-                  <h5>Websites</h5>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item><a href="https://arboretumgambut.com">Arboretum Gambut</a></ListGroup.Item>
-                    <ListGroup.Item><a href="https://sekolahcintagambut.com">Sekolah Cinta Gambut</a></ListGroup.Item>
-                  </ListGroup>
-                </Col>
-                <Col></Col>
-                <Col>
-                  <h5>Contact Us</h5>
-                  Address: <br></br>Sungai Pakning, Bukit Batu, Bengkalis Regency, Riau 28761
-                </Col>
-              </Row>
-              <Row style={{paddingTop: 10}}>
-                <Col>
-                  <ColoredLine/>
-                </Col>
-              </Row>
-              <Row style={{paddingBottom: 40}}>
-                <Col>
-                  © Copyright PT Pertamina(Persero) RU II Sungai Pakning 2020. All Rights Reserved.
-                </Col>
-              </Row> 
+              <Footer />
+
             </Col>
             <Col sm={1} style={{background: 'linear-gradient(to left, #f9f9f9, #f9f9f9)', paddingTop: 10}}>
             </Col>
