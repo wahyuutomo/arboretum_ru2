@@ -4,7 +4,6 @@ import {Route, Switch, Redirect} from 'react-router-dom';
 import Dashboard from '../views/Dashboard/Dashboard';
 import Arboretum from '../views/Arboretum/Arboretum';
 import MangroveJambi from '../views/MangroveJambi/MangroveJambi';
-import MangroveTanjungLeban from '../views/MangroveTanjungLeban/MangroveTanjungLeban';
 import Poligowo from '../views/Poligowo/Poligowo';
 import DaerahAliran from '../views/DaerahAliran/DaerahAliran';
 
@@ -14,7 +13,6 @@ const AppRoutes = () => {
         	<Route path="/home" component={Dashboard} />
         	<Route path="/arboretum" component={Arboretum} />
         	<Route path="/mangrove-pangkalan-jambi" component={MangroveJambi} />
-        	<Route path="/mangrove-tanjung-leban" component={MangroveTanjungLeban} />
         	<Route path="/poligowo" component={Poligowo} />
             <Route path="/konservasi-daerah-aliran" component={DaerahAliran} />
             <Redirect exact from="/" to="home" />

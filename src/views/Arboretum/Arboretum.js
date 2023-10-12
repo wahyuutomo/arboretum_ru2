@@ -58,7 +58,7 @@ class Arboretum extends React.Component{
               <Header />
 
               {/* CAROUSEL */}
-              <Gallery />
+              <Gallery carousel={true}/>
 
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
