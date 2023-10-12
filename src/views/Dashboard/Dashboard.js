@@ -15,8 +15,6 @@ import Header from '../../components/Header/Header.js'
 import Footer from '../../components/Footer/Footer.js'
 import Gallery from '../../components/Gallery/Gallery.js'
 import Program from '../../components/Program/Program.js'
-import Collase from '../../components/Collase/Collase.js'
-
 
 class Dashboard extends React.Component{
   constructor(props) {
@@ -111,7 +109,7 @@ class Dashboard extends React.Component{
               </Row>
 
               {/* COLLASE PHOTOS */}
-              <Collase />
+              <Gallery />
 
               {/* FOOTER */}
               <Footer />
