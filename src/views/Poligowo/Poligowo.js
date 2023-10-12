@@ -15,6 +15,7 @@ import Header from '../../components/Header/Header.js'
 import Footer from '../../components/Footer/Footer.js'
 import Gallery from '../../components/Gallery/Gallery.js'
 import DataTable from '../../components/DataTable/DataTable.js'
+import SingleBarChart from '../../components/Chart/SingleBarChart.js'
 
 import {
   XYPlot,
@@ -102,86 +103,23 @@ class Poligowo extends React.Component{
                 <Col md={5} style={{textAlign: 'center'}}>
                   <div>
                     <h5>Perbandingan Indeks Keanekaragaman H' Flora di Poligowo</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[1.0, 2.3]}
-                      height={400} 
-                      width={500}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Indeks Kehati"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.h_index.flora}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-                        data={table_data.h_index.flora} 
-                        getLabel={d => d.y}/>
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.h_index.flora}
+                      width={500} height={400}
+                      min_y={1.0} max_y={2.3} 
+                      y_title={"Index Kehati"} x_title={""}
+                    />
                   </div>
                 </Col>
                 <Col md={5} style={{textAlign: 'center'}}>
                   <div>
                     <h5>Perbandingan Jumlah Flora di Poligowo Tahun 2021 - 2023</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 1300]}
-                      height={400} 
-                      width={500}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Jumlah"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.total_species.flora}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={table_data.total_species.flora} 
-                        getLabel={d => d.y}/>
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.total_species.flora}
+                      width={500} height={400}
+                      min_y={0} max_y={1300} 
+                      y_title={"Jumlah"} x_title={""}
+                    />
                   </div>
                 </Col>
                 <Col md={1} style={{textAlign: 'center'}}>

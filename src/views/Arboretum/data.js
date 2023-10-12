@@ -768,7 +768,7 @@ export const mammals = [
    }
 ]
 
-export const hepertofauna = [
+export const herpetofauna = [
    {
      "No": 1,
      "spesies": "Hemidactylus frenatus (Schlegel, 1836)",
@@ -825,7 +825,7 @@ export const h_index = {
     {x: '2020', y: 2.69, yOffset: -25},
     {x: '2021', y: 2.72, yOffset: -25},
     {x: '2022', y: 3.10, yOffset: -25},
-    {x: '2023', y: 3.16, yOffset: -25},
+    {x: '2023', y: 3.18, yOffset: -25},
   ],
   "birds" : [
     {x: '2021', y: 2.89, yOffset: 20},
@@ -871,11 +871,12 @@ export const h_index_lines = {
 
 export const total_species = {
   "flora" : [
+    {x: '2018', y: 13, yOffset: -25},
     {x: '2019', y: 24, yOffset: -25},
     {x: '2020', y: 26, yOffset: -25},
     {x: '2021', y: 28, yOffset: -25},
     {x: '2022', y: 41, yOffset: -25},
-    {x: '2023', y: 58, yOffset: -25},
+    {x: '2023', y: 59, yOffset: -25},
   ],
   "birds" : [
     {x: '2022', y: 19, yOffset: -25},

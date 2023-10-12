@@ -16,16 +16,8 @@ import Program from '../../components/Program/Program.js'
 import Header from '../../components/Header/Header.js'
 import Footer from '../../components/Footer/Footer.js'
 import Gallery from '../../components/Gallery/Gallery.js'
-
-import {
-  XYPlot,
-  XAxis,
-  YAxis,
-  LineSeries,
-  VerticalBarSeries,
-  ChartLabel,
-  LabelSeries
-} from 'react-vis';
+import DataTable from '../../components/DataTable/DataTable.js'
+import SingleBarChart from '../../components/Chart/SingleBarChart.js'
 
 import { connect } from "react-redux";
 
@@ -125,47 +117,7 @@ class Arboretum extends React.Component{
               </Row>
 
               {/* FLORA TABLE */}
-              <Row>
-                <Col>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
-                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
-                      </tr>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>2021</td>
-                        <td style={{textAlign: 'center'}}>2022</td>
-                        <td style={{textAlign: 'center'}}>2023</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {table_data.flora.map(( listValue, index ) => {
-                        return (
-                          <tr key={index}>
-                            <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2021}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
-                          </tr>
-                        );
-                      })}
-                      <tr>
-                        <td colSpan="3">Jumlah</td>
-                        {table_data.data_count.flora.map(( listValue, index ) => {
-                        return (
-                            <td style={{textAlign: 'center'}}>{listValue.y}</td>
-                        );
-                        })}
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
+              <DataTable data={table_data.flora} data_count={table_data.data_count.flora} years={[2021,2022,2023]}/>
 
               {/* FLORA SPECIES COUNT */}
               <Row style={{paddingTop: 45}}>
@@ -193,49 +145,13 @@ class Arboretum extends React.Component{
                 <Col style={{textAlign: 'center'}}>
                   <div>
                     <h5>Perkembangan Biodiversitas</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 60]}
-                      height={400} 
-                      width={600}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Jumlah Spesies"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.total_species.flora}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
 
-                        data={table_data.total_species.flora} 
-                        getLabel={d => d.y}/>
-                      {/*<LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={jumlah_spesies} 
-                      />*/}
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.total_species.flora}
+                      width={500} height={400}
+                      min_y={0} max_y={60} 
+                      y_title={"Jumlah Spesies"} x_title={""}
+                    />
                   </div>
                 </Col>
               </Row>
@@ -266,56 +182,12 @@ class Arboretum extends React.Component{
                 <Col style={{textAlign: 'center'}}>
                   <div>
                     <h5>Index Keanekaragaman Hayati</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 5]}
-                      height={400} 
-                      width={600}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Indeks Kehati"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.h_index.flora}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={table_data.h_index.flora} 
-                        getLabel={d => d.y}/>
-                     {/* <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={[
-                          //{x: '2018', y: 1.7, yOffset: -25},
-                          {x: '2019', y: 2.12, yOffset: -25},
-                          {x: '2020', y: 2.54, yOffset: -25},
-                          {x: '2021', y: 2.96, yOffset: -25},
-                          {x: '2022', y: 3.30, yOffset: -25},
-                          {x: '2023', y: 3.36, yOffset: -25},
-                        ]} 
-                      />*/}
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.h_index.flora}
+                      width={500} height={400}
+                      min_y={0} max_y={5} 
+                      y_title={"Index Kehati"} x_title={""}
+                    />
                   </div>
                 </Col>
               </Row>
@@ -329,45 +201,7 @@ class Arboretum extends React.Component{
               </Row>
 
               {/* BIRDS TABLE */}
-              <Row>
-                <Col>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
-                        <th colspan="5" style={{textAlign: 'center'}}>Jumlah</th>
-                      </tr>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>2022</td>
-                        <td style={{textAlign: 'center'}}>2023</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {table_data.birds.map(( listValue, index ) => {
-                        return (
-                          <tr key={index}>
-                            <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
-                          </tr>
-                        );
-                      })}
-                      <tr>
-                        <td colSpan="3">Jumlah</td>
-                        {table_data.data_count.birds.map(( listValue, index ) => {
-                        return (
-                            <td style={{textAlign: 'center'}}>{listValue.y}</td>
-                        );
-                        })}
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
+              <DataTable data={table_data.birds} data_count={table_data.data_count.birds} years={[2022,2023]}/>
               
               {/* BIRDS H INDEX */}
               <Row style={{paddingTop: 45}}>
@@ -376,55 +210,18 @@ class Arboretum extends React.Component{
                 <Col md={4} style={{textAlign: 'center'}}>
                   <div>
                     <h5>H' Burung</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[2.5, 3]}
-                      height={400} 
-                      width={600}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text="Indeks Kehati"
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.h_index.birds}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={table_data.h_index.birds} 
-                        getLabel={d => d.y}/>
-                      <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={table_data.h_index_lines.birds} 
-                      />
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.h_index.birds}
+                      line={table_data.h_index_lines.birds}
+                      width={500} height={400}
+                      min_y={2.5} max_y={3} 
+                      y_title={"Jumlah Spesies"} x_title={""}
+                    />
                   </div>
                 </Col>
                 <Col md={4} style={{textAlign: 'center'}}>
                 </Col>
               </Row>
-
 
               <Row style={{background: '#fff', paddingTop: 60, paddingBottom: 10}}>
                 <Col>
@@ -435,45 +232,7 @@ class Arboretum extends React.Component{
               </Row>
 
               {/* MAMMALS TABLE */}
-              <Row>
-                <Col>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
-                        <th colspan="2" style={{textAlign: 'center'}}>Jumlah</th>
-                      </tr>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>2022</td>
-                        <td style={{textAlign: 'center'}}>2023</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {table_data.mammals.map(( listValue, index ) => {
-                        return (
-                          <tr key={index}>
-                            <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
-                          </tr>
-                        );
-                      })}
-                      <tr>
-                        <td colSpan="3">Jumlah</td>
-                        {table_data.data_count.mammals.map(( listValue, index ) => {
-                        return (
-                            <td style={{textAlign: 'center'}}>{listValue.y}</td>
-                        );
-                        })}
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
+              <DataTable data={table_data.mammals} data_count={table_data.data_count.mammals} years={[2022,2023]}/>
 
               {/* MAMMALS H INDEX */}
               <Row style={{paddingTop: 45}}>
@@ -482,49 +241,13 @@ class Arboretum extends React.Component{
                 <Col md={4} style={{textAlign: 'center'}}>
                   <div>
                     <h5>H' Mamalia</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 2]}
-                      height={400} 
-                      width={600}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text=""
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.h_index.mammals}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={table_data.h_index.mammals} 
-                        getLabel={d => d.y}/>
-                      <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={table_data.h_index_lines.mammals} 
-                      />
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.h_index.mammals}
+                      line={table_data.h_index_lines.mammals}
+                      width={500} height={400}
+                      min_y={0} max_y={2} 
+                      y_title={"Jumlah Spesies"} x_title={""}
+                    />
                   </div>
                 </Col>
                 <Col md={4} style={{textAlign: 'center'}}>
@@ -540,45 +263,7 @@ class Arboretum extends React.Component{
               </Row>
 
               {/* HERPETOFAUNA TABLE */}
-              <Row>
-                <Col>
-                  <Table striped bordered hover size="sm">
-                    <thead>
-                      <tr>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>No</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Ilmiah</th>
-                        <th rowspan="2" style={{textAlign: 'center', textAlignVertical: 'center' }}>Nama Lokal</th>
-                        <th colspan="2" style={{textAlign: 'center'}}>Jumlah</th>
-                      </tr>
-                      <tr>
-                        <td style={{textAlign: 'center'}}>2022</td>
-                        <td style={{textAlign: 'center'}}>2023</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {table_data.hepertofauna.map(( listValue, index ) => {
-                        return (
-                          <tr key={index}>
-                            <td style={{textAlign: 'center'}}>{index + 1}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.spesies}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.nama_lokal}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2022}</td>
-                            <td style={{textAlign: 'center'}}>{listValue.y2023}</td>
-                          </tr>
-                        );
-                      })}
-                      <tr>
-                        <td colSpan="3">Jumlah</td>
-                        {table_data.data_count.herpetofauna.map(( listValue, index ) => {
-                        return (
-                            <td style={{textAlign: 'center'}}>{listValue.y}</td>
-                        );
-                        })}
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
+              <DataTable data={table_data.herpetofauna} data_count={table_data.data_count.herpetofauna} years={[2022,2023]}/>
 
               {/* HERPETOFAUNA H INDEX */}
               <Row style={{paddingTop: 45}}>
@@ -587,49 +272,13 @@ class Arboretum extends React.Component{
                 <Col md={4} style={{textAlign: 'center'}}>
                   <div>
                     <h5>H' Herpetofauna</h5>
-                    <XYPlot 
-                      className="clustered-stacked-bar-chart-example"
-                      xType="ordinal"
-                      yDomain={[0, 2]}
-                      height={400} 
-                      width={600}>
-                      <XAxis />
-                      <YAxis />
-                      <ChartLabel
-                        text=""
-                        className="alt-x-label"
-                        includeMargin={false}
-                        xPercent={0.6}
-                        yPercent={1.12}
-                      />
-                      <ChartLabel
-                        text=""
-                        className="alt-y-label"
-                        includeMargin={false}
-                        xPercent={0.06}
-                        yPercent={0.06}
-                        style={{
-                          transform: 'rotate(-90)',
-                          textAnchor: 'end'
-                        }}
-                      />
-                      <VerticalBarSeries
-                        className="clustered-stacked-bar-chart-example"
-                        barWidth={0.5}
-                        color="#12939A"
-                        data={table_data.h_index.herpetofauna}
-                      />
-                      <LabelSeries
-                        labelAnchorX='middle'
-
-                        data={table_data.h_index.herpetofauna} 
-                        getLabel={d => d.y}/>
-                      <LineSeries
-                        color="#000"
-                        strokeStyle='dashed'
-                        data={table_data.h_index_lines.herpetofauna} 
-                      />
-                    </XYPlot>
+                    <SingleBarChart 
+                      data={table_data.h_index.herpetofauna}
+                      line={table_data.h_index_lines.herpetofauna}
+                      width={500} height={400}
+                      min_y={0} max_y={2} 
+                      y_title={"Jumlah Spesies"} x_title={""}
+                    />
                   </div>
                 </Col>
                 <Col md={4} style={{textAlign: 'center'}}>
