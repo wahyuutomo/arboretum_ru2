@@ -260,8 +260,10 @@ class DaerahAliran extends React.Component {
                     <LineSeries
                       color="#000"
                       strokeStyle="dashed"
-                      data={[{ x: "2023", y: 3.5, yOffset: -25 }]}
-                      data={[{ x: "2024", y: 3.6, yOffset: -25 }]}
+                      data={[
+                        { x: "2023", y: 3.5, yOffset: -25 },
+                        { x: "2024", y: 3.6, yOffset: -25 },
+                      ]}
                     />
                   </XYPlot>
                 </div>
