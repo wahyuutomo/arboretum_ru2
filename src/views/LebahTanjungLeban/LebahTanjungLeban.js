@@ -4,6 +4,8 @@ import "react-vis/dist/style.css";
 
 import Card from "react-bootstrap/Card";
 
+import Table from "react-bootstrap/Table";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,16 +17,15 @@ import Header from "../../components/Header/Header.js";
 import Footer from "../../components/Footer/Footer.js";
 import Gallery from "../../components/Gallery/Gallery.js";
 import DataTable from "../../components/DataTable/DataTable.js";
-import SingleBarChart from "../../components/Chart/SingleBarChart.js";
 
 // import {
 //   XYPlot,
 //   XAxis,
 //   YAxis,
+//   LineSeries,
 //   VerticalBarSeries,
 //   ChartLabel,
 //   LabelSeries,
-//   DiscreteColorLegend,
 // } from "react-vis";
 
 import { connect } from "react-redux";
@@ -109,48 +110,8 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2021, 2022, 2023, 2024]}
+              years={[2024]}
             />
-
-            {/* FLORA H INDEX */}
-            <Row style={{ paddingTop: 45 }}>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
-              <Col md={5} style={{ textAlign: "center" }}>
-                <div>
-                  <h5>
-                    Perbandingan Indeks Keanekaragaman H' Flora di
-                    LebahTanjungLeban
-                  </h5>
-                  <SingleBarChart
-                    data={table_data.h_index.flora}
-                    width={500}
-                    height={400}
-                    min_y={1.0}
-                    max_y={2.3}
-                    y_title={"Index Kehati"}
-                    x_title={""}
-                  />
-                </div>
-              </Col>
-              <Col md={5} style={{ textAlign: "center" }}>
-                <div>
-                  <h5>
-                    Perbandingan Jumlah Flora di LebahTanjungLeban Tahun 2021 -
-                    2024
-                  </h5>
-                  <SingleBarChart
-                    data={table_data.total_species.flora}
-                    width={500}
-                    height={400}
-                    min_y={0}
-                    max_y={1300}
-                    y_title={"Jumlah"}
-                    x_title={""}
-                  />
-                </div>
-              </Col>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
-            </Row>
 
             <Row
               style={{ background: "#fff", paddingTop: 60, paddingBottom: 10 }}
@@ -166,121 +127,38 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2022, 2023, 2024]}
+              years={[2024]}
             />
 
-            {/* BIRDS H INDEX */}
-            {/* <Row style={{ paddingTop: 45 }}> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/*   <Col md={8} style={{ textAlign: "center" }}> */}
-            {/*     <div> */}
-            {/*       <h5> */}
-            {/*         Indeks Ekologi Burung di LebahTanjungLeban: Indeks Keanekaragaman */}
-            {/*         Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E) */}
-            {/*       </h5> */}
-            {/*       <XYPlot */}
-            {/*         className="clustered-stacked-bar-chart-example" */}
-            {/*         xType="ordinal" */}
-            {/*         yDomain={[0, 6]} */}
-            {/*         height={400} */}
-            {/*         width={800} */}
-            {/*       > */}
-            {/*         <XAxis /> */}
-            {/*         <YAxis /> */}
-            {/*         <ChartLabel */}
-            {/*           text="" */}
-            {/*           className="alt-x-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.6} */}
-            {/*           yPercent={1.12} */}
-            {/*         /> */}
-            {/*         <ChartLabel */}
-            {/*           className="alt-y-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.06} */}
-            {/*           yPercent={0.06} */}
-            {/*           style={{ */}
-            {/*             transform: "rotate(-90)", */}
-            {/*             textAnchor: "end", */}
-            {/*           }} */}
-            {/*         /> */}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#61351c" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 2.96 }, */}
-            {/*             { x: "R", y: 4.98 }, */}
-            {/*             { x: "E", y: 0.91 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 2.96, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "R", y: 4.98, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "E", y: 0.91, yOffset: -25, xOffset: -25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/**/}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#3e6a00" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 2.98 }, */}
-            {/*             { x: "R", y: 4.5 }, */}
-            {/*             { x: "E", y: 0.96 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 2.98, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "R", y: 4.5, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "E", y: 0.96, yOffset: -25, xOffset: 25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/*         <DiscreteColorLegend */}
-            {/*           width={180} */}
-            {/*           style={{ */}
-            {/*             position: "absolute", */}
-            {/*             left: "650px", */}
-            {/*             top: "100px", */}
-            {/*           }} */}
-            {/*           items={[ */}
-            {/*             { title: "2022", color: "#61351c", strokeWidth: "12" }, */}
-            {/*             { title: "2023", color: "#3e6a00", strokeWidth: "12" }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*       </XYPlot> */}
-            {/*     </div> */}
-            {/*   </Col> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/* </Row> */}
-
+            {/* BIRDS HRE */}
             <Row style={{ paddingTop: 45 }}>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
-              <Col md={5} style={{ textAlign: "center" }}>
-                <div>
-                  <h5>
-                    Perbandingan Jumlah Burung di LebahTanjungLeban Tahun 2022 -
-                    2024
-                  </h5>
-                  <SingleBarChart
-                    data={table_data.total_species.birds}
-                    width={500}
-                    height={400}
-                    min_y={0}
-                    max_y={160}
-                    y_title={"Jumlah"}
-                    x_title={""}
-                  />
-                </div>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+              <Col style={{ textAlign: "center" }}>
+                <h5>Indeks Kehati Burung Eduwisata Lebah Madu Tanjung Leban</h5>
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th style={{ textAlign: "center" }}>Tahun</th>
+                      <th style={{ textAlign: "center" }}>H'</th>
+                      <th style={{ textAlign: "center" }}>R</th>
+                      <th style={{ textAlign: "center" }}>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table_data.hre_index.birds.map((listValue, index) => {
+                      return (
+                        <tr key={index}>
+                          <td style={{ textAlign: "center" }}>{listValue.x}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.h}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.r}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.e}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
               </Col>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
             </Row>
 
             <Row
@@ -297,123 +175,42 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2022, 2023, 2024]}
+              years={[2024]}
             />
 
-            {/* MAMMALS H INDEX */}
-            {/* <Row style={{ paddingTop: 45 }}> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/*   <Col md={8} style={{ textAlign: "center" }}> */}
-            {/*     <div> */}
-            {/*       <h5> */}
-            {/*         Diagram Indeks Ekologi Mamalia di LebahTanjungLeban: Indeks */}
-            {/*         Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks */}
-            {/*         Kemerataan (E) */}
-            {/*       </h5> */}
-            {/*       <XYPlot */}
-            {/*         className="clustered-stacked-bar-chart-example" */}
-            {/*         xType="ordinal" */}
-            {/*         yDomain={[0, 4]} */}
-            {/*         height={400} */}
-            {/*         width={800} */}
-            {/*       > */}
-            {/*         <XAxis /> */}
-            {/*         <YAxis /> */}
-            {/*         <ChartLabel */}
-            {/*           text="" */}
-            {/*           className="alt-x-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.6} */}
-            {/*           yPercent={1.12} */}
-            {/*         /> */}
-            {/*         <ChartLabel */}
-            {/*           className="alt-y-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.06} */}
-            {/*           yPercent={0.06} */}
-            {/*           style={{ */}
-            {/*             transform: "rotate(-90)", */}
-            {/*             textAnchor: "end", */}
-            {/*           }} */}
-            {/*         /> */}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#61351c" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.67 }, */}
-            {/*             { x: "R", y: 2.75 }, */}
-            {/*             { x: "E", y: 0.98 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.67, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "R", y: 2.75, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "E", y: 0.98, yOffset: -25, xOffset: -25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/**/}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#3e6a00" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.7 }, */}
-            {/*             { x: "R", y: 2.0 }, */}
-            {/*             { x: "E", y: 0.82 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.7, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "R", y: 2.0, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "E", y: 0.82, yOffset: -25, xOffset: 25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/*         <DiscreteColorLegend */}
-            {/*           width={180} */}
-            {/*           style={{ */}
-            {/*             position: "absolute", */}
-            {/*             left: "650px", */}
-            {/*             top: "100px", */}
-            {/*           }} */}
-            {/*           items={[ */}
-            {/*             { title: "2022", color: "#61351c", strokeWidth: "12" }, */}
-            {/*             { title: "2023", color: "#3e6a00", strokeWidth: "12" }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*       </XYPlot> */}
-            {/*     </div> */}
-            {/*   </Col> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/* </Row> */}
-
+            {/* MAMMALS HRE */}
             <Row style={{ paddingTop: 45 }}>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
-              <Col md={5} style={{ textAlign: "center" }}>
-                <div>
-                  <h5>
-                    Perbandingan Jumlah Mamalia di LebahTanjungLeban Tahun 2022
-                    - 2024
-                  </h5>
-                  <SingleBarChart
-                    data={table_data.total_species.mammals}
-                    width={500}
-                    height={400}
-                    min_y={0}
-                    max_y={70}
-                    y_title={"Jumlah"}
-                    x_title={""}
-                  />
-                </div>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+              <Col style={{ textAlign: "center" }}>
+                <h5>
+                  Indeks Kehati Mamalia Eduwisata Lebah Madu Tanjung Leban
+                </h5>
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th style={{ textAlign: "center" }}>Tahun</th>
+                      <th style={{ textAlign: "center" }}>H'</th>
+                      <th style={{ textAlign: "center" }}>R</th>
+                      <th style={{ textAlign: "center" }}>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table_data.hre_index.mammals.map((listValue, index) => {
+                      return (
+                        <tr key={index}>
+                          <td style={{ textAlign: "center" }}>{listValue.x}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.h}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.r}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.e}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
               </Col>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
             </Row>
+
             <Row
               style={{ background: "#fff", paddingTop: 60, paddingBottom: 10 }}
             >
@@ -428,122 +225,148 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2022, 2023, 2024]}
+              years={[2024]}
             />
 
-            {/* HERPETOFAUNA H INDEX */}
-            {/* <Row style={{ paddingTop: 45 }}> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/*   <Col md={8} style={{ textAlign: "center" }}> */}
-            {/*     <div> */}
-            {/*       <h5> */}
-            {/*         Diagram Indeks Ekologi Herpetofauna di LebahTanjungLeban: Indeks */}
-            {/*         Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks */}
-            {/*         Kemerataan (E) */}
-            {/*       </h5> */}
-            {/*       <XYPlot */}
-            {/*         className="clustered-stacked-bar-chart-example" */}
-            {/*         xType="ordinal" */}
-            {/*         yDomain={[0, 4]} */}
-            {/*         height={400} */}
-            {/*         width={800} */}
-            {/*       > */}
-            {/*         <XAxis /> */}
-            {/*         <YAxis /> */}
-            {/*         <ChartLabel */}
-            {/*           text="" */}
-            {/*           className="alt-x-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.6} */}
-            {/*           yPercent={1.12} */}
-            {/*         /> */}
-            {/*         <ChartLabel */}
-            {/*           className="alt-y-label" */}
-            {/*           includeMargin={false} */}
-            {/*           xPercent={0.06} */}
-            {/*           yPercent={0.06} */}
-            {/*           style={{ */}
-            {/*             transform: "rotate(-90)", */}
-            {/*             textAnchor: "end", */}
-            {/*           }} */}
-            {/*         /> */}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#61351c" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.33 }, */}
-            {/*             { x: "R", y: 1.86 }, */}
-            {/*             { x: "E", y: 0.96 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.33, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "R", y: 1.86, yOffset: -25, xOffset: -25 }, */}
-            {/*             { x: "E", y: 0.96, yOffset: -25, xOffset: -25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/**/}
-            {/*         <VerticalBarSeries */}
-            {/*           className="clustered-stacked-bar-chart-example" */}
-            {/*           barWidth={0.5} */}
-            {/*           color="#3e6a00" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.73 }, */}
-            {/*             { x: "R", y: 2.4 }, */}
-            {/*             { x: "E", y: 0.97 }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*         <LabelSeries */}
-            {/*           labelAnchorX="middle" */}
-            {/*           data={[ */}
-            {/*             { x: "H'", y: 1.73, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "R", y: 2.4, yOffset: -25, xOffset: 25 }, */}
-            {/*             { x: "E", y: 0.97, yOffset: -25, xOffset: 25 }, */}
-            {/*           ]} */}
-            {/*           getLabel={(d) => d.y} */}
-            {/*         /> */}
-            {/*         <DiscreteColorLegend */}
-            {/*           width={180} */}
-            {/*           style={{ */}
-            {/*             position: "absolute", */}
-            {/*             left: "650px", */}
-            {/*             top: "100px", */}
-            {/*           }} */}
-            {/*           items={[ */}
-            {/*             { title: "2022", color: "#61351c", strokeWidth: "12" }, */}
-            {/*             { title: "2023", color: "#3e6a00", strokeWidth: "12" }, */}
-            {/*           ]} */}
-            {/*         /> */}
-            {/*       </XYPlot> */}
-            {/*     </div> */}
-            {/*   </Col> */}
-            {/*   <Col md={2} style={{ textAlign: "center" }}></Col> */}
-            {/* </Row> */}
-
+            {/* MAMMALS HRE */}
             <Row style={{ paddingTop: 45 }}>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
-              <Col md={5} style={{ textAlign: "center" }}>
-                <div>
-                  <h5>
-                    Perbandingan Jumlah Herpetofauna di LebahTanjungLeban Tahun
-                    2022 - 2024
-                  </h5>
-                  <SingleBarChart
-                    data={table_data.total_species.herpetofauna}
-                    width={500}
-                    height={400}
-                    min_y={0}
-                    max_y={30}
-                    y_title={"Jumlah"}
-                    x_title={""}
-                  />
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+              <Col style={{ textAlign: "center" }}>
+                <h5>
+                  Indeks Kehati Herpetofauna Eduwisata Lebah Madu Tanjung Leban
+                </h5>
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th style={{ textAlign: "center" }}>Tahun</th>
+                      <th style={{ textAlign: "center" }}>H'</th>
+                      <th style={{ textAlign: "center" }}>R</th>
+                      <th style={{ textAlign: "center" }}>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table_data.hre_index.herpetofauna.map(
+                      (listValue, index) => {
+                        return (
+                          <tr key={index}>
+                            <td style={{ textAlign: "center" }}>
+                              {listValue.x}
+                            </td>
+                            <td style={{ textAlign: "center" }}>
+                              {listValue.h}
+                            </td>
+                            <td style={{ textAlign: "center" }}>
+                              {listValue.r}
+                            </td>
+                            <td style={{ textAlign: "center" }}>
+                              {listValue.e}
+                            </td>
+                          </tr>
+                        );
+                      },
+                    )}
+                  </tbody>
+                </Table>
+              </Col>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+            </Row>
+
+            <Row
+              style={{ background: "#fff", paddingTop: 60, paddingBottom: 10 }}
+            >
+              <Col>
+                <div style={{ alignItems: "center", textAlign: "center" }}>
+                  <h3>{copywrite.dragonfly_table_title}</h3>
                 </div>
               </Col>
-              <Col md={1} style={{ textAlign: "center" }}></Col>
+            </Row>
+
+            {/* DRAGONFLY TABLE */}
+            <DataTable
+              data={table_data.dragonfly}
+              data_count={table_data.data_count.dragonfly}
+              years={[2024]}
+            />
+
+            {/* DRAGONFLY HRE */}
+            <Row style={{ paddingTop: 45 }}>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+              <Col style={{ textAlign: "center" }}>
+                <h5>Indeks Kehati Capung Eduwisata Lebah Madu Tanjung Leban</h5>
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th style={{ textAlign: "center" }}>Tahun</th>
+                      <th style={{ textAlign: "center" }}>H'</th>
+                      <th style={{ textAlign: "center" }}>R</th>
+                      <th style={{ textAlign: "center" }}>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table_data.hre_index.dragonfly.map((listValue, index) => {
+                      return (
+                        <tr key={index}>
+                          <td style={{ textAlign: "center" }}>{listValue.x}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.h}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.r}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.e}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
+              </Col>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+            </Row>
+
+            <Row
+              style={{ background: "#fff", paddingTop: 60, paddingBottom: 10 }}
+            >
+              <Col>
+                <div style={{ alignItems: "center", textAlign: "center" }}>
+                  <h3>{copywrite.butterfly_table_title}</h3>
+                </div>
+              </Col>
+            </Row>
+
+            {/* BUTTERFLY TABLE */}
+            <DataTable
+              data={table_data.butterfly}
+              data_count={table_data.data_count.butterfly}
+              years={[2024]}
+            />
+
+            {/* BUTTERFLY HRE */}
+            <Row style={{ paddingTop: 45 }}>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
+              <Col style={{ textAlign: "center" }}>
+                <h5>
+                  Indeks Kehati Kupu-kupu Eduwisata Lebah Madu Tanjung Leban
+                </h5>
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th style={{ textAlign: "center" }}>Tahun</th>
+                      <th style={{ textAlign: "center" }}>H'</th>
+                      <th style={{ textAlign: "center" }}>R</th>
+                      <th style={{ textAlign: "center" }}>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table_data.hre_index.butterfly.map((listValue, index) => {
+                      return (
+                        <tr key={index}>
+                          <td style={{ textAlign: "center" }}>{listValue.x}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.h}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.r}</td>
+                          <td style={{ textAlign: "center" }}>{listValue.e}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
+              </Col>
+              <Col md={2} style={{ textAlign: "center" }}></Col>
             </Row>
             <Row
               style={{ background: "#fff", paddingTop: 30, paddingBottom: 10 }}
@@ -559,7 +382,7 @@ class LebahTanjungLeban extends React.Component {
             </Row>
 
             {/* PROGRAM CARDS */}
-            <Program history={this.props.history} />
+            {<Program history={this.props.history} />}
 
             {/* FOOTER */}
             <Footer />

@@ -18,15 +18,15 @@ import Footer from "../../components/Footer/Footer.js";
 import Gallery from "../../components/Gallery/Gallery.js";
 import DataTable from "../../components/DataTable/DataTable.js";
 
-import {
-  XYPlot,
-  XAxis,
-  YAxis,
-  LineSeries,
-  VerticalBarSeries,
-  ChartLabel,
-  LabelSeries,
-} from "react-vis";
+// import {
+//   XYPlot,
+//   XAxis,
+//   YAxis,
+//   LineSeries,
+//   VerticalBarSeries,
+//   ChartLabel,
+//   LabelSeries,
+// } from "react-vis";
 
 import { connect } from "react-redux";
 

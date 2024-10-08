@@ -113,7 +113,7 @@ class Program extends React.Component {
             style={{ borderWidth: 0 }}
             as="Button"
             onClick={() => {
-              this.props.history.push("/lebah-tanjung-lebah");
+              this.props.history.push("/lebah-tanjung-leban");
             }}
           >
             <Card.Img variant="top" src={poligowo1} height="240" />
@@ -128,4 +128,3 @@ class Program extends React.Component {
 }
 
 export default Program;
-
