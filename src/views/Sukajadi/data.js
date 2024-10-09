@@ -6,37 +6,37 @@ export const copywrite = {
     Internasional Refinery Unit II, berdiri sebagai oase di tengah pesatnya pembangunan. \
     Program ini hadir sebagai bentuk komitmen perusahaan dalam melestarikan lingkungan, \
     khususnya ekosistem gambut yang rentan. Arboretum ini bukan sekadar kumpulan \
-      tanaman, melainkan sebuah laboratorium alam yang berfungsi ganda sebagai paru \
-      -paru kota dan pusat edukasi. Di sini, berbagai jenis tumbuhan, terutama spesies \
-      asli yang beradaptasi dengan kondisi gambut, dirawat dan dilestarikan. Dengan \
+    tanaman, melainkan sebuah laboratorium alam yang berfungsi ganda sebagai paru-paru \
+    kota dan pusat edukasi. Di sini, berbagai jenis tumbuhan, terutama spesies \
+    asli yang beradaptasi dengan kondisi gambut, dirawat dan dilestarikan. Dengan \
     demikian, arboretum ini tidak hanya memperkaya keanekaragaman hayati, tetapi juga \
     menjaga keseimbangan ekosistem.",
 
     //eslint-disable-next-line
-    "Lebih dari sekadar pelestarian, Arboretum Gambut Sukajadi juga berperan penting dalam meningkatkan\
-kesadaran masyarakat akan pentingnya ekosistem gambut. Melalui berbagai program edukasi\
-dan pelatihan, masyarakat diajak untuk lebih peduli terhadap lingkungan sekitar. Arboretum\
-ini menjadi tempat bagi generasi muda untuk belajar tentang alam dan pentingnya menjaga\
-    kelestariannya. Dengan demikian, semangat pelestarian lingkungan dapat terus tumbuh\
-    dan berkembang dari generasi ke generasi. Selain itu, arboretum ini juga menjadi\
-    pusat penelitian yang memungkinkan para ilmuwan untuk menggali lebih dalam tentang\
-    ekosistem gambut. Penelitian-penelitian ini diharapkan dapat menghasilkan data\
-      dan informasi yang berharga untuk mendukung upaya pelestarian gambut di masa\
-      depan.",
+    "Lebih dari sekadar pelestarian, Arboretum Gambut Sukajadi juga berperan penting dalam meningkatkan \
+    kesadaran masyarakat akan pentingnya ekosistem gambut. Melalui berbagai program edukasi \
+    dan pelatihan, masyarakat diajak untuk lebih peduli terhadap lingkungan sekitar. Arboretum \
+    ini menjadi tempat bagi generasi muda untuk belajar tentang alam dan pentingnya menjaga \
+    kelestariannya. Dengan demikian, semangat pelestarian lingkungan dapat terus tumbuh \
+    dan berkembang dari generasi ke generasi. Selain itu, arboretum ini juga menjadi \
+    pusat penelitian yang memungkinkan para ilmuwan untuk menggali lebih dalam tentang \
+    ekosistem gambut. Penelitian-penelitian ini diharapkan dapat menghasilkan data \
+    dan informasi yang berharga untuk mendukung upaya pelestarian gambut di masa \
+    depan.",
     //eslint-disable-next-line
-    "Dalam konteks penilaian PROPER, keberadaan Arboretum Gambut Sukajadi menjadi poin plus bagi\
-PT Kilang Pertamina Internasional Refinery Unit II. Program ini menunjukkan komitmen\
-perusahaan dalam menerapkan prinsip-prinsip pembangunan berkelanjutan. Dengan berhasil\
-melestarikan ekosistem gambut, perusahaan tidak hanya berkontribusi pada pelestarian\
-    lingkungan, tetapi juga mengurangi dampak perubahan iklim. Selain itu, keterlibatan\
-    masyarakat dalam program ini juga menunjukkan bahwa perusahaan peduli terhadap\
+    "Dalam konteks penilaian PROPER, keberadaan Arboretum Gambut Sukajadi menjadi poin plus bagi \
+    PT Kilang Pertamina Internasional Refinery Unit II. Program ini menunjukkan komitmen \
+    perusahaan dalam menerapkan prinsip-prinsip pembangunan berkelanjutan. Dengan berhasil \
+    melestarikan ekosistem gambut, perusahaan tidak hanya berkontribusi pada pelestarian \
+    lingkungan, tetapi juga mengurangi dampak perubahan iklim. Selain itu, keterlibatan \
+    masyarakat dalam program ini juga menunjukkan bahwa perusahaan peduli terhadap \
     kesejahteraan sosial.",
 
     //eslint-disable-next-line
-    "Arboretum Gambut Sukajadi adalah bukti nyata bahwa industri dan lingkungan dapat berjalan beriringan\
-      . Melalui program ini, PT Kilang Pertamina Internasional Refinery Unit II telah\
-      menunjukkan bahwa perusahaan besar dapat menjadi agen perubahan yang positif\
-    . Dengan adanya Arboretum Gambut Sukajadi diharapkan dapat meraih keberhasilan\
+    "Arboretum Gambut Sukajadi adalah bukti nyata bahwa industri dan lingkungan dapat berjalan beriringan. \
+    Melalui program ini, PT Kilang Pertamina Internasional Refinery Unit II telah \
+    menunjukkan bahwa perusahaan besar dapat menjadi agen perubahan yang positif. \
+    Dengan adanya Arboretum Gambut Sukajadi diharapkan dapat meraih keberhasilan \
     seperti site arboretum pendahulunya, Arboretum Gambut Marsawa.",
   ],
 

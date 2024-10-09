@@ -2,38 +2,34 @@ export const copywrite = {
   main_title: "Eduwisata Lebah Madu Tanjung Leban",
   description: [
     //eslint-disable-next-line
-    "Eduwisata Lebah Madu Tanjung Leban, sebuah inisiatif berkelanjutan yang digagas oleh\
-PT Kilang Pertamina Internasional Refinery Unit II, hadir sebagai perwujudan nyata\
-dari tanggung jawab sosial perusahaan. Terletak di kawasan hutan gambut Sungai Pakning\
-    , eduwisata ini menawarkan pengalaman unik bagi pengunjung untuk mengenal lebih\
-    dekat kehidupan lebah kelulut atau stingless bee. Sebagai salah satu jenis lebah\
-    tanpa sengat, kelulut memiliki peran penting dalam menjaga keseimbangan ekosistem\
-    . Melalui budidaya lebah kelulut yang ramah lingkungan, Pertamina tidak hanya berkontribusi\
-    pada pelestarian alam, tetapi juga memberikan nilai tambah bagi masyarakat sekitar\
-    .",
+    "Eduwisata Lebah Madu Tanjung Leban, sebuah inisiatif berkelanjutan yang digagas oleh \
+    PT Kilang Pertamina Internasional Refinery Unit II, hadir sebagai perwujudan nyata \
+    dari tanggung jawab sosial perusahaan. Terletak di kawasan hutan gambut Sungai Pakning, \
+    eduwisata ini menawarkan pengalaman unik bagi pengunjung untuk mengenal lebih \
+    dekat kehidupan lebah kelulut atau stingless bee. Sebagai salah satu jenis lebah \
+    tanpa sengat, kelulut memiliki peran penting dalam menjaga keseimbangan ekosistem. \
+    Melalui budidaya lebah kelulut yang ramah lingkungan, Pertamina tidak hanya berkontribusi \
+    pada pelestarian alam, tetapi juga memberikan nilai tambah bagi masyarakat sekitar.",
     //eslint-disable-next-line
-    "Selain\
-menjadi pusat edukasi, eduwisata ini juga berfungsi sebagai sarana pemberdayaan masyarakat\
-      . Dengan melibatkan masyarakat setempat dalam pengelolaan eduwisata, Pertamina\
-      turut mendorong pertumbuhan ekonomi di wilayah tersebut. Pengunjung yang datang\
-      ke eduwisata tidak hanya dapat belajar tentang kehidupan lebah kelulut, tetapi\
-      juga dapat menikmati produk-produk olahan madu kelulut yang dihasilkan oleh masyarakat\
-      . Hal ini diharapkan dapat meningkatkan pendapatan masyarakat dan meningkatkan\
-      taraf hidup mereka.",
+    "Selain menjadi pusat edukasi, eduwisata ini juga berfungsi sebagai sarana pemberdayaan \
+    masyarakat. Dengan melibatkan masyarakat setempat dalam pengelolaan eduwisata, Pertamina \
+    turut mendorong pertumbuhan ekonomi di wilayah tersebut. Pengunjung yang datang \
+    ke eduwisata tidak hanya dapat belajar tentang kehidupan lebah kelulut, tetapi \
+    juga dapat menikmati produk-produk olahan madu kelulut yang dihasilkan oleh masyarakat. \
+    Hal ini diharapkan dapat meningkatkan pendapatan masyarakat dan meningkatkan \
+    taraf hidup mereka.",
     //eslint-disable-next-line
-    "Keberadaan\
-Eduwisata Lebah Madu Tanjung Leban juga memberikan kontribusi positif terhadap penilaian\
-      PROPER (Program Penilaian Peringkat Kinerja Perusahaan). Program ini menunjukkan\
-      komitmen Pertamina dalam menjalankan bisnis yang berkelanjutan dan bertanggung\
-      jawab terhadap lingkungan. Dengan melestarikan hutan gambut dan membudidayakan\
-      lebah kelulut, Pertamina turut berkontribusi dalam mengurangi emisi gas rumah\
-      kaca dan menjaga keanekaragaman hayati.",
+    "Keberadaan Eduwisata Lebah Madu Tanjung Leban juga memberikan kontribusi positif terhadap penilaian \
+    PROPER (Program Penilaian Peringkat Kinerja Perusahaan). Program ini menunjukkan \
+    komitmen Pertamina dalam menjalankan bisnis yang berkelanjutan dan bertanggung \
+    jawab terhadap lingkungan. Dengan melestarikan hutan gambut dan membudidayakan \
+    lebah kelulut, Pertamina turut berkontribusi dalam mengurangi emisi gas rumah \
+    kaca dan menjaga keanekaragaman hayati.",
     //eslint-disable-next-line
-    "Eduwisata\
-Lebah Madu Tanjung Leban bukan hanya sekadar tempat wisata, tetapi juga merupakan sebuah\
-laboratorium alam yang hidup. Di sini, pengunjung dapat belajar tentang pentingnya\
-menjaga keseimbangan ekosistem dan peran serangga penyerbuk dalam kehidupan manusia\
-    . Dengan demikian, eduwisata ini diharapkan dapat menginspirasi generasi muda untuk\
+    "Eduwisata Lebah Madu Tanjung Leban bukan hanya sekadar tempat wisata, tetapi juga merupakan sebuah \
+    laboratorium alam yang hidup. Di sini, pengunjung dapat belajar tentang pentingnya \
+    menjaga keseimbangan ekosistem dan peran serangga penyerbuk dalam kehidupan manusia. \
+    Dengan demikian, eduwisata ini diharapkan dapat menginspirasi generasi muda untuk \
     lebih peduli terhadap lingkungan dan ikut serta dalam upaya pelestarian alam.",
   ],
 
