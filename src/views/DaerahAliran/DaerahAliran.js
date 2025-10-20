@@ -110,7 +110,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2023, 2024]}
+              years={[2023, 2024, 2025]}
             />
 
             {/* SPECIES COUNT */}
@@ -199,12 +199,14 @@ class DaerahAliran extends React.Component {
                       <th></th>
                       <th style={{ textAlign: "center" }}>2023</th>
                       <th style={{ textAlign: "center" }}>2024</th>
+                      <th style={{ textAlign: "center" }}>2025</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td style={{ textAlign: "center" }}>Indeks Kehati</td>
                       <td style={{ textAlign: "center" }}>3.21</td>
+                      <td style={{ textAlign: "center" }}>3.5</td>
                       <td style={{ textAlign: "center" }}>3.52</td>
                     </tr>
                   </tbody>
@@ -216,7 +218,7 @@ class DaerahAliran extends React.Component {
                   <XYPlot
                     className="clustered-stacked-bar-chart-example"
                     xType="ordinal"
-                    yDomain={[3.0, 3.3]}
+                    yDomain={[3.0, 4.0]}
                     height={400}
                     width={400}
                   >
@@ -246,14 +248,16 @@ class DaerahAliran extends React.Component {
                       color="#12939A"
                       data={[
                         { x: "2023", y: 3.21 },
-                        { x: "2024", y: 3.25 },
+                        { x: "2024", y: 3.5 },
+                        { x: "2025", y: 3.52 },
                       ]}
                     />
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
                         { x: "2023", y: 3.21, yOffset: -25 },
-                        { x: "2024", y: 3.25, yOffset: -25 },
+                        { x: "2024", y: 3.5, yOffset: -25 },
+                        { x: "2025", y: 3.52, yOffset: -25 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -263,6 +267,7 @@ class DaerahAliran extends React.Component {
                       data={[
                         { x: "2023", y: 3.5, yOffset: -25 },
                         { x: "2024", y: 3.6, yOffset: -25 },
+                        { x: "2025", y: 3.65, yOffset: -25 },
                       ]}
                     />
                   </XYPlot>
@@ -284,7 +289,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2023, 2024]}
+              years={[2023, 2024, 2025]}
             />
 
             {/* BIRDS HRE */}
@@ -332,7 +337,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2023, 2024]}
+              years={[2023, 2024, 2025]}
             />
 
             {/* MAMMALS HRE */}
@@ -380,7 +385,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2023, 2024]}
+              years={[2023, 2024, 2025]}
             />
 
             {/* MAMMALS HRE */}
@@ -438,7 +443,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.dragonfly}
               data_count={table_data.data_count.dragonfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* DRAGONFLY HRE */}
@@ -486,7 +491,7 @@ class DaerahAliran extends React.Component {
             <DataTable
               data={table_data.butterfly}
               data_count={table_data.data_count.butterfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* BUTTERFLY HRE */}

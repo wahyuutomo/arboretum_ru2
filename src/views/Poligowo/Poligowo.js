@@ -109,7 +109,7 @@ class Poligowo extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2021, 2022, 2023, 2024]}
+              years={[2021, 2022, 2023, 2024, 2025]}
             />
 
             {/* FLORA H INDEX */}
@@ -134,7 +134,7 @@ class Poligowo extends React.Component {
               <Col md={5} style={{ textAlign: "center" }}>
                 <div>
                   <h5>
-                    Perbandingan Jumlah Flora di Poligowo Tahun 2021 - 2024
+                    Perbandingan Jumlah Flora di Poligowo Tahun 2021 - 2025
                   </h5>
                   <SingleBarChart
                     data={table_data.total_species.flora}
@@ -164,7 +164,7 @@ class Poligowo extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* BIRDS H INDEX */}
@@ -264,7 +264,7 @@ class Poligowo extends React.Component {
               <Col md={5} style={{ textAlign: "center" }}>
                 <div>
                   <h5>
-                    Perbandingan Jumlah Burung di Poligowo Tahun 2022 - 2024
+                    Perbandingan Jumlah Burung di Poligowo Tahun 2022 - 2025
                   </h5>
                   <SingleBarChart
                     data={table_data.total_species.birds}
@@ -294,7 +294,7 @@ class Poligowo extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* MAMMALS H INDEX */}
@@ -395,7 +395,7 @@ class Poligowo extends React.Component {
               <Col md={5} style={{ textAlign: "center" }}>
                 <div>
                   <h5>
-                    Perbandingan Jumlah Mamalia di Poligowo Tahun 2022 - 2024
+                    Perbandingan Jumlah Mamalia di Poligowo Tahun 2022 - 2025
                   </h5>
                   <SingleBarChart
                     data={table_data.total_species.mammals}
@@ -424,7 +424,7 @@ class Poligowo extends React.Component {
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* HERPETOFAUNA H INDEX */}
@@ -526,7 +526,7 @@ class Poligowo extends React.Component {
                 <div>
                   <h5>
                     Perbandingan Jumlah Herpetofauna di Poligowo Tahun 2022 -
-                    2024
+                    2025
                   </h5>
                   <SingleBarChart
                     data={table_data.total_species.herpetofauna}

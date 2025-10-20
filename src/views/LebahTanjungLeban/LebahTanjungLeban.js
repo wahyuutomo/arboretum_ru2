@@ -110,7 +110,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             <Row
@@ -127,7 +127,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* BIRDS HRE */}
@@ -175,7 +175,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* MAMMALS HRE */}
@@ -225,7 +225,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* MAMMALS HRE */}
@@ -285,7 +285,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.dragonfly}
               data_count={table_data.data_count.dragonfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* DRAGONFLY HRE */}
@@ -333,7 +333,7 @@ class LebahTanjungLeban extends React.Component {
             <DataTable
               data={table_data.butterfly}
               data_count={table_data.data_count.butterfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* BUTTERFLY HRE */}

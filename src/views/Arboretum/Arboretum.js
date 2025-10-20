@@ -142,13 +142,13 @@ class Arboretum extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2021, 2022, 2023, 2024]}
+              years={[2021, 2022, 2023, 2024, 2025]}
             />
 
             {/* FLORA SPECIES COUNT */}
             <Row style={{ paddingTop: 45 }}>
               <Col style={{ textAlign: "center" }}>
-                <h5>Jumlah Spesies di Arboretum Gambut Tahun 2019-2024</h5>
+                <h5>Jumlah Spesies di Arboretum Gambut Tahun 2019-2025</h5>
                 <Table striped bordered hover size="sm">
                   <thead>
                     <tr>
@@ -177,7 +177,7 @@ class Arboretum extends React.Component {
                     width={500}
                     height={400}
                     min_y={0}
-                    max_y={80}
+                    max_y={100}
                     y_title={"Jumlah Spesies"}
                     x_title={""}
                   />
@@ -189,7 +189,7 @@ class Arboretum extends React.Component {
             <Row style={{ paddingTop: 30 }}>
               <Col style={{ textAlign: "center" }}>
                 <h5>
-                  Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2019-2024
+                  Indeks Keanekaragaman Hayati Arboretum Gambut Tahun 2019-2025
                 </h5>
                 <Table striped bordered hover size="sm">
                   <thead>
@@ -240,7 +240,7 @@ class Arboretum extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* BIRDS H INDEX */}
@@ -255,8 +255,8 @@ class Arboretum extends React.Component {
                     width={500}
                     height={400}
                     min_y={2.5}
-                    max_y={3}
-                    y_title={"Jumlah Spesies"}
+                    max_y={3.5}
+                    y_title={"Indeks Kehati"}
                     x_title={""}
                   />
                 </div>
@@ -278,7 +278,7 @@ class Arboretum extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* MAMMALS H INDEX */}
@@ -294,7 +294,7 @@ class Arboretum extends React.Component {
                     height={400}
                     min_y={0}
                     max_y={2}
-                    y_title={"Jumlah Spesies"}
+                    y_title={"Indeks Kehati"}
                     x_title={""}
                   />
                 </div>
@@ -316,7 +316,7 @@ class Arboretum extends React.Component {
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* HERPETOFAUNA H INDEX */}
@@ -331,8 +331,8 @@ class Arboretum extends React.Component {
                     width={500}
                     height={400}
                     min_y={0}
-                    max_y={2}
-                    y_title={"Jumlah Spesies"}
+                    max_y={2.4}
+                    y_title={"Indeks Kehati"}
                     x_title={""}
                   />
                 </div>

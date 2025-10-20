@@ -108,7 +108,7 @@ class MangroveJambi extends React.Component {
             <DataTable
               data={table_data.flora}
               data_count={table_data.data_count.flora}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* FLORA H INDEX */}
@@ -176,7 +176,7 @@ class MangroveJambi extends React.Component {
             <DataTable
               data={table_data.birds}
               data_count={table_data.data_count.birds}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* BIRDS H INDEX */}
@@ -185,7 +185,7 @@ class MangroveJambi extends React.Component {
               <Col md={8} style={{ textAlign: "center" }}>
                 <div style={{ justifyContent: "center" }}>
                   <h5>
-                    Diagram Perbandingan Indeks Ekologi Burung Tahun 2021 - 2024
+                    Diagram Perbandingan Indeks Ekologi Burung Tahun 2021 - 2025
                     di Mangrove Education Center Pangkalan Jambi: Indeks
                     Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks
                     Kemerataan (E)
@@ -251,9 +251,9 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 3.17, yOffset: -25, xOffset: -15 },
+                        { x: "H'", y: 3.17, yOffset: -45, xOffset: -15 },
                         { x: "R", y: 5.89, yOffset: -25, xOffset: -15 },
-                        { x: "E", y: 0.93, yOffset: -25, xOffset: -15 },
+                        { x: "E", y: 0.93, yOffset: -45, xOffset: -15 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -272,9 +272,9 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 3.17, yOffset: -25, xOffset: 15 },
-                        { x: "R", y: 6.3, yOffset: -25, xOffset: 15 },
-                        { x: "E", y: 0.92, yOffset: -25, xOffset: 15 },
+                        { x: "H'", y: 3.17, yOffset: -25, xOffset: 0 },
+                        { x: "R", y: 6.3, yOffset: -25, xOffset: 0 },
+                        { x: "E", y: 0.92, yOffset: -25, xOffset: 0 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -293,9 +293,29 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 3.19, yOffset: -25, xOffset: 45 },
-                        { x: "R", y: 6.03, yOffset: -25, xOffset: 45 },
-                        { x: "E", y: 0.96, yOffset: -25, xOffset: 45 },
+                        { x: "H'", y: 3.19, yOffset: -45, xOffset: 25 },
+                        { x: "R", y: 6.03, yOffset: -45, xOffset: 25 },
+                        { x: "E", y: 0.96, yOffset: -45, xOffset: 25 },
+                      ]}
+                      getLabel={(d) => d.y}
+                    />
+                    {/* ================================== */}
+                    <VerticalBarSeries
+                      className="clustered-stacked-bar-chart-example"
+                      barWidth={0.5}
+                      color="#0a70afff"
+                      data={[
+                        { x: "H'", y: 3.26 },
+                        { x: "R", y: 6.60 },
+                        { x: "E", y: 0.93 },
+                      ]}
+                    />
+                    <LabelSeries
+                      labelAnchorX="middle"
+                      data={[
+                        { x: "H'", y: 3.26, yOffset: -25, xOffset: 45 },
+                        { x: "R", y: 6.60, yOffset: -25, xOffset: 45 },
+                        { x: "E", y: 0.93, yOffset: -25, xOffset: 45 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -312,6 +332,7 @@ class MangroveJambi extends React.Component {
                       { title: "2022", color: "#61351c", strokeWidth: "12" },
                       { title: "2023", color: "#3e6a00", strokeWidth: "12" },
                       { title: "2024", color: "#af0a10", strokeWidth: "12" },
+                      { title: "2025", color: "#0a70afff", strokeWidth: "12" },
                     ]}
                   />
                 </div>
@@ -333,7 +354,7 @@ class MangroveJambi extends React.Component {
             <DataTable
               data={table_data.mammals}
               data_count={table_data.data_count.mammals}
-              years={[2022, 2023, 2024]}
+              years={[2022, 2023, 2024, 2025]}
             />
 
             {/* MAMMALS H INDEX */}
@@ -343,7 +364,7 @@ class MangroveJambi extends React.Component {
                 <div>
                   <h5>
                     Diagram Perbandingan Indeks Ekologi Mamalia Tahun 2021 -
-                    2024 di Mangrove Education Center Pangkalan Jambi: Indeks
+                    2025 di Mangrove Education Center Pangkalan Jambi: Indeks
                     Keanekaragaman Jenis (H’); Indeks Kekayaan Jenis (R); Indeks
                     Kemerataan (E)
                   </h5>
@@ -409,9 +430,9 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.27, yOffset: -25, xOffset: -15 },
-                        { x: "R", y: 1.37, yOffset: -25, xOffset: -15 },
-                        { x: "E", y: 0.92, yOffset: -25, xOffset: -15 },
+                        { x: "H'", y: 1.27, yOffset: -35, xOffset: -25 },
+                        { x: "R", y: 1.37, yOffset: -35, xOffset: -25 },
+                        { x: "E", y: 0.92, yOffset: -35, xOffset: -25 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -430,9 +451,9 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.3, yOffset: -25, xOffset: 15 },
-                        { x: "R", y: 0.97, yOffset: -25, xOffset: 15 },
-                        { x: "E", y: 0.94, yOffset: -25, xOffset: 15 },
+                        { x: "H'", y: 1.3, yOffset: -45, xOffset: 0 },
+                        { x: "R", y: 0.97, yOffset: -45, xOffset: 0 },
+                        { x: "E", y: 0.94, yOffset: -45, xOffset: 0 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -451,9 +472,30 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.32, yOffset: -25, xOffset: 45 },
-                        { x: "R", y: 1.12, yOffset: -25, xOffset: 45 },
-                        { x: "E", y: 0.82, yOffset: -25, xOffset: 45 },
+                        { x: "H'", y: 1.32, yOffset: -55, xOffset: 25 },
+                        { x: "R", y: 1.12, yOffset: -55, xOffset: 25 },
+                        { x: "E", y: 0.82, yOffset: -55, xOffset: 25 },
+                      ]}
+                      getLabel={(d) => d.y}
+                    />
+
+                    {/* ================================== */}
+                    <VerticalBarSeries
+                      className="clustered-stacked-bar-chart-example"
+                      barWidth={0.5}
+                      color="#0a70afff"
+                      data={[
+                        { x: "H'", y: 1.60 },
+                        { x: "R", y: 1.46 },
+                        { x: "E", y: 0.89 },
+                      ]}
+                    />
+                    <LabelSeries
+                      labelAnchorX="middle"
+                      data={[
+                        { x: "H'", y: 1.60, yOffset: -35, xOffset: 45 },
+                        { x: "R", y: 1.46, yOffset: -35, xOffset: 45 },
+                        { x: "E", y: 0.89, yOffset: -35, xOffset: 45 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -471,18 +513,27 @@ class MangroveJambi extends React.Component {
                       { title: "2022", color: "#61351c", strokeWidth: "12" },
                       { title: "2023", color: "#3e6a00", strokeWidth: "12" },
                       { title: "2024", color: "#af0a10", strokeWidth: "12" },
+                      { title: "2025", color: "#0a70afff", strokeWidth: "12" },
                     ]}
                   />
                 </div>
               </Col>
               <Col md={2} style={{ textAlign: "center" }}></Col>
             </Row>
-
+            <Row
+              style={{ background: "#fff", paddingTop: 60, paddingBottom: 10 }}
+            >
+              <Col>
+                <div style={{ alignItems: "center", textAlign: "center" }}>
+                  <h3>{copywrite.herpetofauna_table_title}</h3>
+                </div>
+              </Col>
+            </Row>
             {/* HERPETOFAUNA TABLE */}
             <DataTable
               data={table_data.herpetofauna}
               data_count={table_data.data_count.herpetofauna}
-              years={[2022, 2023, 2024]}
+              years={[2024, 2025]}
             />
 
             {/* HERPETOFAUNA H INDEX */}
@@ -557,9 +608,9 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.26, yOffset: -25, xOffset: 0 },
-                        { x: "R", y: 1.41, yOffset: -25, xOffset: 0 },
-                        { x: "E", y: 0.78, yOffset: -25, xOffset: 0 },
+                        { x: "H'", y: 1.26, yOffset: -25, xOffset: -18 },
+                        { x: "R", y: 1.41, yOffset: -25, xOffset: -18 },
+                        { x: "E", y: 0.78, yOffset: -25, xOffset: -18 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -578,9 +629,29 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.48, yOffset: -25, xOffset: 45 },
-                        { x: "R", y: 2.5, yOffset: -25, xOffset: 45 },
-                        { x: "E", y: 0.76, yOffset: -25, xOffset: 45 },
+                        { x: "H'", y: 1.48, yOffset: -25, xOffset: 15 },
+                        { x: "R", y: 2.5, yOffset: -25, xOffset: 15 },
+                        { x: "E", y: 0.76, yOffset: -25, xOffset: 15 },
+                      ]}
+                      getLabel={(d) => d.y}
+                    />
+                    {/* ================================== */}
+                    <VerticalBarSeries
+                      className="clustered-stacked-bar-chart-example"
+                      barWidth={0.5}
+                      color="#0a70afff"
+                      data={[
+                        { x: "H'", y: 2.06 },
+                        { x: "R", y: 2.67 },
+                        { x: "E", y: 0.94 },
+                      ]}
+                    />
+                    <LabelSeries
+                      labelAnchorX="middle"
+                      data={[
+                        { x: "H'", y: 2.06, yOffset: -55, xOffset: 45 },
+                        { x: "R", y: 2.67, yOffset: -25, xOffset: 45 },
+                        { x: "E", y: 0.94, yOffset: -25, xOffset: 45 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -595,6 +666,7 @@ class MangroveJambi extends React.Component {
                         { title: "2022", color: "#61351c", strokeWidth: "12" },
                         { title: "2023", color: "#3e6a00", strokeWidth: "12" },
                         { title: "2024", color: "#af0a10", strokeWidth: "12" },
+                        { title: "2025", color: "#0a70afff", strokeWidth: "12" },
                       ]}
                     />
                   </XYPlot>
@@ -618,7 +690,7 @@ class MangroveJambi extends React.Component {
             <DataTable
               data={table_data.dragonfly}
               data_count={table_data.data_count.dragonfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* DRAGONFLY H INDEX */}
@@ -627,14 +699,14 @@ class MangroveJambi extends React.Component {
               <Col md={8} style={{ textAlign: "center" }}>
                 <div>
                   <h5>
-                    Diagram Indeks Ekologi Capung Tahun 2024 di Mangrove
+                    Diagram Indeks Ekologi Capung Tahun 2025 di Mangrove
                     Education Center Pangkalan Jambi: Indeks Keanekaragaman
                     Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E)
                   </h5>
                   <XYPlot
                     className="clustered-stacked-bar-chart-example"
                     xType="ordinal"
-                    yDomain={[0.8, 1.2]}
+                    yDomain={[0.8, 2]}
                     height={400}
                     width={800}
                   >
@@ -671,9 +743,29 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.1, yOffset: -25, xOffset: 0 },
-                        { x: "R", y: 1.12, yOffset: -25, xOffset: 0 },
-                        { x: "E", y: 1, yOffset: -25, xOffset: 0 },
+                        { x: "H'", y: 1.1, yOffset: -25, xOffset: -45 },
+                        { x: "R", y: 1.12, yOffset: -25, xOffset: -45 },
+                        { x: "E", y: 1, yOffset: -25, xOffset: -45 },
+                      ]}
+                      getLabel={(d) => d.y}
+                    />
+                    {/* ================================== */}
+                    <VerticalBarSeries
+                      className="clustered-stacked-bar-chart-example"
+                      barWidth={0.5}
+                      color="#3e6a00"
+                      data={[
+                        { x: "H'", y: 1.52 },
+                        { x: "R", y: 1.67 },
+                        { x: "E", y: 0.94 },
+                      ]}
+                    />
+                    <LabelSeries
+                      labelAnchorX="middle"
+                      data={[
+                        { x: "H'", y: 1.52, yOffset: -25, xOffset: 45 },
+                        { x: "R", y: 1.67, yOffset: -25, xOffset: 45 },
+                        { x: "E", y: 0.94, yOffset: -25, xOffset: 45 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -687,6 +779,7 @@ class MangroveJambi extends React.Component {
                       }}
                       items={[
                         { title: "2024", color: "#af0a10", strokeWidth: "12" },
+                        { title: "2025", color: "#3e6a00", strokeWidth: "12" },
                       ]}
                     />
                   </XYPlot>
@@ -710,7 +803,7 @@ class MangroveJambi extends React.Component {
             <DataTable
               data={table_data.butterfly}
               data_count={table_data.data_count.butterfly}
-              years={[2024]}
+              years={[2024, 2025]}
             />
 
             {/* BUTTERFLY H INDEX */}
@@ -719,14 +812,14 @@ class MangroveJambi extends React.Component {
               <Col md={8} style={{ textAlign: "center" }}>
                 <div>
                   <h5>
-                    Diagram Indeks Ekologi Kupu-kupu Tahun 2024 di Mangrove
+                    Diagram Indeks Ekologi Kupu-kupu Tahun 2025 di Mangrove
                     Education Center Pangkalan Jambi: Indeks Keanekaragaman
                     Jenis (H’); Indeks Kekayaan Jenis (R); Indeks Kemerataan (E)
                   </h5>
                   <XYPlot
                     className="clustered-stacked-bar-chart-example"
                     xType="ordinal"
-                    yDomain={[0.3, 1.4]}
+                    yDomain={[0.3, 2]}
                     height={400}
                     width={800}
                   >
@@ -763,9 +856,29 @@ class MangroveJambi extends React.Component {
                     <LabelSeries
                       labelAnchorX="middle"
                       data={[
-                        { x: "H'", y: 1.1, yOffset: -25, xOffset: 0 },
-                        { x: "R", y: 0.48, yOffset: -25, xOffset: 0 },
-                        { x: "E", y: 0.88, yOffset: -25, xOffset: 0 },
+                        { x: "H'", y: 1.1, yOffset: -25, xOffset: -45 },
+                        { x: "R", y: 0.48, yOffset: -25, xOffset: -45 },
+                        { x: "E", y: 0.88, yOffset: -25, xOffset: -45 },
+                      ]}
+                      getLabel={(d) => d.y}
+                    />
+                     {/* ================================== */}
+                    <VerticalBarSeries
+                      className="clustered-stacked-bar-chart-example"
+                      barWidth={0.5}
+                      color="#3e6a00"
+                      data={[
+                        { x: "H'", y: 1.43 },
+                        { x: "R", y: 1.82 },
+                        { x: "E", y: 0.89 },
+                      ]}
+                    />
+                    <LabelSeries
+                      labelAnchorX="middle"
+                      data={[
+                        { x: "H'", y: 1.43, yOffset: -25, xOffset: 45 },
+                        { x: "R", y: 1.82, yOffset: -25, xOffset: 45 },
+                        { x: "E", y: 0.89, yOffset: -25, xOffset: 45 },
                       ]}
                       getLabel={(d) => d.y}
                     />
@@ -779,6 +892,7 @@ class MangroveJambi extends React.Component {
                       }}
                       items={[
                         { title: "2024", color: "#af0a10", strokeWidth: "12" },
+                        { title: "2025", color: "#3e6a00", strokeWidth: "12" },
                       ]}
                     />
                   </XYPlot>

@@ -78,10 +78,16 @@ class DataTable extends React.Component {
                               {listValue.y2024}
                             </td>
                           );
+                        case 2025:
+                          return (
+                            <td style={{ textAlign: "center" }}>
+                              {listValue.y2025}
+                            </td>
+                          );
                         default:
                           return (
                             <td style={{ textAlign: "center" }}>
-                              {listValue.y2024}
+                              {listValue.y2025}
                             </td>
                           );
                       }

@@ -13,7 +13,7 @@ class Header extends React.Component{
         <Col sm={8} md={8} lg={9} style={{background: '#fff'}}>
           <div style={{fontSize: 24, textAlignVertical:'center'}}>Pertamina RU II Sungai Pakning</div>
         </Col>
-        <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img alt="" src={logo_pertamina} height="35"/></Col>
+        <Col sm={4} md={4} lg={3} float="center" style={{background: '#fff', display: 'flex', justifyContent:'flex-end'}}><img alt="" src={logo_pertamina} height="55"/></Col>
       </Row>
 		);
 	}
