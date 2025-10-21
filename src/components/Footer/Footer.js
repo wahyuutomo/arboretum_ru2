@@ -39,7 +39,7 @@ class Footer extends React.Component{
         </Row>
         <Row style={{paddingBottom: 40}}>
           <Col>
-            © Copyright PT Pertamina(Persero) RU II Sungai Pakning 2020. All Rights Reserved.
+            © Copyright PT Kilang Pertamina Internasional RU II Sungai Pakning 2025. All Rights Reserved.
           </Col>
         </Row>       
       </div>

@@ -17,18 +17,18 @@ export const copywrite = {
     "Berbagai upaya telah dilakukan kelompok mangrove Harapan Bersama mulai tahun 2004 hingga \
     sekarang, namun kelompok sering mengalami kegagalan dalam proses penanaman mangrove sebagai \
     upaya pencegahan bencana abrasi karena kurangnya pengetahuan mengenai tatacara penanaman \
-    mangrove dan besarnya arus yang menggerus daratan mereka. Mulai tahun 2017 PT Pertamina RU \
+    mangrove dan besarnya arus yang menggerus daratan mereka. Mulai tahun 2017 PT Kilang Pertamina Internasional RU \
     II Sungai Pakning mulai memperkenalkan beberapa metode alat pemecah ombak yang digunakan \
     untuk meningkatkan keberhasilan penanaman mangrove dan pencegahan abrasi antara lain hybrid \
     engineering, lalu hybrid engineering yang telah di modifikasi dan terakhir ialah triangle \
     mangrove barrier.",
     //eslint-disable-next-line
-    "Sebagai wujud kepedulian PT. Pertamina RU II Sungai Pakning terhadap perlindungan \
+    "Sebagai wujud kepedulian PT. Kilang Pertamina Internasional RU II Sungai Pakning terhadap perlindungan \
     biodiversity mangrove maka dibangunlah Mangrove Education Center (MEC) Pangkalan Jambi \
     sebagai tempat implementasi konservasi biodiversity ekosistem mangrove dan untuk edukasi \
     terhadap masyarakat.  Sebagai bagian dari pengelolaan Mangrove Education Center (MEC) maka \
-    PT. Pertamina RU II Sungai Pakning Field secara rutin melakukan pemantauan/monev perkembangan \
-    odiversity didalamnya.",
+    PT Kilang Pertamina Internasional RU II Sungai Pakning Field secara rutin melakukan \
+    pemantauan/monev perkembangan biodiversity didalamnya.",
   ],
   flora_table_title: "Keanekaragaman Hayati Mangrove Pangkalan Jambi",
   bird_table_title: "Jumlah Spesies Burung Mangrove Pangkalan Jambi",

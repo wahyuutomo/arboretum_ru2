@@ -110,7 +110,7 @@ class Arboretum extends React.Component {
                     bencana kebakaran lahan dan hutan menimbulkan banyak
                     kerugian antara lain 86 ha lahan produktif yang terbakar,
                     terganggunya aktifitas masyarakat, hingga menimbulkan korban
-                    jiwa akibat ISPA. Oleh karena itu PT Pertamina RU II Sungai
+                    jiwa akibat ISPA. Oleh karena itu PT Kilang Pertamina Internasional RU II Sungai
                     Paning, sebagai salah satu perusahaan yang berada di wilayah
                     Sungai Pakning, Bengkalis, Provinsi Riau ikut andil dalam
                     upaya penanganan bencana kebakaran hutan dan lahan melalui
